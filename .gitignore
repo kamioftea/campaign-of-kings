@@ -35,3 +35,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# IntelliJ
+/campaign-of-kings.iml
+/.idea/
+
+# Font
+/public/wolfsbane2.*
