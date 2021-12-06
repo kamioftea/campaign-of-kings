@@ -1,0 +1,298 @@
+{
+  "name": "Abyssal Dwarfs",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1004.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Blacksouls",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "75",
+        "Regiment (20)": "115",
+        "Horde (40)": "190"
+      }
+    },
+    {
+      "name": "Abyssal Berserkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Immortal Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Slave Orcs",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "60",
+        "Regiment (20)": "95",
+        "Horde (40)": "155"
+      }
+    },
+    {
+      "name": "Gargoyles",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "85"
+      }
+    },
+    {
+      "name": "Decimators",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "155",
+        "Horde (40)": "260"
+      }
+    },
+    {
+      "name": "Mutated Mastiff Hunting Pack",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "65"
+      }
+    },
+    {
+      "name": "Abyssal Halfbreeds",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "130",
+        "Regiment (10)": "200"
+      }
+    },
+    {
+      "name": "Slave Orc Gore Riders",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "90",
+        "Regiment (10)": "140"
+      }
+    },
+    {
+      "name": "Lesser Obsidian Golems",
+      "type": "Monstrous Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "215"
+      }
+    },
+    {
+      "name": "Abyssal Grotesques",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "145",
+        "Horde (6)": "245"
+      }
+    },
+    {
+      "name": "G'rog Mortar",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Katsuchan Rocket Launcher",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Angkor Heavy Mortar",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Dragon Fire-team",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Greater Obsidian Golem",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "235"
+      }
+    },
+    {
+      "name": "Hellfane",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "265"
+      }
+    },
+    {
+      "name": "Slavedriver",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Infernox",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Overmaster",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Hexcaster",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "70"
+      }
+    },
+    {
+      "name": "Iron-caster",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Taskmaster on Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Abyssal Halfbreed Champion",
+      "type": "Hero",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Overmaster on Ancient Winged Halfbreed",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "300"
+      }
+    },
+    {
+      "name": "Abyssal Grotesque Champion",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Supreme Iron-caster on Great Winged Halfbreed",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "270"
+      }
+    },
+    {
+      "name": "Brakki Barka",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Ba'su'su the Vile",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Ba'su'su's Vile Brood",
+      "type": "Heavy Infantry",
+      "unique": "1",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "110"
+      }
+    },
+    {
+      "name": "Dravak Dalkan",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "155"
+      }
+    },
+    {
+      "name": "Infernok",
+      "type": "Titan",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "255"
+      }
+    },
+    {
+      "name": "The Damned Yaygar",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

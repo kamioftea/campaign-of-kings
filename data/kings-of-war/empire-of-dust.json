@@ -1,0 +1,290 @@
+{
+  "name": "Empire of Dust",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1013.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Skeleton Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "55",
+        "Regiment (20)": "85",
+        "Horde (40)": "140"
+      }
+    },
+    {
+      "name": "Skeleton Spearmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Revenants",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "125",
+        "Horde (40)": "205"
+      }
+    },
+    {
+      "name": "Mummies",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "180"
+      }
+    },
+    {
+      "name": "Skeleton Archers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "95",
+        "Horde (40)": "165"
+      }
+    },
+    {
+      "name": "Skeleton Deadeye Crossbows",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "120"
+      }
+    },
+    {
+      "name": "Revenant Cavalry",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "115",
+        "Regiment (10)": "180"
+      }
+    },
+    {
+      "name": "Skeleton Archer Cavalry",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "155"
+      }
+    },
+    {
+      "name": "Desert Swarm",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "60",
+        "Horde (6)": "100"
+      }
+    },
+    {
+      "name": "Scavengers",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "90",
+        "Horde (6)": "150"
+      }
+    },
+    {
+      "name": "Revenant Chariots",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "110",
+        "Regiment (3)": "140",
+        "Horde (4)": "175",
+        "Legion (6)": "205"
+      }
+    },
+    {
+      "name": "Enslaved Guardians",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "135",
+        "Horde (6)": "225"
+      }
+    },
+    {
+      "name": "Enslaved Guardians Archers",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "235"
+      }
+    },
+    {
+      "name": "Sandborne Wyrm Riders",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "135",
+        "Horde (6)": "225"
+      }
+    },
+    {
+      "name": "Bone Giant",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "190"
+      }
+    },
+    {
+      "name": "Reanimated Behemoth",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "190"
+      }
+    },
+    {
+      "name": "Monolith",
+      "type": "Titan",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Undead Wyrm",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "215"
+      }
+    },
+    {
+      "name": "Empire of Dust Balefire Catapult",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Soul Snare",
+      "type": "War Engine",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Undead Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Ahmunite Pharaoh on Royal Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "205"
+      }
+    },
+    {
+      "name": "Revenant Champion",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Ahmunite Pharaoh",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Cursed High Priest",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Revenant King on Undead Great Flying Wyrm",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "265"
+      }
+    },
+    {
+      "name": "Revenant on Undead Great Burrowing Wyrm",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Apaphys, Champion of Death",
+      "type": "Hero",
+      "subType": "Ttn",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "350"
+      }
+    },
+    {
+      "name": "Idol of Shobik",
+      "type": "Hero",
+      "subType": "Mon",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "290"
+      }
+    },
+    {
+      "name": "Sebekh-Rei the Accursed",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "155"
+      }
+    },
+    {
+      "name": "The Bone Shakers",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Trident Realm",
+  "units": [
+    {
+      "name": "Thuul",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Riverguard",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Otter Bevy",
+      "type": "Grunt",
+      "points": "10"
+    },
+    {
+      "name": "Naiad Lurker",
+      "type": "Support",
+      "points": "18"
+    },
+    {
+      "name": "Thuul Mythican",
+      "type": "Spellcaster",
+      "points": "26"
+    },
+    {
+      "name": "Water Elemental",
+      "type": "Large",
+      "points": "32"
+    },
+    {
+      "name": "Naiad Centurion",
+      "type": "Command",
+      "points": "45"
+    },
+    {
+      "name": "Naiad Heartpiercer",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Giga",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Riverguard Sentinel",
+      "type": "Command",
+      "points": "37"
+    },
+    {
+      "name": "Riverguard Treeleaper",
+      "type": "Support",
+      "points": "19"
+    },
+    {
+      "name": "Riverguard Dambuster",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Riverguard Dambuster Sentinel",
+      "type": "Command, Large",
+      "points": "45"
+    },
+    {
+      "name": "Naiad Initiate",
+      "type": "Grunt",
+      "points": "10"
+    },
+    {
+      "name": "Mythican Aquamage",
+      "type": "Command, Spellcaster",
+      "points": "40"
+    },
+    {
+      "name": "Placoderm Defender",
+      "type": "Support",
+      "points": "28"
+    },
+    {
+      "name": "Naiad Envoy",
+      "type": "Support",
+      "points": "24"
+    }
+  ]
+}

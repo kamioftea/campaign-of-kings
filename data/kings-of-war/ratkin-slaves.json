@@ -1,0 +1,196 @@
+{
+  "name": "Ratkin Slaves",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1026.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Slave Wretches",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Horde (40)": "115",
+        "Legion (60)": "170"
+      }
+    },
+    {
+      "name": "Slave Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "85",
+        "Horde (40)": "140"
+      }
+    },
+    {
+      "name": "Blacksouls",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "75",
+        "Regiment (20)": "115",
+        "Horde (40)": "190"
+      }
+    },
+    {
+      "name": "Abyssal Berserkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Immortal Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Decimators",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "155",
+        "Horde (40)": "260"
+      }
+    },
+    {
+      "name": "Abyssal Halfbreeds",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "130",
+        "Regiment (10)": "200"
+      }
+    },
+    {
+      "name": "Slave Nightmares",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "230"
+      }
+    },
+    {
+      "name": "Katsuchan Rocket Launcher",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Vermintide",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "65",
+        "Horde (6)": "110"
+      }
+    },
+    {
+      "name": "Slave Tunnel Runners",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "170",
+        "Regiment (3)": "210"
+      }
+    },
+    {
+      "name": "Slave Death Engine Impaler",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Slavedriver",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Overmaster",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Iron-caster",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Taskmaster on Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Abyssal Halfbreed Champion",
+      "type": "Hero",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Overmaster on Ancient Winged Halfbreed",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "300"
+      }
+    },
+    {
+      "name": "Golekh Skinflayer",
+      "type": "Hero",
+      "subType": "Cht",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Cryza's Gore-Impaler",
+      "type": "Hero (Mon-Cht)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Lowest of the Low",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

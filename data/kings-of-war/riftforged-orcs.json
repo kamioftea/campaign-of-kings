@@ -1,0 +1,228 @@
+{
+  "name": "Riftforged Orcs",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1037.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Skulks",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "110"
+      }
+    },
+    {
+      "name": "Morax",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Unforged Orcs",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "115",
+        "Horde (40)": "190"
+      }
+    },
+    {
+      "name": "Riftforged Legionaries",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "150",
+        "Horde (40)": "250"
+      }
+    },
+    {
+      "name": "Reborn Legionaries",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Riftwalkers",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Tundra Wolves",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "115",
+        "Regiment (10)": "180"
+      }
+    },
+    {
+      "name": "Gore Riders",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "190"
+      }
+    },
+    {
+      "name": "Fight Wagons",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "155",
+        "Regiment (3)": "195",
+        "Horde (4)": "245",
+        "Legion (6)": "285"
+      }
+    },
+    {
+      "name": "Helstrikers",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "160",
+        "Horde (6)": "265"
+      }
+    },
+    {
+      "name": "Storm Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "240"
+      }
+    },
+    {
+      "name": "Stormforged Shrine",
+      "type": "Titan",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "240"
+      }
+    },
+    {
+      "name": "Thunderseers",
+      "type": "Monstrous Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "135",
+        "Horde (6)": "225"
+      }
+    },
+    {
+      "name": "Stormslayer",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Ambarox",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Orclings",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "60",
+        "Horde (6)": "100"
+      }
+    },
+    {
+      "name": "Flagger",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Stormbringer",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Stormcaller",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Riftforger",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Stormbringer on Winged Slasher",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "295"
+      }
+    },
+    {
+      "name": "Stormbringer on Helstrike Manticore",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Vohdler",
+      "type": "Hero (Mon-Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "190"
+      }
+    },
+    {
+      "name": "Thonaar",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "170"
+      }
+    },
+    {
+      "name": "The Iron Boots",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Goblin",
+  "units": [
+    {
+      "name": "Spitter",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Rabble",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Luggit",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Mawbeast",
+      "type": "Support",
+      "points": "19"
+    },
+    {
+      "name": "Banggit",
+      "type": "Support",
+      "points": "28"
+    },
+    {
+      "name": "Biggit",
+      "type": "Command",
+      "points": "32"
+    },
+    {
+      "name": "Wiz",
+      "type": "Spellcaster",
+      "points": "29"
+    },
+    {
+      "name": "Troll",
+      "type": "Large",
+      "points": "34"
+    },
+    {
+      "name": "Mawpup Launcher",
+      "type": "Support",
+      "points": "32"
+    },
+    {
+      "name": "Blaggit*",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Snaggit",
+      "type": "Support",
+      "points": "18"
+    },
+    {
+      "name": "Winggit",
+      "type": "Large",
+      "points": "37"
+    },
+    {
+      "name": "Magwa & Jo‘os*",
+      "type": "Command",
+      "points": "37"
+    },
+    {
+      "name": "Stinggit",
+      "type": "Command",
+      "points": "37"
+    },
+    {
+      "name": "Sneak",
+      "type": "Warrior",
+      "points": "13"
+    }
+  ]
+}

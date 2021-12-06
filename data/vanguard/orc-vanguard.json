@@ -1,0 +1,55 @@
+{
+  "name": "Orc",
+  "units": [
+    {
+      "name": "Ax",
+      "type": "Grunt",
+      "points": "12"
+    },
+    {
+      "name": "Greatax",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "Krudger",
+      "type": "Command",
+      "points": "45"
+    },
+    {
+      "name": "Godspeaker",
+      "type": "Spellcaster",
+      "points": "31"
+    },
+    {
+      "name": "Morax",
+      "type": "Warrior",
+      "points": "22"
+    },
+    {
+      "name": "Orclings",
+      "type": "Grunt",
+      "points": "10"
+    },
+    {
+      "name": "Gore Rider",
+      "type": "Support",
+      "points": "24"
+    },
+    {
+      "name": "Troll",
+      "type": "Large",
+      "points": "34"
+    },
+    {
+      "name": "Krusher",
+      "type": "Command",
+      "points": "34"
+    },
+    {
+      "name": "Skulk",
+      "type": "Grunt",
+      "points": "12"
+    }
+  ]
+}

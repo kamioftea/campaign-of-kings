@@ -1,0 +1,45 @@
+{
+  "name": "Brotherhood",
+  "units": [
+    {
+      "name": "Bowman",
+      "type": "Grunt",
+      "points": "7"
+    },
+    {
+      "name": "Poacher",
+      "type": "Support",
+      "points": "22"
+    },
+    {
+      "name": "Spearmen",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Devoted",
+      "type": "Spellcaster",
+      "points": "26"
+    },
+    {
+      "name": "Mounted Knight",
+      "type": "Warrior",
+      "points": "28"
+    },
+    {
+      "name": "Water Elemental",
+      "type": "Large",
+      "points": "32"
+    },
+    {
+      "name": "Exemplar",
+      "type": "Command",
+      "points": "41"
+    },
+    {
+      "name": "Foot Knight",
+      "type": "Warrior",
+      "points": "15"
+    }
+  ]
+}

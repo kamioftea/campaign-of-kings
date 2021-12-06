@@ -1,0 +1,271 @@
+{
+  "name": "Ogres",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1009.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Red Goblin Rabble",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "75",
+        "Horde (40)": "125",
+        "Legion (60)": "180"
+      }
+    },
+    {
+      "name": "Red Goblin Sharpsticks",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "95",
+        "Horde (40)": "155",
+        "Legion (60)": "230"
+      }
+    },
+    {
+      "name": "Red Goblins Spitters",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "90",
+        "Horde (40)": "160"
+      }
+    },
+    {
+      "name": "Red Goblin Scouts",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "155"
+      }
+    },
+    {
+      "name": "Red Goblin Scout Sniffs",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "105"
+      }
+    },
+    {
+      "name": "Warrior Chariots",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "170",
+        "Regiment (3)": "215",
+        "Horde (4)": "270",
+        "Legion (6)": "310"
+      }
+    },
+    {
+      "name": "Boomer Chariots",
+      "type": "Chariot",
+      "irregular": true,
+      "options": {
+        "Troop (2)": "145",
+        "Regiment (3)": "180"
+      }
+    },
+    {
+      "name": "Boomers",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "230"
+      }
+    },
+    {
+      "name": "Shooters",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "230"
+      }
+    },
+    {
+      "name": "Warriors",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200",
+        "Legion (12)": "350"
+      }
+    },
+    {
+      "name": "Hunters",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "135",
+        "Horde (6)": "225"
+      }
+    },
+    {
+      "name": "Berserker Braves",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "230"
+      }
+    },
+    {
+      "name": "Siege Breakers",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "145",
+        "Horde (6)": "240"
+      }
+    },
+    {
+      "name": "Crocodog Wrangler",
+      "type": "Monster",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Red Goblin Blaster",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Mammoth",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "220"
+      }
+    },
+    {
+      "name": "Red Goblin Slasher",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "225"
+      }
+    },
+    {
+      "name": "Ogre Warlock",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Sergeant",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Boomer Sergeant",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Army Standard",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "70"
+      }
+    },
+    {
+      "name": "Berserker Bully",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Ogre Warlord",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "155"
+      }
+    },
+    {
+      "name": "Red Goblin Biggit",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Kuzlo &amp; Madfall",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Grokagamok",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "250"
+      }
+    },
+    {
+      "name": "Nomagarok",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Hell on Wheels",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

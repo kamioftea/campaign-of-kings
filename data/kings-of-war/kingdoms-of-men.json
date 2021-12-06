@@ -1,0 +1,282 @@
+{
+  "name": "Kingdoms of Men",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/3.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Shield Wall",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "65",
+        "Regiment (20)": "100",
+        "Horde (40)": "165"
+      }
+    },
+    {
+      "name": "Pole-Arms Block",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Spear Phalanx",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Foot Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "135",
+        "Horde (40)": "225"
+      }
+    },
+    {
+      "name": "Militia Mob",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "60",
+        "Horde (40)": "105",
+        "Legion (60)": "155"
+      }
+    },
+    {
+      "name": "Fanatics",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "95",
+        "Regiment (20)": "145",
+        "Horde (40)": "240"
+      }
+    },
+    {
+      "name": "Bowmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "75",
+        "Regiment (20)": "100",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Crossbow Block",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "115",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Knights",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "195",
+        "Horde (20)": "330"
+      }
+    },
+    {
+      "name": "Mounted Sergeants",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "150"
+      }
+    },
+    {
+      "name": "Mounted Scouts",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "155"
+      }
+    },
+    {
+      "name": "Beast Cavalry",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "125",
+        "Horde (6)": "210"
+      }
+    },
+    {
+      "name": "Charioteers",
+      "type": "Chariot",
+      "irregular": true,
+      "options": {
+        "Troop (2)": "125",
+        "Regiment (3)": "155",
+        "Horde (4)": "195",
+        "Legion (6)": "225"
+      }
+    },
+    {
+      "name": "Siege Artillery",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Ballista",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Cannon",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Mammoth",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "220"
+      }
+    },
+    {
+      "name": "Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "225"
+      }
+    },
+    {
+      "name": "General",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "General on Pegasus",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "General on Winged Beast",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "190"
+      }
+    },
+    {
+      "name": "Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Hero",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "40"
+      }
+    },
+    {
+      "name": "Hero on Pegasus",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Assassin",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Fanatic Instigator",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Wizard",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "The Captain",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "The Monarch",
+      "type": "Hero",
+      "subType": "Ttn",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "235"
+      }
+    },
+    {
+      "name": "Outlaws",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

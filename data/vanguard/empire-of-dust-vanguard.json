@@ -1,0 +1,55 @@
+{
+  "name": "Empire of Dust",
+  "units": [
+    {
+      "name": "Skeleton",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Skeleton Archer",
+      "type": "Grunt",
+      "points": "7"
+    },
+    {
+      "name": "Revenant",
+      "type": "Warrior",
+      "points": "10"
+    },
+    {
+      "name": "Desert Swarm",
+      "type": "Grunt",
+      "points": "10"
+    },
+    {
+      "name": "Enslaved Guardian",
+      "type": "Large, Spellcaster",
+      "points": "44"
+    },
+    {
+      "name": "Pharoahs Champion",
+      "type": "Command",
+      "points": "48"
+    },
+    {
+      "name": "Revenant Champion",
+      "type": "Support",
+      "points": "26"
+    },
+    {
+      "name": "Sand Wraith",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Mummy",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "High Priest",
+      "type": "Command, Spellcaster",
+      "points": "39"
+    }
+  ]
+}

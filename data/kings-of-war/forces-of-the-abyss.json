@@ -1,0 +1,278 @@
+{
+  "name": "Forces of the Abyss",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1012.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Lower Abyssals",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "75",
+        "Regiment (20)": "115",
+        "Horde (40)": "190"
+      }
+    },
+    {
+      "name": "Abyssal Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Succubi",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Abyssal Ghouls",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "65",
+        "Regiment (20)": "90",
+        "Horde (40)": "150"
+      }
+    },
+    {
+      "name": "Succubi Larvae",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Horde (40)": "150",
+        "Legion (60)": "215"
+      }
+    },
+    {
+      "name": "Gargoyles",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "85"
+      }
+    },
+    {
+      "name": "Flamebearers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "155"
+      }
+    },
+    {
+      "name": "The Oathbreakers",
+      "type": "Infantry",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Molochs",
+      "type": "Monstrous Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "135",
+        "Horde (6)": "225"
+      }
+    },
+    {
+      "name": "Tortured Souls",
+      "type": "Swarm",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "Imps",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "65",
+        "Horde (6)": "110"
+      }
+    },
+    {
+      "name": "Abyssal Horsemen",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "155",
+        "Regiment (10)": "240"
+      }
+    },
+    {
+      "name": "Hellhounds",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "120",
+        "Regiment (10)": "185"
+      }
+    },
+    {
+      "name": "Chroneas",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "225"
+      }
+    },
+    {
+      "name": "Abyssal Fiend",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "175"
+      }
+    },
+    {
+      "name": "Abyssal Champion",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Abyssal Harbinger",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Archfiend of the Abyss",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "305"
+      }
+    },
+    {
+      "name": "Despoiler Champion",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Seductress",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Abyssal Warlock",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Hellequin-Blood-masque",
+      "type": "Hero",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Efreet",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Mau'ti-bu-su",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Ba'su'su the Vile",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Ba'su'su's Vile Brood",
+      "type": "Heavy Infantry",
+      "unique": "1",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "110"
+      }
+    },
+    {
+      "name": "The Well of Souls",
+      "type": "Hero",
+      "subType": "Mon",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "290"
+      }
+    },
+    {
+      "name": "Manifestation of Ba’el",
+      "type": "Hero",
+      "subType": "Mon",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "265"
+      }
+    },
+    {
+      "name": "Zaz'u'szu the Betrayer",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Kah'za'ah's Torment",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

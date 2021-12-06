@@ -1,0 +1,301 @@
+{
+  "name": "Elves",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1001.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Kindred Tallspears",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Kindred Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Shield Watch",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "155"
+      }
+    },
+    {
+      "name": "Forest Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Palace Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160",
+        "Horde (40)": "265"
+      }
+    },
+    {
+      "name": "Kindred Archers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "140",
+        "Horde (40)": "245"
+      }
+    },
+    {
+      "name": "Kindred Gladestalkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "130",
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Therennian Sea Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "150",
+        "Horde (40)": "260"
+      }
+    },
+    {
+      "name": "Hunters of the Wild",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140"
+      }
+    },
+    {
+      "name": "Stormwind Cavalry",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "140",
+        "Regiment (10)": "215"
+      }
+    },
+    {
+      "name": "Silverbreeze Cavalry",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "130",
+        "Regiment (10)": "200"
+      }
+    },
+    {
+      "name": "Battlecats",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80"
+      }
+    },
+    {
+      "name": "Drakon Hatchling Pack",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "115",
+        "Horde (6)": "195"
+      }
+    },
+    {
+      "name": "Forest Shamblers",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "War Chariots",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "135",
+        "Regiment (3)": "170",
+        "Horde (4)": "215",
+        "Legion (6)": "245"
+      }
+    },
+    {
+      "name": "Drakon Riders",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "165",
+        "Horde (6)": "275"
+      }
+    },
+    {
+      "name": "Bolt Thrower",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Tree Herder",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "260"
+      }
+    },
+    {
+      "name": "Elven King",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Lord on Drakon",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Elven Prince",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Elven Archmage",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Dragon Kindred Lord",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "305"
+      }
+    },
+    {
+      "name": "Noble War Chariot",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Madriga the Elf",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "125"
+      }
+    },
+    {
+      "name": "Tydarion Dragonlord",
+      "type": "Hero",
+      "subType": "Ttn",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "335"
+      }
+    },
+    {
+      "name": "Argus Rodinar",
+      "type": "Hero",
+      "subType": "Mon",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "70"
+      }
+    },
+    {
+      "name": "Nimue Waydancer",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "King's Champion",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Kal'ar's Hunters",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

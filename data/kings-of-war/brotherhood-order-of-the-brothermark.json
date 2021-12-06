@@ -1,0 +1,226 @@
+{
+  "name": "Brotherhood: Order of the Brothermark",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/18.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Villein Penitents",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "75",
+        "Horde (40)": "125",
+        "Legion (60)": "190"
+      }
+    },
+    {
+      "name": "Men-at-Arms Swordsmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Men-at-Arms Spearmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "125",
+        "Horde (40)": "205"
+      }
+    },
+    {
+      "name": "Paladin Monster Slayers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "155",
+        "Horde (40)": "255"
+      }
+    },
+    {
+      "name": "Villein Bowmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "95",
+        "Horde (40)": "165"
+      }
+    },
+    {
+      "name": "Men-at-Arms Crossbowmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "130",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Order of the Abyssal Hunt",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "155",
+        "Regiment (10)": "235"
+      }
+    },
+    {
+      "name": "Villein Skirmishers",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "95",
+        "Regiment (10)": "145"
+      }
+    },
+    {
+      "name": "Paladin Knights",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "135",
+        "Regiment (10)": "210",
+        "Horde (20)": "355"
+      }
+    },
+    {
+      "name": "Ogre Palace Guard",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "235"
+      }
+    },
+    {
+      "name": "Villein Siege Artillery",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Heavy Arbalest",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Phoenix",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "195"
+      }
+    },
+    {
+      "name": "Exemplar Paladin",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Exemplar Chaplain",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Exemplar Hunter",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Bearer of the Holy Icon",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Dictator",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Priest",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "War-Wizard",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "High Paladin on Dragon",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "310"
+      }
+    },
+    {
+      "name": "High Chaplain Augustus",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Oathsworn Guardians",
+      "type": "Infantry",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "180"
+      }
+    },
+    {
+      "name": "Defenders of Righteousness",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

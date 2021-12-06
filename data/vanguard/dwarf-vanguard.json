@@ -1,0 +1,85 @@
+{
+  "name": "Dwarf",
+  "units": [
+    {
+      "name": "Levy",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Ironwatch",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "Ironclad",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "Ranger",
+      "type": "Warrior",
+      "points": "19"
+    },
+    {
+      "name": "Shieldbreaker",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Ironguard",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Brock Rider",
+      "type": "Support",
+      "points": "30"
+    },
+    {
+      "name": "Mastiff Packmaster",
+      "type": "Warrior",
+      "points": "20"
+    },
+    {
+      "name": "Dwarf Sergeant",
+      "type": "Command",
+      "points": "31"
+    },
+    {
+      "name": "Ranger Captain",
+      "type": "Command",
+      "points": "44"
+    },
+    {
+      "name": "Stone Priest",
+      "type": "Spellcaster",
+      "points": "28"
+    },
+    {
+      "name": "Earth Elemental",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Battle Driller",
+      "type": "Support",
+      "points": "29"
+    },
+    {
+      "name": "Flame Priest",
+      "type": "Support",
+      "points": "30"
+    },
+    {
+      "name": "Steel Juggernaut*",
+      "type": "Large",
+      "points": "44"
+    },
+    {
+      "name": "Dwarf Berserker Lord",
+      "type": "Command",
+      "points": "43"
+    }
+  ]
+}

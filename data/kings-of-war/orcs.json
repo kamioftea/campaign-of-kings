@@ -1,0 +1,277 @@
+{
+  "name": "Orcs",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1006.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Morax",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Longax",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "155",
+        "Horde (40)": "255"
+      }
+    },
+    {
+      "name": "Youngax",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "115",
+        "Horde (40)": "190"
+      }
+    },
+    {
+      "name": "Ax",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "130",
+        "Horde (40)": "215",
+        "Legion (60)": "310"
+      }
+    },
+    {
+      "name": "Greatax",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "150",
+        "Horde (40)": "250"
+      }
+    },
+    {
+      "name": "Skulks",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "110"
+      }
+    },
+    {
+      "name": "Reborn Legionaries",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Gore Riders",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "190"
+      }
+    },
+    {
+      "name": "Skulk Outriders",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "105"
+      }
+    },
+    {
+      "name": "Orclings",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "60",
+        "Horde (6)": "100"
+      }
+    },
+    {
+      "name": "Trolls",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "115",
+        "Horde (6)": "190"
+      }
+    },
+    {
+      "name": "Gore Chariots",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "150",
+        "Regiment (3)": "190",
+        "Horde (4)": "240",
+        "Legion (6)": "275"
+      }
+    },
+    {
+      "name": "Skulk Raider Chariots",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "115",
+        "Regiment (3)": "145"
+      }
+    },
+    {
+      "name": "Fight Wagons",
+      "type": "Chariot",
+      "irregular": true,
+      "options": {
+        "Troop (2)": "155",
+        "Regiment (3)": "195",
+        "Horde (4)": "245",
+        "Legion (6)": "285"
+      }
+    },
+    {
+      "name": "War Drum",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "225"
+      }
+    },
+    {
+      "name": "Krudger",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Krudger on Gore Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Krudger on Winged Slasher",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "285"
+      }
+    },
+    {
+      "name": "Flagger",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Krusher",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Troll Bruiser",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Godspeaker",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "70"
+      }
+    },
+    {
+      "name": "Skulk Marauder on Gore Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Skulk Stalker",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Morax Mansplitter",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Gakamak",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "220"
+      }
+    },
+    {
+      "name": "Wip the Outcast",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Ulpgar the Mad",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Molgurk's Mad Mob",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

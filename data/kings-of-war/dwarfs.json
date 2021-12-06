@@ -1,0 +1,285 @@
+{
+  "name": "Dwarfs",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1002.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Ironclad",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "110",
+        "Horde (40)": "180"
+      }
+    },
+    {
+      "name": "Ironguard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "150"
+      }
+    },
+    {
+      "name": "Shieldbreakers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "125",
+        "Horde (40)": "205"
+      }
+    },
+    {
+      "name": "Berserkers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Bulwarkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "135",
+        "Horde (40)": "225"
+      }
+    },
+    {
+      "name": "Ironwatch Crossbows",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "135",
+        "Horde (40)": "235"
+      }
+    },
+    {
+      "name": "Rangers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "140",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Ironwatch Rifles",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "150",
+        "Horde (40)": "265"
+      }
+    },
+    {
+      "name": "Sharpshooters",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100"
+      }
+    },
+    {
+      "name": "Berserker Brock Riders",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "195"
+      }
+    },
+    {
+      "name": "Earth Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Mastiff Hunting Pack",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "65"
+      }
+    },
+    {
+      "name": "Ironbelcher Cannon",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Flame Belcher",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Jarrun Bombard",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Ironbelcher Organ Gun",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Battle Driller",
+      "type": "Monster",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Steel Behemoth",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "245"
+      }
+    },
+    {
+      "name": "Greater Earth Elemental",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Dwarf Lord",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Dwarf Lord on Large Beast",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Berserker Lord",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Stone Priest",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Warsmith",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Dwarf Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Steel Juggernaut",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Flame Priest",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Rordin the Dwarf",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "125"
+      }
+    },
+    {
+      "name": "Garrek Heavyhand",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Faber Ironheart",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "175"
+      }
+    },
+    {
+      "name": "The Royal Guard",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

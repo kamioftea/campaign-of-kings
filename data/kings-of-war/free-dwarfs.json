@@ -1,0 +1,234 @@
+{
+  "name": "Free Dwarfs",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1024.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Free Dwarf Spear Levy",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120"
+      }
+    },
+    {
+      "name": "Free Dwarf Shieldbreakers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "130",
+        "Horde (40)": "215"
+      }
+    },
+    {
+      "name": "Ironclad",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "110",
+        "Horde (40)": "180"
+      }
+    },
+    {
+      "name": "Free Dwarf Berserkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Free Dwarf Ironwatch Rifles",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "150",
+        "Horde (40)": "265"
+      }
+    },
+    {
+      "name": "Free Dwarf Ironwatch Crossbows",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "135",
+        "Horde (40)": "235"
+      }
+    },
+    {
+      "name": "Free Dwarf Rangers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "140",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Free Dwarf Brock Riders",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "195"
+      }
+    },
+    {
+      "name": "Earth Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Mastiff Hunting Pack",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "65"
+      }
+    },
+    {
+      "name": "Jarrun Bombard",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Ironbelcher Cannon",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Greater Earth Elemental",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Free Dwarf Lord",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Free Dwarf Stone Priest",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Free Dwarf Packmaster",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Ranger Captain",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Dwarf Lord on Large Beast",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Berserker Lord",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Dwarf Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Sveri Egilax on Hellbrock",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Herneas the Hunter",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Garrek Heavyhand",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Banick Kholearm",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Eryc's Mallets",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

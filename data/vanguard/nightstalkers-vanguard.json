@@ -1,0 +1,70 @@
+{
+  "name": "Nightstalkers",
+  "units": [
+    {
+      "name": "Phantom",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Reaper",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "Scarecrow",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Needlefangs",
+      "type": "Grunt",
+      "points": "11"
+    },
+    {
+      "name": "Butcher",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "Horror",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Shadowhound",
+      "type": "Support",
+      "points": "17"
+    },
+    {
+      "name": "Reaper Souldrinker",
+      "type": "Command",
+      "points": "28"
+    },
+    {
+      "name": "Spectre",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Butcher Fleshripper",
+      "type": "Command, Large",
+      "points": "41"
+    },
+    {
+      "name": "Mind-screech",
+      "type": "Large, Spellcaster",
+      "points": "31"
+    },
+    {
+      "name": "Shade",
+      "type": "Command",
+      "points": "40"
+    },
+    {
+      "name": "Banshee",
+      "type": "Command",
+      "points": "39"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Kingdoms of Men",
+  "units": [
+    {
+      "name": "Foot Soldier",
+      "type": "Grunt",
+      "points": "7"
+    },
+    {
+      "name": "Leader of Men",
+      "type": "Command",
+      "points": "41"
+    },
+    {
+      "name": "Berserker",
+      "type": "Warrior",
+      "points": "21"
+    },
+    {
+      "name": "Knight",
+      "type": "Support",
+      "points": "29"
+    },
+    {
+      "name": "Veteran Soldier",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Foot Guard",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Arquebusier",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Ogre Warrier",
+      "type": "Large",
+      "points": "24"
+    },
+    {
+      "name": "Wizard",
+      "type": "Spellcaster",
+      "points": "24"
+    }
+  ]
+}

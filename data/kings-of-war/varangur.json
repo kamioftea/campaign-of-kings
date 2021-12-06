@@ -1,0 +1,249 @@
+{
+  "name": "Varangur",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/19.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Draugr",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "75",
+        "Horde (40)": "125",
+        "Legion (60)": "180"
+      }
+    },
+    {
+      "name": "Human Clansmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Reavers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "135",
+        "Regiment (20)": "210"
+      }
+    },
+    {
+      "name": "Night Raiders",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "140"
+      }
+    },
+    {
+      "name": "Huscarls",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "145",
+        "Regiment (20)": "225"
+      }
+    },
+    {
+      "name": "The Fallen",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "255"
+      }
+    },
+    {
+      "name": "Snow Trolls",
+      "type": "Monstrous Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Mounted Sons of Korgaan",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "140",
+        "Regiment (10)": "215"
+      }
+    },
+    {
+      "name": "Horse Raiders",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "105",
+        "Regiment (10)": "165"
+      }
+    },
+    {
+      "name": "Tundra Wolves",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "115",
+        "Regiment (10)": "180"
+      }
+    },
+    {
+      "name": "Frostfang Cavalry",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "160",
+        "Horde (6)": "265"
+      }
+    },
+    {
+      "name": "Snow Foxes",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80"
+      }
+    },
+    {
+      "name": "Magus Conclave",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Jabberwock",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Cavern Dweller",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Frost Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Cursed Son",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Lord",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Thegn",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Thegn on Frostfang",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "125"
+      }
+    },
+    {
+      "name": "Magus",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Lord on Frostfang",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "190"
+      }
+    },
+    {
+      "name": "Lord on Chimera",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "310"
+      }
+    },
+    {
+      "name": "Snow Troll Prime",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Skald",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Magnilde of the Fallen",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "175"
+      }
+    },
+    {
+      "name": "Kruufnir",
+      "type": "Hero (Mon-Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Sliksneer's Shriekers",
+      "type": "Formation",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "name": "Trident Realm",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1021.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Naiad Ensnarers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Thuul",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Riverguard Treeleapers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "110",
+        "Regiment (20)": "170"
+      }
+    },
+    {
+      "name": "Placoderms",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Naiad Heartpiercers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Riverguard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Tidal Swarm",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "70",
+        "Horde (6)": "120"
+      }
+    },
+    {
+      "name": "Nokken",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "130"
+      }
+    },
+    {
+      "name": "Depth Horrors",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "110",
+        "Horde (6)": "185"
+      }
+    },
+    {
+      "name": "Water Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Oceanborne Naiad Wyrmriders",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "255"
+      }
+    },
+    {
+      "name": "Riverguard Dambusters",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "260"
+      }
+    },
+    {
+      "name": "Gigas",
+      "type": "Monstrous Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "125",
+        "Horde (6)": "205"
+      }
+    },
+    {
+      "name": "Greater Water Elemental",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Knucker",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Coral Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "215"
+      }
+    },
+    {
+      "name": "Kraken",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "240"
+      }
+    },
+    {
+      "name": "Leviathan's Bane",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Naiad Centurion",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Naiad Wyrmrider Centurion",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Naiad Stalker",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Depth Horror Eternal",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Thuul Aquamage",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Thuul Mythican",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Naiad Envoy",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Riverguard Sentinel",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Siren",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Riverguard Dambuster Sentinel",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Eckter",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Trident King",
+      "type": "Hero",
+      "subType": "Cht",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Kyroqsh, the Hunter in the Deep",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "The Hidden Ones",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

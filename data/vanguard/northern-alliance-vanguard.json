@@ -1,0 +1,75 @@
+{
+  "name": "Northern Alliance",
+  "units": [
+    {
+      "name": "Human Clansman",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Snow Troll",
+      "type": "Large",
+      "points": "34"
+    },
+    {
+      "name": "Huscarl",
+      "type": "Warrior",
+      "points": "15"
+    },
+    {
+      "name": "Ice Kin Hunter",
+      "type": "Support",
+      "points": "22"
+    },
+    {
+      "name": "Ice Naiad",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Half-Elf Berserker",
+      "type": "Warrior",
+      "points": "19"
+    },
+    {
+      "name": "Dwarf Clansman",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Snow Troll Prime",
+      "type": "Command, Large",
+      "points": "54"
+    },
+    {
+      "name": "Elf Clansman",
+      "type": "Grunt",
+      "points": "11"
+    },
+    {
+      "name": "Ice Blade",
+      "type": "Command",
+      "points": "42"
+    },
+    {
+      "name": "Ice Elemental",
+      "type": "Large",
+      "points": "47"
+    },
+    {
+      "name": "Ice Queen",
+      "type": "Spellcaster",
+      "points": "33"
+    },
+    {
+      "name": "Thegn",
+      "type": "Command",
+      "points": "39"
+    },
+    {
+      "name": "Frostfang Cavalry",
+      "type": "Large",
+      "points": "35"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Ratkin",
+  "units": [
+    {
+      "name": "Swarm-crier",
+      "type": "Support",
+      "points": "14"
+    },
+    {
+      "name": "Twitch Keenear*",
+      "type": "Spellcaster",
+      "points": "28"
+    },
+    {
+      "name": "Nightmare Gunner",
+      "type": "Large",
+      "points": "27"
+    },
+    {
+      "name": "Nightmare Driller",
+      "type": "Large",
+      "points": "31"
+    },
+    {
+      "name": "Birthing Daughter*",
+      "type": "Command",
+      "points": "37"
+    },
+    {
+      "name": "Vermintide",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Wretch",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Hackpaw",
+      "type": "Warrior",
+      "points": "18"
+    },
+    {
+      "name": "Ratkin Warrior",
+      "type": "Warrior",
+      "points": "10"
+    },
+    {
+      "name": "Scurrier",
+      "type": "Support",
+      "points": "16"
+    },
+    {
+      "name": "Brute Enforcer",
+      "type": "Large",
+      "points": "39"
+    },
+    {
+      "name": "Shock Trooper",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "War-Chief",
+      "type": "Command",
+      "points": "36"
+    },
+    {
+      "name": "Night Terror",
+      "type": "Large",
+      "points": "26"
+    },
+    {
+      "name": "Warlock",
+      "type": "Spellcaster",
+      "points": "31"
+    }
+  ]
+}

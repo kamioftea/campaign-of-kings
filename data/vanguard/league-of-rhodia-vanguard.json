@@ -1,0 +1,45 @@
+{
+  "name": "League of Rhodia",
+  "units": [
+    {
+      "name": "City Militia",
+      "type": "Grunt",
+      "points": "7"
+    },
+    {
+      "name": "Household Knight",
+      "type": "Support",
+      "points": "29"
+    },
+    {
+      "name": "House Guard",
+      "type": "Warrior",
+      "points": "11"
+    },
+    {
+      "name": "Rhor Marksman",
+      "type": "Support",
+      "points": "26"
+    },
+    {
+      "name": "Honour Guard",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "House Guard Captain",
+      "type": "Command",
+      "points": "42"
+    },
+    {
+      "name": "Halfling Brave",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "Halfling Sorcerer",
+      "type": "Spellcaster",
+      "points": "28"
+    }
+  ]
+}

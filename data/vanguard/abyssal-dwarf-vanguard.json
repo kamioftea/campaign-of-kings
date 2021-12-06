@@ -1,0 +1,90 @@
+{
+  "name": "Abyssal Dwarf",
+  "units": [
+    {
+      "name": "Decimator",
+      "type": "Warrior",
+      "points": "21"
+    },
+    {
+      "name": "Blacksoul",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Mobile Katsuchan",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Gargoyle",
+      "type": "Support",
+      "points": "15"
+    },
+    {
+      "name": "Abyssal Halfbreed",
+      "type": "Warrior",
+      "points": "24"
+    },
+    {
+      "name": "Slave Driver",
+      "type": "Command",
+      "points": "34"
+    },
+    {
+      "name": "Slave Orc",
+      "type": "Grunt",
+      "points": "10"
+    },
+    {
+      "name": "Lesser Obsidian Golem",
+      "type": "Large",
+      "points": "37"
+    },
+    {
+      "name": "Immortal Guard",
+      "type": "Support",
+      "points": "20"
+    },
+    {
+      "name": "Iron Caster",
+      "type": "Spellcaster",
+      "points": "28"
+    },
+    {
+      "name": "Ratkin Slave",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Mutated Mastiff",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Hexcaster*",
+      "type": "Support",
+      "points": "16"
+    },
+    {
+      "name": "Infernox",
+      "type": "Large",
+      "points": "34"
+    },
+    {
+      "name": "Charnox",
+      "type": "Large",
+      "points": "40"
+    },
+    {
+      "name": "Overmaster",
+      "type": "Command",
+      "points": "42"
+    },
+    {
+      "name": "Immortal Guardian",
+      "type": "Command",
+      "points": "41"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "name": "Ratkin",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/14.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "85",
+        "Horde (40)": "145"
+      }
+    },
+    {
+      "name": "Spear Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "105",
+        "Horde (40)": "180"
+      }
+    },
+    {
+      "name": "Shock Troops",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "130",
+        "Horde (40)": "220"
+      }
+    },
+    {
+      "name": "Wretches",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Horde (40)": "115",
+        "Legion (60)": "170"
+      }
+    },
+    {
+      "name": "Clawshots",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "95"
+      }
+    },
+    {
+      "name": "Scurriers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "155"
+      }
+    },
+    {
+      "name": "Hackpaws",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "150"
+      }
+    },
+    {
+      "name": "Nightmares",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "235"
+      }
+    },
+    {
+      "name": "Vermintide",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "65",
+        "Horde (6)": "110",
+        "Legion (12)": "195"
+      }
+    },
+    {
+      "name": "Tunnel Runners",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "170",
+        "Regiment (3)": "210"
+      }
+    },
+    {
+      "name": "Weapon Team",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Shredder",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Death Engine Impaler",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Death Engine Spewer",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Mutant Rat-fiend",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "220"
+      }
+    },
+    {
+      "name": "Brood Mother",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Warlock",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "War Chief",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Swarm-crier",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "45"
+      }
+    },
+    {
+      "name": "Night Terror",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Brute Enforcer",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Master Scurrier",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Birthing Daughter",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Tangle",
+      "type": "Titan",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Mother Cryza",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Scudku-z'luk, Demonspawn of Diew",
+      "type": "Hero",
+      "subType": "Ttn",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "345"
+      }
+    },
+    {
+      "name": "Twitch Keenear",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Smoke, Mirrors and Death",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

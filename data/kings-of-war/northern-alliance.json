@@ -1,0 +1,283 @@
+{
+  "name": "Northern Alliance",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1023.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Human Clansmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Dwarf Clansmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "75",
+        "Regiment (20)": "115"
+      }
+    },
+    {
+      "name": "Half-Elf Berserkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "180"
+      }
+    },
+    {
+      "name": "Ice Naiads",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Huscarls",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "145",
+        "Regiment (20)": "225"
+      }
+    },
+    {
+      "name": "Pack Hunters",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "110",
+        "Regiment (20)": "145"
+      }
+    },
+    {
+      "name": "Elf Clansmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "140"
+      }
+    },
+    {
+      "name": "Ice Kin Hunters",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "135",
+        "Regiment (20)": "180"
+      }
+    },
+    {
+      "name": "Snow Foxes",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80"
+      }
+    },
+    {
+      "name": "Ice Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "145",
+        "Horde (6)": "240"
+      }
+    },
+    {
+      "name": "Tundra Wolves",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "115",
+        "Regiment (10)": "180"
+      }
+    },
+    {
+      "name": "Snow Trolls",
+      "type": "Monstrous Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Frostfang Cavalry",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "160",
+        "Horde (6)": "265"
+      }
+    },
+    {
+      "name": "Cavern Dweller",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Frost Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Ice Kin Bolt Thrower",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Lord",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Ice Kin Master Hunter",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Thegn on Frostfang",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "125"
+      }
+    },
+    {
+      "name": "Thegn",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Lord on Frostfang",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "190"
+      }
+    },
+    {
+      "name": "Ice-Queen",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Lord on Chimera",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "310"
+      }
+    },
+    {
+      "name": "Ice Blade",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Snow Troll Prime",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Skald",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Orlaf the Barbarian",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Clarion",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Hrimm, Legendary Ice Giant",
+      "type": "Hero",
+      "subType": "Ttn",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "260"
+      }
+    },
+    {
+      "name": "Serakina, the Ice Queen",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Orlaf's Raiders",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

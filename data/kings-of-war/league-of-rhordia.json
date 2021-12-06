@@ -1,0 +1,226 @@
+{
+  "name": "League of Rhordia",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/16.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Halfling Braves",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "80",
+        "Horde (40)": "130",
+        "Legion (60)": "190"
+      }
+    },
+    {
+      "name": "Pole-Arms Block",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Spear Phalanx",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Foot Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "135",
+        "Horde (40)": "225"
+      }
+    },
+    {
+      "name": "Halfling Archers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "90",
+        "Horde (40)": "160"
+      }
+    },
+    {
+      "name": "Crossbow Block",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "85",
+        "Regiment (20)": "115",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Dogs of War",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Halfling Knights",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "120",
+        "Regiment (10)": "185",
+        "Horde (20)": "315"
+      }
+    },
+    {
+      "name": "Knights",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "195",
+        "Horde (20)": "330"
+      }
+    },
+    {
+      "name": "Mounted Scouts",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "155"
+      }
+    },
+    {
+      "name": "Honour Guard",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "145",
+        "Horde (6)": "240"
+      }
+    },
+    {
+      "name": "Volley Gun",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Cannon",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Mammoth",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "220"
+      }
+    },
+    {
+      "name": "Duke",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Duke on Ancient Winged Aralez",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Baron",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Baron on Aralez",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Halfling Master Sergeant",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Wizard",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Battle Shrine",
+      "type": "Monster",
+      "subType": "Cht",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Duke Hetronburg",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "175"
+      }
+    },
+    {
+      "name": "The Loyalists",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

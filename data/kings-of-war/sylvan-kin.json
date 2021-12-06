@@ -1,0 +1,280 @@
+{
+  "name": "Sylvan Kin",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/17.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Boskwraiths",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Kindred Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Kindred Tallspears",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Forest Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165",
+        "Horde (40)": "270"
+      }
+    },
+    {
+      "name": "Riverguard Treeleapers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "110",
+        "Regiment (20)": "170"
+      }
+    },
+    {
+      "name": "Sylvan Gladestalkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "130",
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Kindred Archers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "140",
+        "Horde (40)": "245"
+      }
+    },
+    {
+      "name": "Hunters of the Wild",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140"
+      }
+    },
+    {
+      "name": "Forest Shamblers",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "Air Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "The Windborne",
+      "type": "Cavalry",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "165"
+      }
+    },
+    {
+      "name": "Wild Gur Panthers",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "85",
+        "Regiment (10)": "130"
+      }
+    },
+    {
+      "name": "Silverbreeze Cavalry",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "130",
+        "Regiment (10)": "200"
+      }
+    },
+    {
+      "name": "Stormwind Cavalry",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "140",
+        "Regiment (10)": "215"
+      }
+    },
+    {
+      "name": "Woodland Critters",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "130"
+      }
+    },
+    {
+      "name": "Bolt Thrower",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Greater Air Elemental",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Archwraith",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Forest Warden",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Master Hunter",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Tree Herder",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "260"
+      }
+    },
+    {
+      "name": "Elven King",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Elven Prince",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Elven Archmage",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Dragon Kindred Lord",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "315"
+      }
+    },
+    {
+      "name": "Avatar of the Green Lady",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "El'Rik Nisleen",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Nimue Waydancer",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Wardens of the Sacred Groves",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

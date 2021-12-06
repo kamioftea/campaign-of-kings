@@ -1,0 +1,245 @@
+{
+  "name": "Nightstalkers",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1022.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Scarecrows",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "80",
+        "Horde (40)": "130",
+        "Legion (60)": "190"
+      }
+    },
+    {
+      "name": "Doppelgangers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "145"
+      }
+    },
+    {
+      "name": "Blood Worms",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "120",
+        "Horde (40)": "200",
+        "Legion (60)": "290"
+      }
+    },
+    {
+      "name": "Reapers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "135",
+        "Regiment (20)": "210"
+      }
+    },
+    {
+      "name": "Phantoms",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Spectres",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Shadowhounds",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "190"
+      }
+    },
+    {
+      "name": "Needle-fangs",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "135"
+      }
+    },
+    {
+      "name": "Butchers",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "125",
+        "Horde (6)": "205"
+      }
+    },
+    {
+      "name": "Mind-screech",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Planar Apparition",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Horror Riftweavers",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Fiends",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "215"
+      }
+    },
+    {
+      "name": "Soulflayers",
+      "type": "Large Cavalry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "165"
+      }
+    },
+    {
+      "name": "Terror",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "250"
+      }
+    },
+    {
+      "name": "Shadow-hulk",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "225"
+      }
+    },
+    {
+      "name": "Portal of Despair",
+      "type": "Titan",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Dread-fiend",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Void Lurker",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "270"
+      }
+    },
+    {
+      "name": "Shade",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Horror",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Banshee",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Reaper Souldrinker",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "The Dream Hunter",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "195"
+      }
+    },
+    {
+      "name": "Butcher Fleshripper",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Esenyshra, the Wailing Shadow",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "Beaststalker Doomhounds",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

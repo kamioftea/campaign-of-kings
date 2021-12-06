@@ -1,0 +1,75 @@
+{
+  "name": "Basilean",
+  "units": [
+    {
+      "name": "Paladin Defender",
+      "type": "Warrior",
+      "points": "17"
+    },
+    {
+      "name": "Crossbowman",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Sisterhood",
+      "type": "Warrior",
+      "points": "11"
+    },
+    {
+      "name": "Gur Panther",
+      "type": "Support",
+      "points": "15"
+    },
+    {
+      "name": "Sergeant",
+      "type": "Warrior",
+      "points": "17"
+    },
+    {
+      "name": "Sisterhood Scout",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "Veteran Sergeant",
+      "type": "Command",
+      "points": "30"
+    },
+    {
+      "name": "Paladin Chaplain",
+      "type": "Spellcaster",
+      "points": "38"
+    },
+    {
+      "name": "Man-at-arms",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "War-Wizard",
+      "type": "Spellcaster",
+      "points": "33"
+    },
+    {
+      "name": "Veteran Sister",
+      "type": "Support",
+      "points": "20"
+    },
+    {
+      "name": "Ogre Palace Guard",
+      "type": "Large",
+      "points": "32"
+    },
+    {
+      "name": "Dictator",
+      "type": "Command",
+      "points": "41"
+    },
+    {
+      "name": "Abbess",
+      "type": "Command",
+      "points": "44"
+    }
+  ]
+}

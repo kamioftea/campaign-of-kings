@@ -1,0 +1,266 @@
+{
+  "name": "Twilight Kin",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1027.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Impalers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "165"
+      }
+    },
+    {
+      "name": "Blade Dancers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "125",
+        "Regiment (20)": "190"
+      }
+    },
+    {
+      "name": "Kindred Tallspears",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Kindred Archers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "140",
+        "Horde (40)": "245"
+      }
+    },
+    {
+      "name": "Twilight Gladestalkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "130",
+        "Regiment (20)": "175"
+      }
+    },
+    {
+      "name": "Therennian Sea Guard",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "150",
+        "Horde (40)": "260"
+      }
+    },
+    {
+      "name": "Blade Dancer Neophytes",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Cronebound Gargoyles",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "85"
+      }
+    },
+    {
+      "name": "Cronebound Butchers",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "Cronebound Shadowhounds",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "120",
+        "Regiment (10)": "185"
+      }
+    },
+    {
+      "name": "Cronebound Abyssal Horsemen",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "155",
+        "Regiment (10)": "240"
+      }
+    },
+    {
+      "name": "Silverbreeze Cavalry",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "130",
+        "Regiment (10)": "200"
+      }
+    },
+    {
+      "name": "Cronebound Fiends",
+      "type": "Large Cavalry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "125",
+        "Horde (6)": "210"
+      }
+    },
+    {
+      "name": "Cronebound Needle-fangs",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "130"
+      }
+    },
+    {
+      "name": "Bolt Thrower",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Dragon Breath",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Cronebound Mind-screech",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Cronebound Shadow-hulk",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "220"
+      }
+    },
+    {
+      "name": "Cronebound Banshee",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Cronebound Archfiend",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "305"
+      }
+    },
+    {
+      "name": "Twilight Assassin",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Soulbane",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Summoner Crone",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Elven Prince",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Soulbane on Dread-fiend",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Mikayel, Lord of Nightmares",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "La'theal Bleakheart",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "The Crew of the Black Hydra",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

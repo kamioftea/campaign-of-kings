@@ -1,0 +1,303 @@
+{
+  "name": "Goblins",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1005.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Sharpsticks",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "95",
+        "Horde (40)": "155",
+        "Legion (60)": "230"
+      }
+    },
+    {
+      "name": "Rabble",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "75",
+        "Horde (40)": "125",
+        "Legion (60)": "180"
+      }
+    },
+    {
+      "name": "Luggit Gang",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Spitters",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (20)": "90",
+        "Horde (40)": "160"
+      }
+    },
+    {
+      "name": "Trolls",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "115",
+        "Horde (6)": "190"
+      }
+    },
+    {
+      "name": "Fleabag Rider Sniffs",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "105",
+        "Regiment (10)": "160"
+      }
+    },
+    {
+      "name": "Mawbeast Pack",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "80",
+        "Regiment (10)": "120"
+      }
+    },
+    {
+      "name": "Fleabag Riders",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "155",
+        "Horde (20)": "265"
+      }
+    },
+    {
+      "name": "Fleabag Chariots",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "125",
+        "Regiment (3)": "155",
+        "Horde (4)": "195",
+        "Legion (6)": "225"
+      }
+    },
+    {
+      "name": "Mincer Mob",
+      "type": "Chariot",
+      "irregular": true,
+      "options": {
+        "Troop (2)": "160",
+        "Regiment (3)": "200"
+      }
+    },
+    {
+      "name": "War-Trombone",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Big Rocks Thrower",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Sharpstick Thrower",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Mawpup Launcher",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Mincer",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Goblin Blaster",
+      "type": "Monster",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Winggit",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Giant",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "225"
+      }
+    },
+    {
+      "name": "Goblin Slasher",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Biggit",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "King",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "70"
+      }
+    },
+    {
+      "name": "Banggit",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Flaggit",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "40"
+      }
+    },
+    {
+      "name": "Stinggit",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "King on chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Wiz",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "45"
+      }
+    },
+    {
+      "name": "Troll Bruiser",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Magwa &amp; Jo'os",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Magwa'ns",
+      "type": "Cavalry",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "Regiment (10)": "130"
+      }
+    },
+    {
+      "name": "Kuzlo &amp; Madfall",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Grupp Longnail",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Grogger's Lugg Lads",
+      "type": "Infantry",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "Horde (40)": "245"
+      }
+    },
+    {
+      "name": "Gorp's Explodo'matic Bangstiks",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

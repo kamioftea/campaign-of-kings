@@ -1,0 +1,85 @@
+{
+  "name": "Ogre",
+  "units": [
+    {
+      "name": "Paymaster",
+      "type": "Large, Support",
+      "points": "24"
+    },
+    {
+      "name": "Crocodog",
+      "type": "Grunt",
+      "points": "7"
+    },
+    {
+      "name": "Shooter",
+      "type": "Large, Warrior",
+      "points": "25"
+    },
+    {
+      "name": "Cleaver",
+      "type": "Large, Warrior",
+      "points": "22"
+    },
+    {
+      "name": "Siege Breaker",
+      "type": "Large, Support",
+      "points": "34"
+    },
+    {
+      "name": "Berserker Brave",
+      "type": "Large, Warrior",
+      "points": "23"
+    },
+    {
+      "name": "Brawler",
+      "type": "Large, Warrior",
+      "points": "18"
+    },
+    {
+      "name": "Red Goblin",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Red Goblin Biggit",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Boomer",
+      "type": "Large, Warrior",
+      "points": "33"
+    },
+    {
+      "name": "Ogre Warlock",
+      "type": "Large, Spellcaster",
+      "points": "31"
+    },
+    {
+      "name": "Ogre Sergeant",
+      "type": "Command, Large",
+      "points": "37"
+    },
+    {
+      "name": "Hunter",
+      "type": "Large, Warrior",
+      "points": "21"
+    },
+    {
+      "name": "Boomer Sergeant",
+      "type": "Large, Support",
+      "points": "37"
+    },
+    {
+      "name": "Berserker Bully",
+      "type": "Command, Large",
+      "points": "42"
+    },
+    {
+      "name": "The Matriarch*",
+      "type": "Command, Large",
+      "points": "33"
+    }
+  ]
+}

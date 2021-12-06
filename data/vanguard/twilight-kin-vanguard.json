@@ -1,0 +1,45 @@
+{
+  "name": "Twilight Kin",
+  "units": [
+    {
+      "name": "Citizen Levy",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Impaler",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "Shadow",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "Shadowhound",
+      "type": "Support",
+      "points": "17"
+    },
+    {
+      "name": "Butcher",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "Summoner Crone",
+      "type": "Spellcaster",
+      "points": "34"
+    },
+    {
+      "name": "Blade Dancer",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Executioner",
+      "type": "Command",
+      "points": "42"
+    }
+  ]
+}

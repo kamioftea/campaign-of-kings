@@ -1,0 +1,80 @@
+{
+  "name": "Forces of Nature",
+  "units": [
+    {
+      "name": "Centaur Bray-Strider",
+      "type": "Warrior",
+      "points": "22"
+    },
+    {
+      "name": "Druid",
+      "type": "Spellcaster",
+      "points": "36"
+    },
+    {
+      "name": "Salamander Unblooded",
+      "type": "Grunt",
+      "points": "11"
+    },
+    {
+      "name": "Naiad",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Naiad Ensnarer",
+      "type": "Support",
+      "points": "20"
+    },
+    {
+      "name": "Centaur Chief",
+      "type": "Command",
+      "points": "43"
+    },
+    {
+      "name": "Wild Companion",
+      "type": "Support",
+      "points": "13"
+    },
+    {
+      "name": "Forest Shambler",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "Gladewalker Druid",
+      "type": "Command, Spellcaster",
+      "points": "40"
+    },
+    {
+      "name": "Fire Elemental",
+      "type": "Large",
+      "points": "40"
+    },
+    {
+      "name": "Earth Elemental",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Water Elemental",
+      "type": "Large",
+      "points": "32"
+    },
+    {
+      "name": "Centaur Bray-Hunter",
+      "type": "Warrior",
+      "points": "20"
+    },
+    {
+      "name": "Centaur Tenderhoof",
+      "type": "Grunt",
+      "points": "15"
+    },
+    {
+      "name": "Salamander Veteran",
+      "type": "Command",
+      "points": "28"
+    }
+  ]
+}

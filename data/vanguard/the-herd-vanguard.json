@@ -1,0 +1,45 @@
+{
+  "name": "The Herd",
+  "units": [
+    {
+      "name": "Tribal Warrior",
+      "type": "Grunt",
+      "points": "7"
+    },
+    {
+      "name": "Harpy",
+      "type": "Support",
+      "points": "17"
+    },
+    {
+      "name": "Longhorn",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "Shaman",
+      "type": "Spellcaster",
+      "points": "32"
+    },
+    {
+      "name": "Lycan",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "Tribal Hunter",
+      "type": "Support",
+      "points": "26"
+    },
+    {
+      "name": "Spirit Walker",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Great Chieftan",
+      "type": "Command",
+      "points": "44"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Forces of the Abyss",
+  "units": [
+    {
+      "name": "Lower Abyssal",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Flamebearer",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Imps",
+      "type": "Grunt",
+      "points": "13"
+    },
+    {
+      "name": "Abyssal Guard",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Gargoyle",
+      "type": "Support",
+      "points": "18"
+    },
+    {
+      "name": "Succubus Lurker",
+      "type": "Support",
+      "points": "24"
+    },
+    {
+      "name": "Hellequin",
+      "type": "Support",
+      "points": "29"
+    },
+    {
+      "name": "Abyssal Warlock",
+      "type": "Spellcaster",
+      "points": "36"
+    },
+    {
+      "name": "Tormentor (Champion)",
+      "type": "Command",
+      "points": "44"
+    },
+    {
+      "name": "Hellequin Blood-masque",
+      "type": "Command",
+      "points": "42"
+    },
+    {
+      "name": "Succubus",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Hellhound",
+      "type": "Support",
+      "points": "15"
+    },
+    {
+      "name": "Despoiler",
+      "type": "Large",
+      "points": "37"
+    },
+    {
+      "name": "Seductress",
+      "type": "Command",
+      "points": "45"
+    }
+  ]
+}

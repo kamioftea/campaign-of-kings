@@ -1,0 +1,85 @@
+{
+  "name": "Salamanders",
+  "units": [
+    {
+      "name": "Ghekkotah Warrior",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Ceremonial Guard",
+      "type": "Support",
+      "points": "19"
+    },
+    {
+      "name": "Ghekkotah Clutch Warden",
+      "type": "Support",
+      "points": "27"
+    },
+    {
+      "name": "Tyrant",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Rhinosaur Cataphract",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "Ceremonial Guard Captain",
+      "type": "Command",
+      "points": "36"
+    },
+    {
+      "name": "Lekelidon",
+      "type": "Large",
+      "points": "30"
+    },
+    {
+      "name": "Corsair",
+      "type": "Support",
+      "points": "21"
+    },
+    {
+      "name": "Firebrand*",
+      "type": "Command",
+      "points": "54"
+    },
+    {
+      "name": "Prime",
+      "type": "Warrior",
+      "points": "14"
+    },
+    {
+      "name": "Mage-Priest",
+      "type": "Spellcaster",
+      "points": "33"
+    },
+    {
+      "name": "Unblooded",
+      "type": "Grunt",
+      "points": "11"
+    },
+    {
+      "name": "Ghekkotah Hunter",
+      "type": "Warrior",
+      "points": "10"
+    },
+    {
+      "name": "Fire Elemental",
+      "type": "Large",
+      "points": "38"
+    },
+    {
+      "name": "Battle-Captain",
+      "type": "Command",
+      "points": "44"
+    },
+    {
+      "name": "Veteran",
+      "type": "Command",
+      "points": "18"
+    }
+  ]
+}

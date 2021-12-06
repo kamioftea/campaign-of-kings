@@ -1,0 +1,95 @@
+{
+  "name": "Undead",
+  "units": [
+    {
+      "name": "Crypt Gouger",
+      "type": "Command",
+      "points": "31"
+    },
+    {
+      "name": "Zombie",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Skeleton",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Barrow Wight",
+      "type": "Support",
+      "points": "23"
+    },
+    {
+      "name": "Ghoul",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Revenant",
+      "type": "Warrior",
+      "points": "10"
+    },
+    {
+      "name": "Wraith",
+      "type": "Support",
+      "points": "16"
+    },
+    {
+      "name": "Skeletal Dog Pack",
+      "type": "Grunt",
+      "points": "9"
+    },
+    {
+      "name": "Vampire Halfling",
+      "type": "Command",
+      "points": "44"
+    },
+    {
+      "name": "Necromancer",
+      "type": "Command, Spellcaster",
+      "points": "39"
+    },
+    {
+      "name": "Soul Reaver",
+      "type": "Support",
+      "points": "20"
+    },
+    {
+      "name": "Werewolf",
+      "type": "Large",
+      "points": "33"
+    },
+    {
+      "name": "Ghost",
+      "type": "Support",
+      "points": "17"
+    },
+    {
+      "name": "Armoured Zombie Orc",
+      "type": "Warrior",
+      "points": "12"
+    },
+    {
+      "name": "Goreblight",
+      "type": "Large",
+      "points": "40"
+    },
+    {
+      "name": "Zombie Troll",
+      "type": "Large",
+      "points": "30"
+    },
+    {
+      "name": "Skeleton Archer",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Vampire Bat Swarm",
+      "type": "Grunt",
+      "points": "10"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Elf",
+  "units": [
+    {
+      "name": "Kindred Archer",
+      "type": "Warrior",
+      "points": "16"
+    },
+    {
+      "name": "Guardian Shambler",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Kindred Tallspear",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "Kindred Gladestalker",
+      "type": "Support",
+      "points": "26"
+    },
+    {
+      "name": "Battle-mage",
+      "type": "Spellcaster",
+      "points": "38"
+    },
+    {
+      "name": "Prince",
+      "type": "Command",
+      "points": "44"
+    },
+    {
+      "name": "Battle-cat",
+      "type": "Support",
+      "points": "13"
+    },
+    {
+      "name": "Citizen Levy",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Silverbreeze Gladewarden",
+      "type": "Support",
+      "points": "28"
+    },
+    {
+      "name": "Seaguard",
+      "type": "Warrior",
+      "points": "22"
+    }
+  ]
+}

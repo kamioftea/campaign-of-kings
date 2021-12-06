@@ -1,0 +1,294 @@
+{
+  "name": "Basileans",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1010.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Men-at-Arms Swordsmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Men-at-Arms Spearmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "125",
+        "Horde (40)": "205"
+      }
+    },
+    {
+      "name": "Paladin Foot Guard",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "150"
+      }
+    },
+    {
+      "name": "Sisterhood Infantry",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "135",
+        "Horde (40)": "225"
+      }
+    },
+    {
+      "name": "Men-at-Arms Crossbowmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "100",
+        "Regiment (20)": "130",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Sisterhood Scouts",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Gur Panthers",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "85",
+        "Regiment (10)": "130"
+      }
+    },
+    {
+      "name": "Paladin Knights",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "135",
+        "Regiment (10)": "210",
+        "Horde (20)": "355"
+      }
+    },
+    {
+      "name": "Sisterhood Panther Lancers",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "115",
+        "Regiment (10)": "175"
+      }
+    },
+    {
+      "name": "Sisterhood Panther Chariot",
+      "type": "Chariot",
+      "irregular": false,
+      "options": {
+        "Troop (2)": "145",
+        "Regiment (3)": "180",
+        "Horde (4)": "225",
+        "Legion (6)": "260"
+      }
+    },
+    {
+      "name": "Ogre Palace Guard",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "235"
+      }
+    },
+    {
+      "name": "Elohi",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "160",
+        "Horde (6)": "270"
+      }
+    },
+    {
+      "name": "Heavy Arbalest",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Phoenix",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "195"
+      }
+    },
+    {
+      "name": "Bearer of the Holy Icon",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Dictator",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Ur-Elohi",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Paladin Chaplain",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Priest",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "High Paladin",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Abbess on Panther Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "145"
+      }
+    },
+    {
+      "name": "Abbess",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "War-Wizard",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Ogre Palace Guard Captain",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "High Paladin on Dragon",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "310"
+      }
+    },
+    {
+      "name": "Gnaeus Sallustis",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Samacris, Mother of Phoenixes",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "195"
+      }
+    },
+    {
+      "name": "Danor the Wizard",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "Jullius, Dragon of Heaven",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "315"
+      }
+    },
+    {
+      "name": "Tollivar, the Seer",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "The Golden Panthers",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

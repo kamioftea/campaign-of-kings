@@ -1,0 +1,248 @@
+{
+  "name": "Brotherhood: Order of the Green Lady",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1025.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Men-at-Arms Retainers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Order of the Brotherhood on Foot",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "95",
+        "Regiment (20)": "145"
+      }
+    },
+    {
+      "name": "Naiad Ensnarers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "140",
+        "Horde (40)": "230"
+      }
+    },
+    {
+      "name": "Naiad Heartpiercers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Order of the Thorn",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "110",
+        "Regiment (20)": "170"
+      }
+    },
+    {
+      "name": "Brotherhood Centaurs",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "105",
+        "Regiment (10)": "160"
+      }
+    },
+    {
+      "name": "Centaur Bray Hunters",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "105",
+        "Regiment (10)": "165"
+      }
+    },
+    {
+      "name": "Order of the Brotherhood",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (10)": "200",
+        "Horde (20)": "340"
+      }
+    },
+    {
+      "name": "Order of Redemption",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "165",
+        "Regiment (10)": "250"
+      }
+    },
+    {
+      "name": "Water Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Earth Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Order of the Forsaken",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "255"
+      }
+    },
+    {
+      "name": "Woodland Critters",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "130"
+      }
+    },
+    {
+      "name": "Greater Water Elemental",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Greater Earth Elemental",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Beast of Nature",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Pegasus",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Exemplar Redeemer",
+      "type": "Hero",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "180"
+      }
+    },
+    {
+      "name": "Exemplar of the Brotherhood",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Devoted",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Exemplar Adjutant",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Druid",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Unicorn",
+      "type": "Hero",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Naiad Stalker",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Avatar of the Green Lady",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Champion of the Green Lady",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "The Lurkers in the Lake",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

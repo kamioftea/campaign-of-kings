@@ -1,0 +1,290 @@
+{
+  "name": "Salamanders",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/20.png",
+  "alignment": "Good",
+  "units": [
+    {
+      "name": "Ghekkotah Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "60",
+        "Regiment (20)": "95",
+        "Horde (40)": "155",
+        "Legion (60)": "230"
+      }
+    },
+    {
+      "name": "Salamander Primes",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "135",
+        "Horde (40)": "225"
+      }
+    },
+    {
+      "name": "Salamander Unblooded",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Ancients",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Salamander Ceremonial Guard",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160",
+        "Horde (40)": "265"
+      }
+    },
+    {
+      "name": "Corsairs",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "130",
+        "Regiment (20)": "170"
+      }
+    },
+    {
+      "name": "Ghekkotah Hunters",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "95",
+        "Regiment (20)": "125"
+      }
+    },
+    {
+      "name": "Fire Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Tyrants",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "145",
+        "Horde (6)": "240"
+      }
+    },
+    {
+      "name": "Kaisenor Lancers",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "195"
+      }
+    },
+    {
+      "name": "Scorchwings",
+      "type": "Large Cavalry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "Rhinosaur Cavalry",
+      "type": "Large Cavalry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "150",
+        "Horde (6)": "250"
+      }
+    },
+    {
+      "name": "Ember Sprites",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "135"
+      }
+    },
+    {
+      "name": "Greater Fire Elemental",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "175"
+      }
+    },
+    {
+      "name": "Lekelidon",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Komodon",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Fire Drake",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Ghekkotah Slasher",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Phoenix",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "195"
+      }
+    },
+    {
+      "name": "Clan Lord",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "100"
+      }
+    },
+    {
+      "name": "Herald",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "60"
+      }
+    },
+    {
+      "name": "Mage-Priest",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Battle-Captain",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Battle-Captain on Rhinosaur",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Clan Lord on Fire Drake",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "290"
+      }
+    },
+    {
+      "name": "Ghekkotah Clutch Warden",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Ghekkotah Skylord on Scorchwing",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Firebrand",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "Corsairs (only with Firebrand)",
+      "type": "Heavy Infantry",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "130",
+        "Regiment (20)": "170"
+      }
+    },
+    {
+      "name": "Artakl",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "135"
+      }
+    },
+    {
+      "name": "Rakawas, the Pale Rider",
+      "type": "Hero",
+      "subType": "Ttn",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "245"
+      }
+    },
+    {
+      "name": "The Whispering Scales",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "name": "The Herd",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/15.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Tribal Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "120",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Tribal Spears",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "135",
+        "Horde (40)": "225"
+      }
+    },
+    {
+      "name": "Spirit Walkers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160",
+        "Horde (40)": "265"
+      }
+    },
+    {
+      "name": "Tribal Trappers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "90",
+        "Regiment (20)": "120"
+      }
+    },
+    {
+      "name": "Longhorns",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "135",
+        "Regiment (20)": "205"
+      }
+    },
+    {
+      "name": "Hunters of the Wild",
+      "type": "Heavy Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "160"
+      }
+    },
+    {
+      "name": "Harpies",
+      "type": "Heavy Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "90"
+      }
+    },
+    {
+      "name": "Guardian Brutes",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "135",
+        "Horde (6)": "225"
+      }
+    },
+    {
+      "name": "Lycans",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "255"
+      }
+    },
+    {
+      "name": "Forest Shamblers",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "Earth Elementals",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "130",
+        "Horde (6)": "220"
+      }
+    },
+    {
+      "name": "Centaur Bray Striders",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "105",
+        "Regiment (10)": "160",
+        "Horde (20)": "270"
+      }
+    },
+    {
+      "name": "Centaur Bray Hunters",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "105",
+        "Regiment (10)": "165"
+      }
+    },
+    {
+      "name": "Wild Gur Panthers",
+      "type": "Cavalry",
+      "irregular": true,
+      "options": {
+        "Troop (5)": "85",
+        "Regiment (10)": "130"
+      }
+    },
+    {
+      "name": "Minotaur Chariots",
+      "type": "Chariot",
+      "irregular": true,
+      "options": {
+        "Troop (2)": "170",
+        "Regiment (3)": "210",
+        "Horde (4)": "265"
+      }
+    },
+    {
+      "name": "Scorchwings",
+      "type": "Large Cavalry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "120",
+        "Horde (6)": "200"
+      }
+    },
+    {
+      "name": "Woodland Critters",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "80",
+        "Horde (6)": "130"
+      }
+    },
+    {
+      "name": "Beast of Nature",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Greater Earth Elemental",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Hydra",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Tribal Tracker",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Great Chieftan",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Great Chieftan on Minotaur Chariot",
+      "type": "Hero",
+      "subType": "Cht",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Lycan Alpha",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Centaur Chief",
+      "type": "Hero",
+      "subType": "Cav",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Druid",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "65"
+      }
+    },
+    {
+      "name": "Gladewalker Druid",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Tree Herder",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "260"
+      }
+    },
+    {
+      "name": "Forest Warden",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Moonfang",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Avatar of the Father",
+      "type": "Hero",
+      "subType": "Mon",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "285"
+      }
+    },
+    {
+      "name": "Flaxhoof",
+      "type": "Hero",
+      "subType": "Cav",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "160"
+      }
+    },
+    {
+      "name": "The Silent Hunt",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Varangur",
+  "units": [
+    {
+      "name": "Thrall",
+      "type": "Grunt",
+      "points": "6"
+    },
+    {
+      "name": "Night Raider",
+      "type": "Support",
+      "points": "24"
+    },
+    {
+      "name": "Warrior",
+      "type": "Grunt",
+      "points": "8"
+    },
+    {
+      "name": "Direfang Rider",
+      "type": "Large",
+      "points": "35"
+    },
+    {
+      "name": "Bloodsworn",
+      "type": "Warrior",
+      "points": "13"
+    },
+    {
+      "name": "Reaver",
+      "type": "Support",
+      "points": "16"
+    },
+    {
+      "name": "Magus",
+      "type": "Spellcaster",
+      "points": "30"
+    },
+    {
+      "name": "Chieftan",
+      "type": "Command",
+      "points": "40"
+    }
+  ]
+}

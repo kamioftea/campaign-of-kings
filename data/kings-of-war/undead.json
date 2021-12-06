@@ -1,0 +1,309 @@
+{
+  "name": "Undead",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1008.png",
+  "alignment": "Evil",
+  "units": [
+    {
+      "name": "Skeleton Warriors",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "55",
+        "Regiment (20)": "85",
+        "Horde (40)": "140"
+      }
+    },
+    {
+      "name": "Zombies",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "70",
+        "Horde (40)": "115",
+        "Legion (60)": "170"
+      }
+    },
+    {
+      "name": "Skeleton Spearmen",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "105",
+        "Horde (40)": "175"
+      }
+    },
+    {
+      "name": "Revenants",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "125",
+        "Horde (40)": "205"
+      }
+    },
+    {
+      "name": "Ghouls",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "110",
+        "Horde (40)": "180"
+      }
+    },
+    {
+      "name": "Wraiths",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "120",
+        "Regiment (20)": "185"
+      }
+    },
+    {
+      "name": "Mummies",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "115",
+        "Regiment (20)": "180"
+      }
+    },
+    {
+      "name": "Soul Reaver Infantry",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "165",
+        "Regiment (20)": "250"
+      }
+    },
+    {
+      "name": "Skeleton Archers",
+      "type": "Infantry",
+      "irregular": true,
+      "options": {
+        "Troop (10)": "70",
+        "Regiment (20)": "95",
+        "Horde (40)": "165"
+      }
+    },
+    {
+      "name": "Deathpack",
+      "type": "Swarm",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "75",
+        "Horde (6)": "125"
+      }
+    },
+    {
+      "name": "Revenant Cavalry",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "115",
+        "Regiment (10)": "180",
+        "Horde (20)": "305"
+      }
+    },
+    {
+      "name": "Soul Reaver Cavalry",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "155",
+        "Regiment (10)": "240"
+      }
+    },
+    {
+      "name": "Werewolves",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "255"
+      }
+    },
+    {
+      "name": "Zombie Trolls",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "115",
+        "Horde (6)": "190"
+      }
+    },
+    {
+      "name": "Wights",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "155",
+        "Horde (6)": "260"
+      }
+    },
+    {
+      "name": "Balefire Catapult",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Goreblight",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "175"
+      }
+    },
+    {
+      "name": "Ghoul Ghast",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "95"
+      }
+    },
+    {
+      "name": "Vampire on Undead Pegasus",
+      "type": "Hero",
+      "subType": "LrgCav",
+      "irregular": false,
+      "options": {
+        "1": "215"
+      }
+    },
+    {
+      "name": "Lykanis",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "150"
+      }
+    },
+    {
+      "name": "Vampire Lord",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "165"
+      }
+    },
+    {
+      "name": "Vampire Lord on Undead Dragon",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "305"
+      }
+    },
+    {
+      "name": "Revenant King",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Revenant on Undead Great Burrowing Wyrm",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "200"
+      }
+    },
+    {
+      "name": "Revenant King on Undead Great Flying Wyrm",
+      "type": "Hero",
+      "subType": "Ttn",
+      "irregular": false,
+      "options": {
+        "1": "265"
+      }
+    },
+    {
+      "name": "Liche King",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "155"
+      }
+    },
+    {
+      "name": "Necromancer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Cursed Pharaoh",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "155"
+      }
+    },
+    {
+      "name": "Undead Army Standard Bearer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "50"
+      }
+    },
+    {
+      "name": "Mhorgoth the Faceless",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "230"
+      }
+    },
+    {
+      "name": "Lady Ilona",
+      "type": "Hero",
+      "subType": "Inf",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "250"
+      }
+    },
+    {
+      "name": "Zuinok Iceblood",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "120"
+      }
+    },
+    {
+      "name": "The Shambling Blight",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}

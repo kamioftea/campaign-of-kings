@@ -1,0 +1,245 @@
+{
+  "name": "Halflings",
+  "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/36.png",
+  "alignment": "Neutral",
+  "units": [
+    {
+      "name": "Braves",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "80",
+        "Horde (40)": "130",
+        "Legion (60)": "190"
+      }
+    },
+    {
+      "name": "Spearspikes",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (20)": "100",
+        "Horde (40)": "165"
+      }
+    },
+    {
+      "name": "Stalwarts",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "75",
+        "Regiment (20)": "115",
+        "Horde (40)": "190"
+      }
+    },
+    {
+      "name": "Poachers",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "105",
+        "Regiment (20)": "140"
+      }
+    },
+    {
+      "name": "Halfling Rifles",
+      "type": "Infantry",
+      "irregular": false,
+      "options": {
+        "Troop (10)": "80",
+        "Regiment (20)": "115",
+        "Horde (40)": "200"
+      }
+    },
+    {
+      "name": "Juggers",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "125",
+        "Regiment (10)": "190",
+        "Horde (20)": "325"
+      }
+    },
+    {
+      "name": "Wild Lancers",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "100",
+        "Regiment (10)": "155",
+        "Horde (20)": "265"
+      }
+    },
+    {
+      "name": "Wild Runners",
+      "type": "Cavalry",
+      "irregular": false,
+      "options": {
+        "Troop (5)": "95",
+        "Regiment (10)": "145"
+      }
+    },
+    {
+      "name": "Ej Grenadiers",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "105"
+      }
+    },
+    {
+      "name": "Forest Troll Gunners",
+      "type": "Large Infantry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "140",
+        "Horde (6)": "230"
+      }
+    },
+    {
+      "name": "Forest Trolls",
+      "type": "Large Infantry",
+      "irregular": false,
+      "options": {
+        "Regiment (3)": "125",
+        "Horde (6)": "205"
+      }
+    },
+    {
+      "name": "Aeronauts",
+      "type": "Large Cavalry",
+      "irregular": true,
+      "options": {
+        "Regiment (3)": "175"
+      }
+    },
+    {
+      "name": "Volley Gun",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "85"
+      }
+    },
+    {
+      "name": "Howitzer",
+      "type": "War Engine",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Harvester",
+      "type": "Monster",
+      "irregular": false,
+      "options": {
+        "1": "140"
+      }
+    },
+    {
+      "name": "Iron Beast",
+      "type": "Titan",
+      "irregular": false,
+      "options": {
+        "1": "210"
+      }
+    },
+    {
+      "name": "Sauceror",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Engineer",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "75"
+      }
+    },
+    {
+      "name": "Sergeant",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "55"
+      }
+    },
+    {
+      "name": "Muster Captain",
+      "type": "Hero",
+      "subType": "Inf",
+      "irregular": false,
+      "options": {
+        "1": "80"
+      }
+    },
+    {
+      "name": "Feast Master",
+      "type": "Hero (Hv Inf)",
+      "irregular": false,
+      "options": {
+        "1": "90"
+      }
+    },
+    {
+      "name": "Muster Captain on Winged Aralez",
+      "type": "Hero",
+      "subType": "Mon",
+      "irregular": false,
+      "options": {
+        "1": "195"
+      }
+    },
+    {
+      "name": "Gunnery Sergeant on Troll",
+      "type": "Hero",
+      "subType": "LrgInf",
+      "irregular": false,
+      "options": {
+        "1": "130"
+      }
+    },
+    {
+      "name": "Aeron Cadwalader",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "110"
+      }
+    },
+    {
+      "name": "Greedyguts",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "115"
+      }
+    },
+    {
+      "name": "Ally McSween",
+      "type": "Hero (Hv Inf)",
+      "unique": "1",
+      "irregular": false,
+      "options": {
+        "1": "105"
+      }
+    },
+    {
+      "name": "McSween's Cutthroats",
+      "type": "Formation",
+      "unique": "1",
+      "irregular": false,
+      "options": {}
+    }
+  ]
+}
