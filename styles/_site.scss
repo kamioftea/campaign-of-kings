@@ -1,0 +1,48 @@
+@import "settings";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+@include breakpoint(small only) {
+  .lead {
+    font-size: $lead-font-size * 0.8;
+  }
+}
+
+@each $name, $color in $foundation-palette {
+  .text-#{$name} {
+    color: $color
+  }
+}
+
+.app-wrapper {
+  background: url('/images/background.jpg') no-repeat fixed 20% 55%;
+  background-size: cover;
+
+  min-height: 100vh;
+  display: grid;
+
+  grid-template-rows: min-content auto min-content;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "left   right"
+    "footer footer";
+
+  @include breakpoint(medium down) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto auto min-content;
+    grid-template-areas:
+    "header "
+    "left   "
+    "right  "
+    "footer ";
+  }
+
+  grid-column-gap: 1rem;
+}

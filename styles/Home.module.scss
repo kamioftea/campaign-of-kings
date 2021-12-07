@@ -1,0 +1,13 @@
+@import "settings";
+
+.content {
+    grid-area: right;
+    padding: $global-padding 1.5 * $global-padding;
+    background-color: rgba($body-background, 0.75);
+    max-width: 775px;
+    justify-self: center;
+
+    @include breakpoint(medium down) {
+        grid-area: header-end / left-start / footer-start / right-end;
+    }
+}

@@ -1,0 +1,54 @@
+@import "styles/settings";
+
+.topBar {
+  composes: top-bar from global;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $body-background;
+  border-bottom: thin rgba($secondary-color, 50%) solid;
+  padding: 0;
+  height: fit-content;
+
+  grid-area: header;
+}
+
+.topBarLeft {
+  composes: top-bar-left from global;
+
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    padding: $global-padding;
+    border-right: thin rgba($secondary-color, 50%) solid;
+    line-height: 2rem;
+    color: $primary-color;
+
+    &:hover, &:focus {
+      background-color: darken($body-background, 10%);
+    }
+  }
+
+  :global .h2 {
+    margin: 0;
+  }
+}
+
+.topBarRight {
+  composes: top-bar-right from global;
+
+  display: flex;
+  align-items: center;
+  padding-right: $global-padding;
+
+  a {
+    display: inline-block;
+  }
+
+  :global .button {
+    margin-bottom: 0;
+  }
+}

@@ -40,5 +40,6 @@ yarn-error.log*
 /campaign-of-kings.iml
 /.idea/
 
-# Font
+# Resources
 /public/wolfsbane2.*
+/public/images/
