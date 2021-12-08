@@ -8,6 +8,10 @@ body {
   min-height: 100%;
 }
 
+th {
+  text-align: left;
+}
+
 @include breakpoint(small only) {
   .lead {
     font-size: $lead-font-size * 0.8;
