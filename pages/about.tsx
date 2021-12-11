@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>The Conquest of Hell's Claw - A Kings of War Campaign</title>
+                <title>About | The Conquest of Hell's Claw</title>
                 <meta name="description"
                       content="The Conquest of Hell's Claw is a Kings of War and Vanguard Escalation Campaign running at Chesterfield Open Gaming Society"/>
                 <link rel="icon" href="/favicon.ico"/>
@@ -213,9 +213,9 @@ const Home: NextPage = () => {
                 </p>
 
                 <p>
-                    She loses the Kings of War game. This means she only gets three dice to roll on the territory table,
-                    two D6 as a base, and one extra for winning the Vanguard game. She rolls a 3, 4, and 6. She picks
-                    the forest (3) and decides to unlock Mawpup Launchers. Bob also gets to roll three dice, two
+                    Alice loses the Kings of War game. This means she only gets three dice to roll on the territory
+                    table, two D6 as a base, and one extra for winning the Vanguard game. She rolls a 3, 4, and 6. She
+                    picks the forest (3) and decides to unlock Mawpup Launchers. Bob also gets to roll three dice, two
                     base, plus one for winning the Kings of War game. He rolls a 1, 3, and 5. The Herd don't have any
                     War Machines in their force list, and Bob already took a cave (1) as his choice for extra terrain
                     at the start, unlocking the only monster available to him - the Beast of Nature. Because of this he

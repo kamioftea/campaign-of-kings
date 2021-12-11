@@ -1,0 +1,11 @@
+@import "settings";
+
+.content {
+    grid-area: left-start / left-start / right-end / right-end;
+    padding: $global-padding;
+    background-color: rgba($body-background, 0.85);
+    max-width: max-content;
+    height: max-content;
+    justify-self: center;
+    align-self: center;
+}
