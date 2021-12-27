@@ -1,5 +1,7 @@
 import styles from "../styles/TopBar.module.scss"
 import Link from "next/link"
+import {useUser} from "../hooks/use-user";
+import {UserLoadingState} from "./UserContext";
 
 export function TopBar() {
     return <div className={styles.topBar}>
@@ -11,7 +13,7 @@ export function TopBar() {
                 <a>About</a>
             </Link>
 
-            <Link href="/background">
+            <Link href="/chronicle">
                 <a>Chronicle</a>
             </Link>
 
@@ -20,12 +22,30 @@ export function TopBar() {
             </Link>
         </div>
         <div className={styles.topBarRight}>
-            <Link href="/sign-up">
-                <a className="button primary">Sign Up</a>
-            </Link>
-            <Link href="/sign-in">
-                <a className="button secondary">Sign In</a>
-            </Link>
+            <UserDropdown/>
         </div>
     </div>;
+}
+
+const UserDropdown = () => {
+    const {user, loadingState, handleSignOut} = useUser();
+
+    if (loadingState != UserLoadingState.LOADED) {
+        return <button className="hollow button secondary disabled">Loading...</button>
+    }
+
+    if (!user) {
+        return (
+            <>
+                <Link href="/sign-up">
+                    <a className="button primary">Sign Up</a>
+                </Link>
+                <Link href="/sign-in">
+                    <a className="button secondary">Sign In</a>
+                </Link>
+            </>
+        )
+    }
+
+    return <button className="hollow button primary" onClick={handleSignOut}>{user.name}</button>
 }

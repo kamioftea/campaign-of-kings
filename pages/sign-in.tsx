@@ -1,20 +1,14 @@
 import {NextPage} from "next";
 import styles from '../styles/SplashPage.module.scss'
+import {SignInForm} from "../components/SignInForm";
+import Link from "next/link";
 
 const SignIn: NextPage = () => {
-    return  <div className={styles.content}>
-        <h1>Log In</h1>
-        <form>
-            <label>
-                Email
-                <input type="text"/>
-            </label>
-            <label>
-                Password
-                <input type="password"/>
-            </label>
-            <button className="button primary">Log In</button>
-        </form>
+    return <div className={styles.content}>
+        <h1>Sign In</h1>
+        <SignInForm/>
+        <p><Link href="/forgotten-password"><a>I've forgotten my password.</a></Link></p>
+        <p><Link href="/sign-up"><a>I don't have an account.</a></Link></p>
     </div>
 }
 
