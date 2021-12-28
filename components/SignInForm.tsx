@@ -42,7 +42,7 @@ export const SignInForm = () => {
             }
         })
             .then(res => res.status === 200 ? res.json() : undefined)
-            .then((json: { user: UserDocument } | undefined) => setUser(json?.user))
+            .then((json: UserDocument | undefined) => setUser(json))
             .finally(() => setLoadingState(UserLoadingState.LOADED))
     }
 

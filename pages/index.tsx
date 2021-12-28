@@ -1,16 +1,11 @@
 import type {NextPage} from 'next'
-import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import {DefaultHead} from "../components/DefaultHead";
 
 const Home: NextPage = () => {
   return (
       <>
-          <Head>
-              <title>The Conquest of Hell's Claw - A Kings of War Campaign</title>
-              <meta name="description"
-                    content="The Conquest of Hell's Claw is a Kings of War and Vanguard Escalation Campaign running at Chesterfield Open Gaming Society"/>
-              <link rel="icon" href="/favicon.ico"/>
-          </Head>
+          <DefaultHead />
 
           <main className={`${styles.content}`}>
               <h1>Conquest or Death Await...</h1>

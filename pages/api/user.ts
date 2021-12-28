@@ -1,7 +1,8 @@
-import {getLoginSession, setLoginSession} from '../../lib/auth'
+import {getLoginSession, setLoginSession, UserError} from '../../lib/auth'
 import {NextApiRequest, NextApiResponse} from "next";
 import {User, userResponse} from "../../model/User";
 import {UserDocument} from "../../model/UserDocument";
+
 const bcrypt = require('bcryptjs');
 const {promisify} = require('util');
 
@@ -37,7 +38,8 @@ async function getUser(req: NextApiRequest, res: NextApiResponse) {
 interface UserData {
   name: string,
   email: string,
-  password: string,
+  password?: string,
+  old_password?: string
 }
 
 async function addUser(req: NextApiRequest, res: NextApiResponse) {
@@ -66,5 +68,34 @@ async function addUser(req: NextApiRequest, res: NextApiResponse) {
 }
 
 async function updateUser(req: NextApiRequest, res: NextApiResponse) {
-  return res.status(501).end("Not Implemented");
+  try {
+    const session = await getLoginSession(req)
+    const {name, email, old_password, password: rawPassword} = req.body as UserData;
+
+    if (!name || !email || !old_password) {
+      return res.status(400).end("Invalid request")
+    }
+
+    if (!await bcrypt.compare(old_password, session.user.password)) {
+      return res.status(400).json(
+          {
+            field_errors: {
+              old_password: "Provided password did not match"
+            }
+          }
+      )
+    }
+
+    session.user.name = name;
+    session.user.email = email;
+    if(rawPassword) {
+      session.user.password = await bcryptHash(rawPassword, 14);
+    }
+
+    await session.user.save()
+
+    res.status(200).json(userResponse(session.user))
+  } catch (error) {
+    res.status((error as UserError).status_code ?? 500).end((error as UserError).user_message ?? "Unexpected error")
+  }
 }

@@ -1,16 +1,11 @@
 import type {NextPage} from 'next'
-import Head from 'next/head'
 import styles from '../styles/StandardPage.module.scss'
+import {DefaultHead} from "../components/DefaultHead";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
     return (
         <>
-            <Head>
-                <title>About | The Conquest of Hell's Claw</title>
-                <meta name="description"
-                      content="The Conquest of Hell's Claw is a Kings of War and Vanguard Escalation Campaign running at Chesterfield Open Gaming Society"/>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
+            <DefaultHead title="About"/>
 
             <main className={`${styles.content}`}>
                 <h1>About The Campaign</h1>
@@ -231,10 +226,10 @@ const Home: NextPage = () => {
                     month, from 7pm until 10pm at:
                 </p>
                 <p style={{marginLeft: '2rem'}}>
-                    The Parish Centre<br />
-                    Stonegravels<br />
-                    91 Sheffield Road<br />
-                    Chesterfield<br />
+                    The Parish Centre<br/>
+                    Stonegravels<br/>
+                    91 Sheffield Road<br/>
+                    Chesterfield<br/>
                     S41 7JH
                 </p>
                 <p>
@@ -247,4 +242,4 @@ const Home: NextPage = () => {
     )
 }
 
-export default Home
+export default About
