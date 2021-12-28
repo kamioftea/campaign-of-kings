@@ -1,5 +1,6 @@
 import {NextApiRequest, NextApiResponse} from "next";
-import {User, UserDocument} from "../../model/User";
+import {User} from "../../model/User";
+import {UserDocument} from "../../model/UserDocument";
 import {mongooseConnect} from "../../lib/mongoose-connect";
 import {getResetKey} from "../../lib/auth";
 

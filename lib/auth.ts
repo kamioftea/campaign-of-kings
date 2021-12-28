@@ -2,7 +2,8 @@ import Iron from '@hapi/iron'
 import {getTokenCookie, MAX_AGE, removeTokenCookie, setTokenCookie} from './auth-cookies'
 import {NextApiRequest, NextApiResponse} from "next";
 import {ObjectID} from "bson";
-import {Role, User, UserDocument} from "../model/User";
+import {User} from "../model/User";
+import {Role, UserDocument} from "../model/UserDocument";
 import {mongooseConnect} from "./mongoose-connect";
 
 const TOKEN_SECRET = process.env.TOKEN_SECRET || 'change-me-to-a-32-character-or-longer-string'

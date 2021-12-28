@@ -1,6 +1,7 @@
 import {getLoginSession, setLoginSession} from '../../lib/auth'
 import {NextApiRequest, NextApiResponse} from "next";
-import {User, UserDocument, userResponse} from "../../model/User";
+import {User, userResponse} from "../../model/User";
+import {UserDocument} from "../../model/UserDocument";
 const bcrypt = require('bcryptjs');
 const {promisify} = require('util');
 

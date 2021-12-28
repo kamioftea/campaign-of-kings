@@ -1,0 +1,29 @@
+@import "settings";
+
+.dropdownContainer {
+  position: relative;
+  &.dropdownMenuContainer > :global.dropdown-pane {
+    padding: 0;
+
+    & > ul:global.menu > li {
+      width: 100%;
+      background-color: $white;
+
+      a {
+        width: 100%;
+        padding: $global-padding;
+        &:hover, &:focus {
+          background-color: $light-gray;
+        }
+      }
+
+      hr {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.dropdownHeader {
+  padding: divide($global-padding, 2);
+}

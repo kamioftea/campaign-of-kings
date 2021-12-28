@@ -3,7 +3,7 @@ import {useUser} from '../hooks/use-user';
 import {UserLoadingState} from './UserContext';
 import {useRouter} from "next/router";
 import * as yup from "yup";
-import {UserDocument} from "../model/User";
+import {UserDocument} from "../model/UserDocument";
 import {useEffect} from "react";
 
 const schema = yup.object().shape({

@@ -1,0 +1,8 @@
+@import "settings";
+
+.content {
+    grid-area: header-end / left-start / footer-start / right-end;
+    padding: $global-padding 1.5 * $global-padding;
+    background-color: rgba($body-background, 0.85);
+    width: 100%;
+}

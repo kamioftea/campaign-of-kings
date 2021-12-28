@@ -1,6 +1,7 @@
 import {NextApiRequest, NextApiResponse} from "next";
 import {getLoginSession, UserError} from "../../../../lib/auth";
-import {Role, User, UserDocument, userResponse} from "../../../../model/User";
+import {User, userResponse} from "../../../../model/User";
+import {Role, UserDocument} from "../../../../model/UserDocument";
 
 export default async function handle(req: NextApiRequest, res: NextApiResponse<UserDocument[] | string>) {
     switch (req.method) {
@@ -15,7 +16,7 @@ async function getUsers(req: NextApiRequest, res: NextApiResponse) {
     try {
         await getLoginSession(req, Role.ADMIN)
 
-        let users = [...await User.find({})].map(userResponse);
+        let users = [...await User.find({})].map(u => userResponse(u));
 
         res.status(200).json(users)
     } catch (error) {

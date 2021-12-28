@@ -1,5 +1,5 @@
 import {createContext, ReactNode, useState} from "react";
-import {UserDocument} from "../model/User";
+import {UserDocument} from "../model/UserDocument";
 
 export enum UserLoadingState {
     UNKNOWN,

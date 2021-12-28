@@ -2,6 +2,9 @@ import styles from "../styles/TopBar.module.scss"
 import Link from "next/link"
 import {useUser} from "../hooks/use-user";
 import {UserLoadingState} from "./UserContext";
+import {buttonTrigger, DropdownHeader, DropdownMenu} from "./Dropdown";
+import {Role} from "../model/UserDocument";
+import {ReactNode} from "react";
 
 export function TopBar() {
     return <div className={styles.topBar}>
@@ -47,5 +50,25 @@ const UserDropdown = () => {
         )
     }
 
-    return <button className="hollow button primary" onClick={handleSignOut}>{user.name}</button>
+    const menuItems: { [keys: string]: ReactNode } = {
+        profile: <Link href={'/profile'}><a>User Profile</a></Link>,
+        force: <Link href={'/force'}><a>My Army</a></Link>,
+        divider: <hr/>,
+        signOut: <a href="#" onClick={(e) => {
+            e.preventDefault();
+            handleSignOut()
+        }}>Sign Out</a>,
+    }
+
+    if (user.roles.includes(Role.ADMIN)) {
+        menuItems.adminDivider = <DropdownHeader label="Admin" />;
+        menuItems.adminUsers = <Link href={'/admin/users'}><a>User Admin</a></Link>;
+    }
+
+    return <DropdownMenu
+        trigger_content={buttonTrigger({label: user.name})}
+        align="right"
+        options={menuItems}
+    />
+
 }

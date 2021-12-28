@@ -1,6 +1,7 @@
 import {useCallback, useContext, useEffect} from "react";
 import {UserContext, UserLoadingState} from "../components/UserContext";
-import {UserDocument} from "../model/User";
+import {Role} from "../model/UserDocument";
+import {useRouter} from "next/router";
 
 export const useUser = () => {
     const {user, setUser, loadingState, setLoadingState} = useContext(UserContext);
@@ -11,7 +12,7 @@ export const useUser = () => {
                 setLoadingState(UserLoadingState.LOADING)
                 fetch('/api/user', {method: 'GET'})
                     .then(res => res.status === 200 ? res.json() : undefined)
-                    .then((json: { user: UserDocument } | undefined) => setUser(json?.user))
+                    .then(setUser)
                     .catch(() => setUser(undefined))
                     .finally(() => setLoadingState(UserLoadingState.LOADED))
             }
@@ -36,4 +37,28 @@ export const useUser = () => {
         setLoadingState,
         handleSignOut,
     }
+}
+
+export function useAuthorised(role: Role) {
+    const {user, loadingState} = useUser();
+    const router = useRouter();
+
+    useEffect(() => {
+        if(loadingState !== UserLoadingState.LOADED) {
+            return;
+        }
+
+        if(!user) {
+            // noinspection JSIgnoredPromiseFromCall
+            router.push('/sign-in');
+            return;
+        }
+
+        if(!user.roles.includes(role)) {
+            // noinspection JSIgnoredPromiseFromCall
+            router.push('/unauthorised');
+        }
+    }, [user, loadingState]);
+
+    return user?.roles?.includes(role) ? user : null;
 }
