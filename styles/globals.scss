@@ -58,4 +58,10 @@
 @include foundation-visibility-classes;
 @include foundation-prototype-classes;
 
+@each $name, $color in $foundation-palette {
+  .text-#{$name} {
+    color: $color
+  }
+}
+
 @import "site";

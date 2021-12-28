@@ -1,4 +1,4 @@
-import {Field, Form, Formik} from 'formik';
+import {Form, Formik} from 'formik';
 import {useUser} from '../hooks/use-user';
 import {UserLoadingState} from './UserContext';
 import {useRouter} from "next/router";
@@ -6,9 +6,11 @@ import * as yup from "yup";
 import {UserDocument} from "../model/UserDocument";
 import {useEffect, useState} from "react";
 import Link from 'next/link';
+import {FoundationInput} from "./formik/FoundationInput";
+import {SubmitButton} from "./SubmitButton";
 
 const schema = yup.object().shape({
-    email: yup.string().email().required()
+    email: yup.string().email("Enter your email, e.g. name@example.org").required("Enter your email"),
 })
 
 export const ForgottenPasswordForm = () => {
@@ -27,7 +29,6 @@ export const ForgottenPasswordForm = () => {
     }
 
     const handleSubmit = ({email}: Partial<UserDocument>) => {
-        console.log('submit', email)
         if (!email) {
             return;
         }
@@ -64,11 +65,8 @@ export const ForgottenPasswordForm = () => {
             onSubmit={handleSubmit}
         >
             <Form>
-                <label>
-                    Email
-                    <Field type="text" name="email"/>
-                </label>
-                <button className="button primary">Request Reset</button>
+                <FoundationInput label="Email" type="text" name="email"/>
+                <SubmitButton label="Request Reset" />
             </Form>
         </Formik>
     </>

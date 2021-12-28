@@ -86,9 +86,22 @@ async function updateUser(req: NextApiRequest, res: NextApiResponse) {
       )
     }
 
+    if (email !== session.user.email) {
+      const existing = await User.findOne({email});
+      if (existing) {
+        return res.status(409).json(
+            {
+              field_errors: {
+                email: "Another user with the updated email already exists."
+              }
+            }
+        )
+      }
+    }
+
     session.user.name = name;
     session.user.email = email;
-    if(rawPassword) {
+    if (rawPassword) {
       session.user.password = await bcryptHash(rawPassword, 14);
     }
 

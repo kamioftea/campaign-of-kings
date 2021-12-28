@@ -1,19 +1,21 @@
-import {Field, Form, Formik} from 'formik';
+import {Form, Formik} from 'formik';
 import {useUser} from '../hooks/use-user';
 import {UserLoadingState} from './UserContext';
 import {useRouter} from "next/router";
 import * as yup from "yup";
 import {UserDocument} from "../model/UserDocument";
 import {useEffect} from "react";
+import {FoundationInput} from "./formik/FoundationInput";
+import {SubmitButton} from "./SubmitButton";
 
 const schema = yup.object().shape({
-    name: yup.string().required(),
-    email: yup.string().email().required(),
-    password: yup.string().min(8).required()
+    name: yup.string().required('Enter your name'),
+    email: yup.string().email("Enter your email, e.g. name@example.org").required("Enter your email"),
+    password: yup.string().min(12, "Enter a password of at least 12 characters").required("Enter a password"),
 })
 
 export const SignUpForm = () => {
-    const {user, setUser, loadingState, setLoadingState} = useUser();
+    const {user, setUser, loadingState} = useUser();
     const router = useRouter();
     useEffect(() => {
         if (user) {
@@ -31,8 +33,6 @@ export const SignUpForm = () => {
             return;
         }
 
-        setLoadingState(UserLoadingState.LOADING);
-
         const body = JSON.stringify({name, email, password});
 
         fetch('/api/user', {
@@ -43,8 +43,7 @@ export const SignUpForm = () => {
             }
         })
             .then(res => res.status === 201 ? res.json() : undefined)
-            .then((json: { user: UserDocument } | undefined) => setUser(json?.user))
-            .finally(() => setLoadingState(UserLoadingState.LOADED))
+            .then((json: UserDocument | undefined) => setUser(json))
     }
 
     return <Formik
@@ -57,19 +56,10 @@ export const SignUpForm = () => {
         onSubmit={handleSubmit}
     >
         <Form>
-            <label>
-                Name
-                <Field type="text" name="name" />
-            </label>
-            <label>
-                Email
-                <Field type="text" name="email"/>
-            </label>
-            <label>
-                Password
-                <Field type="password" name="password"/>
-            </label>
-            <button className="button primary">Sign Up</button>
+            <FoundationInput label="Name" type="text" name="name"/>
+            <FoundationInput label="Email" type="text" name="email"/>
+            <FoundationInput label="Password" type="password" name="password"/>
+            <SubmitButton label="Sign Up" />
         </Form>
     </Formik>
 }

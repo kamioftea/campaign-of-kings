@@ -4,7 +4,6 @@
     grid-area: left-start / left-start / right-end / right-end;
     padding: $global-padding;
     background-color: rgba($body-background, 0.85);
-    max-width: 775px;
-    min-width: min(500px, 100%);
+    width: min(775px, 100%);
     justify-self: center;
 }
