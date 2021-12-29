@@ -14,7 +14,7 @@ const schema = yup.object().shape({
 })
 
 export const SignInForm = () => {
-    const {user, setUser, loadingState, setLoadingState} = useUser();
+    const {user, setUser, loadingState} = useUser();
     const router = useRouter();
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export const SignInForm = () => {
 
         const body = JSON.stringify({email, password});
 
-        fetch('/api/sign-in', {
+        return fetch('/api/sign-in', {
             method: 'POST',
             body,
             headers: {
@@ -44,7 +44,6 @@ export const SignInForm = () => {
         })
             .then(res => res.status === 200 ? res.json() : undefined)
             .then((json: UserDocument | undefined) => setUser(json))
-            .finally(() => setLoadingState(UserLoadingState.LOADED))
     }
 
     return <Formik

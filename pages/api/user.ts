@@ -2,9 +2,8 @@ import {getLoginSession, setLoginSession, UserError} from '../../lib/auth'
 import {NextApiRequest, NextApiResponse} from "next";
 import {User, userResponse} from "../../model/User";
 import {UserDocument} from "../../model/UserDocument";
-
-const bcrypt = require('bcryptjs');
-const {promisify} = require('util');
+import bcrypt from "bcryptjs";
+import {promisify} from "util";
 
 const bcryptHash = promisify(bcrypt.hash);
 

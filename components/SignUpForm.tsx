@@ -35,7 +35,7 @@ export const SignUpForm = () => {
 
         const body = JSON.stringify({name, email, password});
 
-        fetch('/api/user', {
+        return fetch('/api/user', {
             method: 'POST',
             body,
             headers: {

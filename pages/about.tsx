@@ -234,7 +234,7 @@ const About: NextPage = () => {
                 </p>
                 <p>
                     Entry is £3 per evening, with your first session being free. For more details see the{' '}
-                    <a href="http://www.c-o-g-s.org.uk/">Club Website</a> or join our{' '}
+                    <a href="http://www.c-o-g-s.org.uk/">Club Website</a> and join our{' '}
                     <a href="https://www.facebook.com/groups/118722704820567/">Facebook page</a>.
                 </p>
             </main>

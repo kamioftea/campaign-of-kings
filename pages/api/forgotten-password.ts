@@ -3,6 +3,7 @@ import {User} from "../../model/User";
 import {UserDocument} from "../../model/UserDocument";
 import {mongooseConnect} from "../../lib/mongoose-connect";
 import {getResetKey} from "../../lib/auth";
+import {sendEmail} from "../../lib/send-email";
 
 interface Data {
     email?:string
@@ -26,6 +27,28 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
         return res.status(404).send("No user account for the provided email has been setup");
     }
 
-    // TODO: send email
-    console.log(`Reset key for ${user.email}: `, await getResetKey(user));
+    try {
+        const key = await getResetKey(user);
+        const resetUrl = `https://${req.headers.host}/reset-password?key=${key}`
+
+        const result = await sendEmail({
+            to: [email],
+            subject: 'Password reset for The Conquest of Hell\'s Claw',
+            text: `Hi ${user.name},
+            
+You are receiving this email because someone has requested a password reset for your account in The Conquest of Hell\'s 
+Claw Campaign. If this was you, please use the following link to reset your password:
+
+${resetUrl}
+
+Thanks,
+Chesterfield Open Gaming Society.`
+        });
+        console.log(result)
+        return res.status(200).send("Reset email sent.");
+    }
+    catch (err) {
+        console.error('Failed to send email', err)
+        return res.status(500).end();
+    }
 }

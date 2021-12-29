@@ -11,7 +11,7 @@ import {SubmitButton} from "./SubmitButton";
 const schema = yup.object().shape({
     name: yup.string().required('Enter your name'),
     email: yup.string().email("Enter your email, e.g. name@example.org").required("Enter your email"),
-    password: yup.string().min(12, "Enter a password of at least 12 characters").required("Enter your password"),
+    password: yup.string().min(12, "Enter a password of at least 12 characters"),
     old_password: yup.string()
         .min(12, "Enter a password of at least 12 characters")
         .required('Enter your current password to make changes to your account.'),
@@ -74,7 +74,7 @@ export const ProfileForm = () => {
 
         const body = JSON.stringify({name, email, old_password, password});
 
-        fetch('/api/user', {
+        return fetch('/api/user', {
             method: 'PUT',
             body,
             headers: {

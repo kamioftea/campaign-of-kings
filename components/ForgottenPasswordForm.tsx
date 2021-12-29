@@ -1,4 +1,4 @@
-import {Form, Formik} from 'formik';
+import {Form, Formik, FormikHelpers} from 'formik';
 import {useUser} from '../hooks/use-user';
 import {UserLoadingState} from './UserContext';
 import {useRouter} from "next/router";
@@ -28,21 +28,30 @@ export const ForgottenPasswordForm = () => {
         return <p>Loading...</p>
     }
 
-    const handleSubmit = ({email}: Partial<UserDocument>) => {
+    const handleSubmit = ({email}: Partial<UserDocument>, helpers: FormikHelpers<Partial<UserDocument>>) => {
         if (!email) {
             return;
         }
 
         const body = JSON.stringify({email});
 
-        fetch('/api/forgotten-password', {
+        return fetch('/api/forgotten-password', {
             method: 'POST',
             body,
             headers: {
                 'Content-Type': 'application/json'
             }
         })
-            .then(res => setSubmitted(res.status === 200));
+            .then(res => {
+                if (res.status === 200) {
+                    setSubmitted(res.status === 200)
+                } else {
+                    helpers.setFieldError('email', 'There was an error sending the reset link')
+                }
+            })
+            .catch(() => {
+                helpers.setFieldError('email', 'There was an error sending the reset link')
+            });
     }
 
     if (submitted) {
@@ -58,9 +67,7 @@ export const ForgottenPasswordForm = () => {
     return <>
         <h1>Reset Password</h1>
         <Formik
-            initialValues={{
-                email: '',
-            }}
+            initialValues={{email: ''}}
             validationSchema={schema}
             onSubmit={handleSubmit}
         >
