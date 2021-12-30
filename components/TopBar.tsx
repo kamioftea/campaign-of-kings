@@ -63,6 +63,7 @@ const UserDropdown = () => {
     if (user.roles.includes(Role.ADMIN)) {
         menuItems.adminDivider = <DropdownHeader label="Admin" />;
         menuItems.adminUsers = <Link href={'/admin/users'}><a>User Admin</a></Link>;
+        menuItems.adminChronicles = <Link href={'/admin/chronicle'}><a>Chronicle Admin</a></Link>;
     }
 
     return <DropdownMenu
