@@ -60,5 +60,5 @@ export function useAuthorised(role: Role) {
         }
     }, [user, loadingState]);
 
-    return user?.roles?.includes(role) ? user : null;
+    return  loadingState === UserLoadingState.LOADED && user?.roles?.includes(role) ? user : null;
 }

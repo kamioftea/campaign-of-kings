@@ -21,7 +21,7 @@ export function TopBar() {
             </Link>
 
             <Link href="/forces">
-                <a>Forces</a>
+                <a>War Hosts</a>
             </Link>
         </div>
         <div className={styles.topBarRight}>
@@ -52,7 +52,7 @@ const UserDropdown = () => {
 
     const menuItems: { [keys: string]: ReactNode } = {
         profile: <Link href={'/profile'}><a>User Profile</a></Link>,
-        force: <Link href={'/force'}><a>My Army</a></Link>,
+        force: <Link href={'/warhost'}><a>Manage Your Warhost</a></Link>,
         divider: <hr/>,
         signOut: <a href="#" onClick={(e) => {
             e.preventDefault();

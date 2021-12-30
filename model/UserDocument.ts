@@ -1,4 +1,5 @@
 import {Document} from "mongoose";
+import {Warhost} from "./Warhost";
 
 export enum Role {
     ADMIN = "Admin",
@@ -18,4 +19,5 @@ export type UserDocument = Document & {
     email: string;
     password: string;
     roles: Role[];
+    warhost?: Warhost,
 };
