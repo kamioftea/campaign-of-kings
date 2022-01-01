@@ -31,7 +31,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
         const key = await getResetKey(user);
         const resetUrl = `https://${req.headers.host}/reset-password?key=${key}`
 
-        const result = await sendEmail({
+        await sendEmail({
             to: [email],
             subject: 'Password reset for The Conquest of Hell\'s Claw',
             text: `Hi ${user.name},
@@ -44,7 +44,6 @@ ${resetUrl}
 Thanks,
 Chesterfield Open Gaming Society.`
         });
-        console.log(result)
         return res.status(200).send("Reset email sent.");
     }
     catch (err) {

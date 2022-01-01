@@ -19,7 +19,6 @@ export function useAdminUsers() {
 
     let updateRole = useCallback((user: UserDocument, role: Role, setActive: boolean) => {
         const body = JSON.stringify({role, setActive});
-        console.log(users)
 
         fetch(`/api/admin/user/${user._id}/role`, {method: 'PUT', headers: {'Content-Type': 'application/json'}, body})
             .then(res => { if (res.status == 200) {return res.json();} else { throw new Error;} })

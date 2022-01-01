@@ -20,7 +20,7 @@ export function TopBar() {
                 <a>Chronicle</a>
             </Link>
 
-            <Link href="/forces">
+            <Link href="/warhosts">
                 <a>War Hosts</a>
             </Link>
         </div>

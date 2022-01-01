@@ -24,8 +24,6 @@ export const Dropdown = ({
     const container = useRef<HTMLDivElement>(null);
     const [isOpen, toggleOpen] = useState<boolean>(false);
 
-    console.log(styles);
-
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (container?.current && !container.current.contains(event.target as HTMLDivElement)) {

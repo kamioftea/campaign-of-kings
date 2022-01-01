@@ -1,6 +1,5 @@
 import AWS, {AWSError, SES} from 'aws-sdk';
 import {PromiseResult} from "aws-sdk/lib/request";
-import Process from "process";
 
 AWS.config.update({region: 'eu-west-2'});
 
@@ -44,10 +43,6 @@ export function sendEmail(email: Email): Promise<PromiseResult<SES.Types.SendEma
             Body: body,
         },
     };
-
-
-    console.log('config', AWS.config.accessKeyId);
-    console.log('env', Process.env.AWS_ACCESS_KEY_ID)
 
     return new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(params).promise();
 }

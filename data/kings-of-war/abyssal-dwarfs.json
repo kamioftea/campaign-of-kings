@@ -1,5 +1,6 @@
 {
   "name": "Abyssal Dwarfs",
+  "vanguardList": "abyssal-dwarf",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1004.png",
   "alignment": "Evil",
   "units": [

@@ -6,7 +6,7 @@ import {Role} from "../../model/UserDocument";
 import {ReactNode} from "react";
 import {WarhostForm} from "../../components/WarhostForm";
 
-const Force: NextPage = () => {
+const WarhostPage: NextPage = () => {
     const user = useAuthorised(Role.PLAYER);
     let content: ReactNode;
 
@@ -19,7 +19,7 @@ const Force: NextPage = () => {
 
     return (
         <>
-            <DefaultHead title="About"/>
+            <DefaultHead title="Warhost"/>
 
             <main className={`${styles.content}`}>
                 <h1>Your Warhost</h1>
@@ -29,4 +29,4 @@ const Force: NextPage = () => {
     )
 }
 
-export default Force;
+export default WarhostPage;

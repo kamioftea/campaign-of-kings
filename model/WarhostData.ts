@@ -34,7 +34,7 @@ export type Alignment = "Good" | "Neutral" | "Evil";
 export interface ArmyData {
     name: string,
     alignment: Alignment,
-    vanguardList: string,
+    vanguardList?: string,
     units: Unit[],
 }
 
@@ -57,9 +57,10 @@ export const army_lists: Promise<{ [key: string]: ArmyData }> = glob('./data/kin
             contents.map(
                 ([json, file]) => {
                     const data = JSON.parse(json) as ArmyData;
+                    let list_name = Path.parse(file).name;
                     return [
-                        Path.parse(file).name,
-                        data
+                        list_name,
+                        {vanguardList: list_name, ...data}
                     ]
                 }
             )
@@ -73,8 +74,9 @@ export const warband_lists: Promise<{ [key: string]: WarbandData }> = glob('./da
             contents.map(
                 ([json, file]) => {
                     const data = JSON.parse(json) as WarbandData;
+                    let name = Path.parse(file).name.replace('-vanguard', '');
                     return [
-                        Path.parse(file).name.replace('-vanguard', ''),
+                        name,
                         data
                     ]
                 }
@@ -82,7 +84,7 @@ export const warband_lists: Promise<{ [key: string]: WarbandData }> = glob('./da
         )
     );
 
-export const lists: Promise<ListSummary[]> = Promise.all([army_lists, warband_lists])
+export const warhost_lists: Promise<ListSummary[]> = Promise.all([army_lists, warband_lists])
     .then(([armies, warbands]) =>
         Object.entries(armies).map(([key, army_data]) => {
             const warband_list = army_data.vanguardList ?? key;

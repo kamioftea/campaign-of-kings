@@ -1,6 +1,7 @@
 {
   "name": "Ogres",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1009.png",
+  "vanguardList": "ogre",
   "alignment": "Neutral",
   "units": [
     {

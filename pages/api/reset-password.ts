@@ -12,7 +12,6 @@ interface Data {
 }
 
 export default async function handle(req: NextApiRequest, res: NextApiResponse<Data | string>) {
-    console.log('reset', req.method)
     switch (req.method) {
         case 'GET':
             return await getUserFromKey(req, res);
@@ -26,10 +25,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse<D
 async function getUserFromKey(req: NextApiRequest, res: NextApiResponse<Data | string>) {
     let {key} = req.query;
 
-    console.log(req.query);
-
     if(!key || typeof key !== 'string') {
-        console.log('no key')
         return res.status(400).send("No key was provided in the request");
     }
 

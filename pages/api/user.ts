@@ -7,11 +7,7 @@ import {promisify} from "util";
 
 const bcryptHash = promisify(bcrypt.hash);
 
-interface Data {
-  user: UserDocument
-}
-
-export default async function handle(req: NextApiRequest, res: NextApiResponse<Data | string>) {
+export default async function handle(req: NextApiRequest, res: NextApiResponse) {
   switch (req.method) {
     case 'GET':
       return await getUser(req, res);
