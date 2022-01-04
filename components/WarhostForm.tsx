@@ -2,7 +2,7 @@ import {UserDocument} from "../model/UserDocument";
 import {useWarhostData} from "../hooks/useWarhostData";
 import {Alignment, Artefact, ListSummary, UnitBreakdown, UnitCategory} from "../model/WarhostData";
 import styles from '../styles/WarhostForm.module.scss';
-import {FiAlertTriangle, FiChevronLeft} from "react-icons/fi";
+import {FiAlertTriangle, FiCheck, FiChevronLeft} from "react-icons/fi";
 import {ChangeEvent, KeyboardEvent, MouseEvent, useState} from "react";
 import {SlotType, Territory, TerritorySlot, TerritoryType} from "../model/Warhost";
 
@@ -293,7 +293,7 @@ export function WarhostForm({user}: ForceFormProps) {
     if (!user.warhost?.army?.list) {
         elements.push(<ArmyChooser key="army-chooser" lists={warhostData.lists} onSelect={(army) => updateWarhost({"army.list": army})}/>)
     }
-    else {
+    else if(!user.warhost.army.complete) {
         elements.push(
             <TerritoryChooser
                 territories={user.warhost.army.territories}
@@ -302,6 +302,47 @@ export function WarhostForm({user}: ForceFormProps) {
                 onChange={(territories) => updateWarhost({"army.territories": territories})}
             />
         )
+
+        const handleBack = (e: MouseEvent | KeyboardEvent) => {
+            e.preventDefault();
+            updateWarhost({
+                "army.list": '',
+                "army.territories": [],
+            });
+        }
+
+        const canProgress =
+            user.warhost.army.territories.length === 2
+            && user.warhost.army.territories
+                .flatMap(t => t.slots)
+                .every(s => s.type != undefined && s.value != undefined);
+
+        const handleNext = (e: MouseEvent | KeyboardEvent) => {
+            e.preventDefault();
+            if(canProgress) {
+                updateWarhost({
+                    "army.complete": true,
+                });
+            }
+        }
+
+        elements.push(
+            <div className="submit-row">
+                <button className="button primary"
+                        onClick={handleBack}
+                        onKeyPress={handleBack}>
+                    <FiChevronLeft/> Back
+                </button>
+                <button className={`button ${canProgress ? 'primary' : 'secondary disabled'}`}
+                        onClick={handleNext}
+                        onKeyPress={handleNext}>
+                    <FiCheck/> Next
+                </button>
+            </div>
+        )
+    }
+    else {
+        elements.push(<p>TODO: Vanguard</p>)
     }
 
 

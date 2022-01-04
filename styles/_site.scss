@@ -74,9 +74,14 @@ td > .button-group {
     font-family: $header-font-family;
     font-size: 1.5rem;
 
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 0.5rem;
+    align-items: center;
+
     a {
       font-family: $body-font-family;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -91,5 +96,16 @@ label.inline {
 
   & > select, & > input, & > textarea, & > .form-error {
     margin: 0;
+  }
+}
+
+.submit-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: left;
+
+  >:nth-child(2n) {
+    justify-self: right;
   }
 }

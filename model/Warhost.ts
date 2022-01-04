@@ -5,6 +5,7 @@ import {army_lists, UnitCategory} from "./WarhostData";
 export interface Army {
     list: string,
     territories: Territory[],
+    complete: boolean,
 }
 
 const armySchema = new Schema<Army>({
@@ -16,7 +17,8 @@ const armySchema = new Schema<Army>({
             type: String,
             value: String,
         })]
-    })]
+    })],
+    complete: Boolean,
 });
 
 export interface Warband {
@@ -58,6 +60,7 @@ export const warhostSchema = new Schema<Warhost>({
 export interface WarhostUpdates {
     "army.list"?: string,
     "army.territories"?: Territory[]
+    "army.complete"?: boolean
 }
 
 export const validUpdateKeys = async (): Promise<{ [key in keyof WarhostUpdates]: yup.AnySchema }> => ({
@@ -74,4 +77,5 @@ export const validUpdateKeys = async (): Promise<{ [key in keyof WarhostUpdates]
             )
         })
     ),
+    "army.complete": yup.boolean()
 });
