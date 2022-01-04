@@ -1,5 +1,6 @@
 {
   "name": "Twilight Kin",
+  "vanguardList": "twilight-kin",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1027.png",
   "alignment": "Evil",
   "units": [
@@ -7,187 +8,216 @@
       "name": "Impalers",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 165
+      },
       "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "165"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
       "name": "Blade Dancers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "125",
-        "Regiment (20)": "190"
-      }
+      "sizes": {
+        "Troop (10)": 125,
+        "Regiment (20)": 190
+      },
+      "options": {}
     },
     {
       "name": "Kindred Tallspears",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "90",
-        "Regiment (20)": "140",
-        "Horde (40)": "230"
-      }
+      "sizes": {
+        "Troop (10)": 90,
+        "Regiment (20)": 140,
+        "Horde (40)": 230
+      },
+      "options": {}
     },
     {
       "name": "Kindred Archers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "140",
-        "Horde (40)": "245"
-      }
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 140,
+        "Horde (40)": 245
+      },
+      "options": {}
     },
     {
       "name": "Twilight Gladestalkers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "130",
-        "Regiment (20)": "175"
-      }
+      "sizes": {
+        "Troop (10)": 130,
+        "Regiment (20)": 175
+      },
+      "options": {}
     },
     {
       "name": "Therennian Sea Guard",
       "type": "Infantry",
       "irregular": true,
-      "options": {
-        "Regiment (20)": "150",
-        "Horde (40)": "260"
-      }
+      "sizes": {
+        "Regiment (20)": 150,
+        "Horde (40)": 260
+      },
+      "options": {}
     },
     {
       "name": "Blade Dancer Neophytes",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "80",
-        "Regiment (20)": "120",
-        "Horde (40)": "200"
-      }
+      "sizes": {
+        "Troop (10)": 80,
+        "Regiment (20)": 120,
+        "Horde (40)": 200
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Gargoyles",
       "type": "Heavy Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "85"
-      }
+      "sizes": {
+        "Troop (10)": 85
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Butchers",
       "type": "Large Infantry",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "120",
-        "Horde (6)": "200"
-      }
+      "sizes": {
+        "Regiment (3)": 120,
+        "Horde (6)": 200
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Shadowhounds",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "120",
-        "Regiment (10)": "185"
-      }
+      "sizes": {
+        "Troop (5)": 120,
+        "Regiment (10)": 185
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Abyssal Horsemen",
       "type": "Cavalry",
       "irregular": false,
-      "options": {
-        "Troop (5)": "155",
-        "Regiment (10)": "240"
-      }
+      "sizes": {
+        "Troop (5)": 155,
+        "Regiment (10)": 240
+      },
+      "options": {}
     },
     {
       "name": "Silverbreeze Cavalry",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "130",
-        "Regiment (10)": "200"
-      }
+      "sizes": {
+        "Troop (5)": 130,
+        "Regiment (10)": 200
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Fiends",
       "type": "Large Cavalry",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "125",
-        "Horde (6)": "210"
-      }
+      "sizes": {
+        "Regiment (3)": 125,
+        "Horde (6)": 210
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Needle-fangs",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "80",
-        "Horde (6)": "130"
-      }
+      "sizes": {
+        "Regiment (3)": 80,
+        "Horde (6)": 130
+      },
+      "options": {}
     },
     {
       "name": "Bolt Thrower",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "90"
-      }
+      "sizes": {
+        "1": 90
+      },
+      "options": {}
     },
     {
       "name": "Dragon Breath",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "90"
-      }
+      "sizes": {
+        "1": 90
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Mind-screech",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "150"
-      }
+      "sizes": {
+        "1": 150
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Shadow-hulk",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "220"
-      }
+      "sizes": {
+        "1": 220
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Banshee",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "140"
-      }
+      "sizes": {
+        "1": 140
+      },
+      "options": {}
     },
     {
       "name": "Cronebound Archfiend",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "305"
-      }
+      "sizes": {
+        "1": 305
+      },
+      "options": {}
     },
     {
       "name": "Twilight Assassin",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 100
+      },
       "options": {
-        "1": "100"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
@@ -195,8 +225,16 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 120
+      },
       "options": {
-        "1": "120"
+        "Screamshard": [
+          5
+        ],
+        "Mount on a Horse": [
+          35
+        ]
       }
     },
     {
@@ -204,8 +242,91 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 95
+      },
       "options": {
-        "1": "95"
+        "Bane Chant (2)": [
+          20
+        ],
+        "Mount on a Horse": [
+          25
+        ],
+        "Veil of Shadows (2) [1]": [
+          25
+        ],
+        "Hex (3)": [
+          15
+        ],
+        "Upgrade to Scepter of Shadows [1]": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3)": [
+          15
+        ],
+        "Library Mindfog (4)": [
+          20
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3)": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3)": [
+          30
+        ],
+        "Library Veil of Shadows [1](4)": [
+          35
+        ],
+        "Library Celestial Restoration [1](2)": [
+          25
+        ],
+        "Library Celestial Restoration [1](3)": [
+          35
+        ],
+        "Library Barkskin [1](5)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](4)": [
+          35
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3)": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3)": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8)": [
+          30
+        ],
+        "Library Host Shadowbeast (10)": [
+          40
+        ]
       }
     },
     {
@@ -213,17 +334,23 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "55"
-      }
+      "sizes": {
+        "1": 55
+      },
+      "options": {}
     },
     {
       "name": "Army Standard Bearer",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 60
+      },
       "options": {
-        "1": "60"
+        "Mount on a Horse": [
+          25
+        ]
       }
     },
     {
@@ -231,8 +358,13 @@
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
+      "sizes": {
+        "1": 165
+      },
       "options": {
-        "1": "165"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
@@ -241,9 +373,10 @@
       "subType": "Cav",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "230"
-      }
+      "sizes": {
+        "1": 230
+      },
+      "options": {}
     },
     {
       "name": "La'theal Bleakheart",
@@ -251,15 +384,17 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "165"
-      }
+      "sizes": {
+        "1": 165
+      },
+      "options": {}
     },
     {
       "name": "The Crew of the Black Hydra",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

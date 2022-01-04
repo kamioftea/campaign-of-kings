@@ -1,5 +1,7 @@
 {
   "name": "Order of the Green Lady",
+  "vanguardList": "brotherhood",
+  "vanguardNotice": "There is no Order of the Green Lady list for Vanguard, so the Brotherhood warband is used instead",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1025.png",
   "alignment": "Neutral",
   "units": [
@@ -7,160 +9,227 @@
       "name": "Men-at-Arms Retainers",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 70,
+        "Regiment (20)": 105,
+        "Horde (40)": 175
+      },
       "options": {
-        "Troop (10)": "70",
-        "Regiment (20)": "105",
-        "Horde (40)": "175"
+        "Vial of Sacred Water": [
+          5
+        ]
       }
     },
     {
       "name": "Order of the Brotherhood on Foot",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 95,
+        "Regiment (20)": 145
+      },
       "options": {
-        "Troop (10)": "95",
-        "Regiment (20)": "145"
+        "Vial of Sacred Water": [
+          5
+        ],
+        "Exchange shields for two-handed weapons": [
+          0
+        ]
       }
     },
     {
       "name": "Naiad Ensnarers",
       "type": "Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "90",
-        "Regiment (20)": "140",
-        "Horde (40)": "230"
-      }
+      "sizes": {
+        "Troop (10)": 90,
+        "Regiment (20)": 140,
+        "Horde (40)": 230
+      },
+      "options": {}
     },
     {
       "name": "Naiad Heartpiercers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "120",
-        "Regiment (20)": "160"
-      }
+      "sizes": {
+        "Troop (10)": 120,
+        "Regiment (20)": 160
+      },
+      "options": {}
     },
     {
       "name": "Order of the Thorn",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 110,
+        "Regiment (20)": 170
+      },
       "options": {
-        "Troop (10)": "110",
-        "Regiment (20)": "170"
+        "Vial of Sacred Water": [
+          5
+        ]
       }
     },
     {
       "name": "Brotherhood Centaurs",
       "type": "Cavalry",
       "irregular": false,
+      "sizes": {
+        "Troop (5)": 105,
+        "Regiment (10)": 160
+      },
       "options": {
-        "Troop (5)": "105",
-        "Regiment (10)": "160"
+        "Vial of Sacred Water": [
+          5
+        ]
       }
     },
     {
       "name": "Centaur Bray Hunters",
       "type": "Cavalry",
       "irregular": false,
-      "options": {
-        "Troop (5)": "105",
-        "Regiment (10)": "165"
-      }
+      "sizes": {
+        "Troop (5)": 105,
+        "Regiment (10)": 165
+      },
+      "options": {}
     },
     {
       "name": "Order of the Brotherhood",
       "type": "Cavalry",
       "irregular": false,
+      "sizes": {
+        "Regiment (10)": 200,
+        "Horde (20)": 340
+      },
       "options": {
-        "Regiment (10)": "200",
-        "Horde (20)": "340"
+        "Vial of Sacred Water": [
+          5
+        ],
+        "Upgrade with the Banner of the Green Lady [1]": [
+          15,
+          20
+        ]
       }
     },
     {
       "name": "Order of Redemption",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "165",
-        "Regiment (10)": "250"
-      }
+      "sizes": {
+        "Troop (5)": 165,
+        "Regiment (10)": 250
+      },
+      "options": {}
     },
     {
       "name": "Water Elementals",
       "type": "Large Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "130",
-        "Horde (6)": "220"
-      }
+      "sizes": {
+        "Regiment (3)": 130,
+        "Horde (6)": 220
+      },
+      "options": {}
     },
     {
       "name": "Earth Elementals",
       "type": "Large Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "130",
-        "Horde (6)": "220"
-      }
+      "sizes": {
+        "Regiment (3)": 130,
+        "Horde (6)": 220
+      },
+      "options": {}
     },
     {
       "name": "Order of the Forsaken",
       "type": "Large Cavalry",
       "irregular": false,
+      "sizes": {
+        "Regiment (3)": 155,
+        "Horde (6)": 255
+      },
       "options": {
-        "Regiment (3)": "155",
-        "Horde (6)": "255"
+        "Vial of Sacred Water": [
+          5
+        ]
       }
     },
     {
       "name": "Woodland Critters",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "80",
-        "Horde (6)": "130"
-      }
+      "sizes": {
+        "Regiment (3)": 80,
+        "Horde (6)": 130
+      },
+      "options": {}
     },
     {
       "name": "Greater Water Elemental",
       "type": "Monster",
       "irregular": false,
+      "sizes": {
+        "1": 180
+      },
       "options": {
-        "1": "180"
+        "Radiance of Life (Sacred Water only)": [
+          15
+        ]
       }
     },
     {
       "name": "Greater Earth Elemental",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "230"
-      }
+      "sizes": {
+        "1": 230
+      },
+      "options": {}
     },
     {
       "name": "Beast of Nature",
       "type": "Monster",
       "irregular": false,
+      "sizes": {
+        "1": 150
+      },
       "options": {
-        "1": "150"
+        "Gain Noxious Mist": [
+          15
+        ],
+        "Upgrade with Wings": [
+          40
+        ],
+        "Increase Attacks to 7": [
+          15
+        ]
       }
     },
     {
       "name": "Pegasus",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "80"
-      }
+      "sizes": {
+        "1": 80
+      },
+      "options": {}
     },
     {
       "name": "Exemplar Redeemer",
       "type": "Hero",
       "subType": "Cav",
       "irregular": false,
+      "sizes": {
+        "1": 180
+      },
       "options": {
-        "1": "180"
+        "Mount on a Winged Unicorn": [
+          25
+        ]
       }
     },
     {
@@ -168,8 +237,16 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 50
+      },
       "options": {
-        "1": "50"
+        "Mount on a Horse": [
+          25
+        ],
+        "Vial of Sacred Water": [
+          5
+        ]
       }
     },
     {
@@ -177,8 +254,82 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 60
+      },
       "options": {
-        "1": "60"
+        "Surge (7)": [
+          25
+        ],
+        "Mount on a Forest Steed": [
+          25
+        ],
+        "Gain Radiance of Life (Sacred Water only)": [
+          15
+        ],
+        "Icy Breath (6)": [
+          20
+        ],
+        "Replace Heal (3) with Icy Breath (6)": [
+          0
+        ],
+        "Bane Chant (2)": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3) (only with Knowledgeable[1])": [
+          15
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Celestial Restoration [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Barkskin [1](5) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8) (only with Knowledgeable[1])": [
+          30
+        ]
       }
     },
     {
@@ -186,17 +337,89 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "50"
-      }
+      "sizes": {
+        "1": 50
+      },
+      "options": {}
     },
     {
       "name": "Druid",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 65
+      },
       "options": {
-        "1": "65"
+        "Lightning Bolt (2)": [
+          10
+        ],
+        "Mount on a Forest Steed": [
+          25
+        ],
+        "Surge (4)": [
+          10
+        ],
+        "Wind Blast (4)": [
+          15
+        ],
+        "Bane Chant (2)": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3) (only with Knowledgeable[1])": [
+          15
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Celestial Restoration [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Barkskin [1](5) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8) (only with Knowledgeable[1])": [
+          30
+        ]
       }
     },
     {
@@ -204,18 +427,20 @@
       "type": "Hero",
       "subType": "Cav",
       "irregular": false,
-      "options": {
-        "1": "120"
-      }
+      "sizes": {
+        "1": 120
+      },
+      "options": {}
     },
     {
       "name": "Naiad Stalker",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "95"
-      }
+      "sizes": {
+        "1": 95
+      },
+      "options": {}
     },
     {
       "name": "Avatar of the Green Lady",
@@ -223,9 +448,10 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "150"
-      }
+      "sizes": {
+        "1": 150
+      },
+      "options": {}
     },
     {
       "name": "Champion of the Green Lady",
@@ -233,15 +459,17 @@
       "subType": "Cav",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "210"
-      }
+      "sizes": {
+        "1": 210
+      },
+      "options": {}
     },
     {
       "name": "The Lurkers in the Lake",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

@@ -1,5 +1,7 @@
 {
   "name": "Riftforged Orcs",
+  "vanguardList": "orc",
+  "vanguardNotice": "There is no Riftforged Orcs list for Vanguard, so the Orc warband is used instead",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1037.png",
   "alignment": "Evil",
   "units": [
@@ -7,205 +9,327 @@
       "name": "Skulks",
       "type": "Heavy Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "85",
-        "Regiment (20)": "110"
-      }
+      "sizes": {
+        "Troop (10)": 85,
+        "Regiment (20)": 110
+      },
+      "options": {}
     },
     {
       "name": "Morax",
       "type": "Heavy Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "115",
-        "Regiment (20)": "175"
-      }
+      "sizes": {
+        "Troop (10)": 115,
+        "Regiment (20)": 175
+      },
+      "options": {}
     },
     {
       "name": "Unforged Orcs",
       "type": "Heavy Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (20)": "115",
-        "Horde (40)": "190"
-      }
+      "sizes": {
+        "Regiment (20)": 115,
+        "Horde (40)": 190
+      },
+      "options": {}
     },
     {
       "name": "Riftforged Legionaries",
       "type": "Heavy Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "100",
-        "Regiment (20)": "150",
-        "Horde (40)": "250"
-      }
+      "sizes": {
+        "Troop (10)": 100,
+        "Regiment (20)": 150,
+        "Horde (40)": 250
+      },
+      "options": {}
     },
     {
       "name": "Reborn Legionaries",
       "type": "Heavy Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "120",
-        "Regiment (20)": "185"
-      }
+      "sizes": {
+        "Troop (10)": 120,
+        "Regiment (20)": 185
+      },
+      "options": {}
     },
     {
       "name": "Riftwalkers",
       "type": "Heavy Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "120",
-        "Regiment (20)": "185"
-      }
+      "sizes": {
+        "Troop (10)": 120,
+        "Regiment (20)": 185
+      },
+      "options": {}
     },
     {
       "name": "Tundra Wolves",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "115",
-        "Regiment (10)": "180"
-      }
+      "sizes": {
+        "Troop (5)": 115,
+        "Regiment (10)": 180
+      },
+      "options": {}
     },
     {
       "name": "Gore Riders",
       "type": "Cavalry",
       "irregular": false,
-      "options": {
-        "Troop (5)": "125",
-        "Regiment (10)": "190"
-      }
+      "sizes": {
+        "Troop (5)": 125,
+        "Regiment (10)": 190
+      },
+      "options": {}
     },
     {
       "name": "Fight Wagons",
       "type": "Chariot",
       "irregular": false,
-      "options": {
-        "Troop (2)": "155",
-        "Regiment (3)": "195",
-        "Horde (4)": "245",
-        "Legion (6)": "285"
-      }
+      "sizes": {
+        "Troop (2)": 155,
+        "Regiment (3)": 195,
+        "Horde (4)": 245,
+        "Legion (6)": 285
+      },
+      "options": {}
     },
     {
       "name": "Helstrikers",
       "type": "Large Cavalry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "160",
-        "Horde (6)": "265"
-      }
+      "sizes": {
+        "Regiment (3)": 160,
+        "Horde (6)": 265
+      },
+      "options": {}
     },
     {
       "name": "Storm Giant",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "240"
-      }
+      "sizes": {
+        "1": 240
+      },
+      "options": {}
     },
     {
       "name": "Stormforged Shrine",
       "type": "Titan",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "240"
-      }
+      "sizes": {
+        "1": 190
+      },
+      "options": {}
     },
     {
       "name": "Thunderseers",
       "type": "Monstrous Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (3)": 135,
+        "Horde (6)": 225
+      },
       "options": {
-        "Regiment (3)": "135",
-        "Horde (6)": "225"
+        "Visions from the Rift [2]": [
+          10
+        ]
       }
     },
     {
       "name": "Stormslayer",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "130"
-      }
+      "sizes": {
+        "1": 130
+      },
+      "options": {}
     },
     {
       "name": "Ambarox",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "115"
-      }
+      "sizes": {
+        "1": 115
+      },
+      "options": {}
     },
     {
       "name": "Orclings",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "60",
-        "Horde (6)": "100"
-      }
+      "sizes": {
+        "Regiment (3)": 60,
+        "Horde (6)": 100
+      },
+      "options": {}
     },
     {
       "name": "Flagger",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "50"
-      }
+      "sizes": {
+        "1": 50
+      },
+      "options": {}
     },
     {
       "name": "Stormbringer",
       "type": "Hero (Hv Inf)",
       "irregular": false,
+      "sizes": {
+        "1": 100
+      },
       "options": {
-        "1": "100"
+        "Upgrade with a Mount": [
+          35
+        ],
+        "Gain Stormstrike": [
+          10
+        ]
       }
     },
     {
       "name": "Stormcaller",
       "type": "Hero (Hv Inf)",
       "irregular": false,
+      "sizes": {
+        "1": 85
+      },
       "options": {
-        "1": "85"
+        "Icy Breath (8)": [
+          25
+        ],
+        "Blizzard (3) [1]": [
+          40
+        ],
+        "Bane Chant (2)": [
+          20
+        ],
+        "Upgrade with a Mount": [
+          25
+        ],
+        "Replace Lightning Bolt (4) with Icy Breath (8)": [
+          0
+        ],
+        "Veil of Shadows (3) [1]": [
+          30
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3)": [
+          15
+        ],
+        "Library Mindfog (4) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3)": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3)": [
+          30
+        ],
+        "Library Veil of Shadows [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Celestial Restoration [1](2)": [
+          25
+        ],
+        "Library Celestial Restoration [1](3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Barkskin [1](5)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3)": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3)": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8)": [
+          30
+        ],
+        "Library Host Shadowbeast (10) (only with Knowledgeable[1])": [
+          40
+        ]
       }
     },
     {
       "name": "Riftforger",
       "type": "Hero (Hv Inf)",
       "irregular": false,
-      "options": {
-        "1": "50"
-      }
+      "sizes": {
+        "1": 50
+      },
+      "options": {}
     },
     {
       "name": "Stormbringer on Winged Slasher",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "295"
-      }
+      "sizes": {
+        "1": 295
+      },
+      "options": {}
     },
     {
       "name": "Stormbringer on Helstrike Manticore",
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
-      "options": {
-        "1": "160"
-      }
+      "sizes": {
+        "1": 160
+      },
+      "options": {}
     },
     {
       "name": "Vohdler",
       "type": "Hero (Mon-Inf)",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "190"
-      }
+      "sizes": {
+        "1": 190
+      },
+      "options": {}
     },
     {
       "name": "Thonaar",
@@ -213,15 +337,17 @@
       "subType": "Cav",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "170"
-      }
+      "sizes": {
+        "1": 170
+      },
+      "options": {}
     },
     {
       "name": "The Iron Boots",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

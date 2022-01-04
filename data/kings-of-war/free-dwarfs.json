@@ -1,5 +1,7 @@
 {
   "name": "Free Dwarfs",
+  "vanguardList": "dwarf",
+  "vanguardNotice": "There is no Free Dwarfs list for Vanguard, so the Dwarf warband is used instead",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1024.png",
   "alignment": "Good",
   "units": [
@@ -8,12 +10,12 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "80",
-        "Regiment (20)": "120"
+        "Troop (10)": 80,
+        "Regiment (20)": 120
       },
       "options": {
         "Throwing Mastiff": [
-          "15"
+          15
         ]
       }
     },
@@ -22,18 +24,18 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "85",
-        "Regiment (20)": "130",
-        "Horde (40)": "215"
+        "Troop (10)": 85,
+        "Regiment (20)": 130,
+        "Horde (40)": 215
       },
       "options": {
         "Throwing Mastiff": [
-          "15"
+          15
         ],
         "Gain Scout": [
-          "5",
-          "10",
-          "15"
+          5,
+          10,
+          15
         ]
       }
     },
@@ -42,13 +44,13 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "70",
-        "Regiment (20)": "110",
-        "Horde (40)": "180"
+        "Troop (10)": 70,
+        "Regiment (20)": 110,
+        "Horde (40)": 180
       },
       "options": {
         "Throwing Mastiff": [
-          "15"
+          15
         ]
       }
     },
@@ -57,13 +59,13 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "105",
-        "Regiment (20)": "165"
+        "Troop (10)": 105,
+        "Regiment (20)": 165
       },
       "options": {
         "Gain Pathfinder": [
-          "10",
-          "15"
+          10,
+          15
         ]
       }
     },
@@ -72,9 +74,9 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "115",
-        "Regiment (20)": "150",
-        "Horde (40)": "265"
+        "Troop (10)": 115,
+        "Regiment (20)": 150,
+        "Horde (40)": 265
       },
       "options": {}
     },
@@ -83,9 +85,9 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "100",
-        "Regiment (20)": "135",
-        "Horde (40)": "235"
+        "Troop (10)": 100,
+        "Regiment (20)": 135,
+        "Horde (40)": 235
       },
       "options": {}
     },
@@ -94,15 +96,15 @@
       "type": "Infantry",
       "irregular": false,
       "sizes": {
-        "Troop (10)": "140",
-        "Regiment (20)": "185"
+        "Troop (10)": 140,
+        "Regiment (20)": 185
       },
       "options": {
-        "Upgrade to Herneas's Handpicked Rangers [1] (Regiment only)": [
-          "15"
+        "Upgrade to Hearneas' Handpicked Rangers [1] (Regiment only)": [
+          15
         ],
         "Throwing Mastiff": [
-          "15"
+          15
         ]
       }
     },
@@ -111,17 +113,17 @@
       "type": "Cavalry",
       "irregular": false,
       "sizes": {
-        "Troop (5)": "125",
-        "Regiment (10)": "195"
+        "Troop (5)": 125,
+        "Regiment (10)": 195
       },
       "options": {
-        "Gain the ranged attack - Throwing Axes: 12\", Att: |T:6/R:12|, Ra: 5+, Steady Aim": [
-          "10",
-          "20"
+        "Gain Throwing Axes": [
+          10,
+          20
         ],
         "Gain Pathfinder": [
-          "10",
-          "15"
+          10,
+          15
         ]
       }
     },
@@ -130,8 +132,8 @@
       "type": "Large Infantry",
       "irregular": false,
       "sizes": {
-        "Regiment (3)": "130",
-        "Horde (6)": "220"
+        "Regiment (3)": 130,
+        "Horde (6)": 220
       },
       "options": {}
     },
@@ -140,11 +142,11 @@
       "type": "Swarm",
       "irregular": true,
       "sizes": {
-        "Regiment (3)": "65"
+        "Regiment (3)": 65
       },
       "options": {
         "Throwing Mastiff": [
-          "15"
+          15
         ]
       }
     },
@@ -153,11 +155,11 @@
       "type": "War Engine",
       "irregular": false,
       "sizes": {
-        "1": "110"
+        "1": 110
       },
       "options": {
-        "Upgrade with Jarrun Iremonger [1] - Gaining Aura (Iron Resolve - War Engines only) and Shattering with both the Blast It! And Lob It! Attacks": [
-          "10"
+        "Upgrade with Jarrun Iremonger [1]": [
+          10
         ]
       }
     },
@@ -166,7 +168,7 @@
       "type": "War Engine",
       "irregular": false,
       "sizes": {
-        "1": "110"
+        "1": 110
       },
       "options": {}
     },
@@ -175,11 +177,11 @@
       "type": "Titan",
       "irregular": false,
       "sizes": {
-        "1": "230"
+        "1": 230
       },
       "options": {
-        "Upgrade to Craggoth & Kholearm [1] - gaining Spellcaster: 0, the Flamesmith keyword, the Inspiring (Self) and Scout special rules, and Fireball (10) spell": [
-          "25"
+        "Upgrade to Craggoth & Kholearm [1]": [
+          25
         ]
       }
     },
@@ -189,11 +191,11 @@
       "subType": "Inf",
       "irregular": false,
       "sizes": {
-        "1": "105"
+        "1": 105
       },
       "options": {
-        "Lord's Jewel [1] - Gain Aura (Iron Resolve - Dwarf only)": [
-          "15"
+        "Lord's Jewel [1]": [
+          15
         ]
       }
     },
@@ -203,89 +205,89 @@
       "subType": "Inf",
       "irregular": false,
       "sizes": {
-        "1": "90"
+        "1": 90
       },
       "options": {
-        "Bane Chant (2)": [
-          "20"
-        ],
         "Martyr's Prayer (7) [1]": [
-          "35"
+          35
+        ],
+        "Bane Chant (2)": [
+          20
         ],
         "Alchemist Curse [1] (3)": [
-          "30"
+          30
         ],
         "Alchemist Curse [1] (3) if exhanged with Surge (8)": [
-          "0"
+          0
         ],
         "Knowledgeable [1] - Spellcaster tier +1": [
-          "10"
+          10
         ],
         "Incantation of the Tempest [1]": [
-          "10"
+          10
         ],
         "Library Mindfog (2)": [
-          "10"
+          10
         ],
         "Library Mindfog (3)": [
-          "15"
+          15
         ],
         "Library Mindfog (4) (only with Knowledgeable[1])": [
-          "20"
+          20
         ],
         "Library Hex (2)": [
-          "15"
+          15
         ],
         "Library Hex (3)": [
-          "20"
+          20
         ],
         "Library Veil of Shadows [1](2)": [
-          "25"
+          25
         ],
         "Library Veil of Shadows [1](3)": [
-          "30"
+          30
         ],
         "Library Veil of Shadows [1](4) (only with Knowledgeable[1])": [
-          "35"
+          35
         ],
         "Library Celestial Restoration [1](2)": [
-          "25"
+          25
         ],
         "Library Celestial Restoration [1](3) (only with Knowledgeable[1])": [
-          "35"
+          35
         ],
         "Library Barkskin [1](5)": [
-          "25"
+          25
         ],
         "Library Alchemist's Curse [1](0)": [
-          "15"
+          15
         ],
         "Library Alchemist's Curse [1](2)": [
-          "25"
+          25
         ],
         "Library Alchemist's Curse [1](4) (only with Knowledgeable[1])": [
-          "35"
+          35
         ],
         "Library Wither and Perish (2)": [
-          "25"
+          25
         ],
         "Library Wither and Perish (3)": [
-          "35"
+          35
         ],
         "Library Scorched Earth (2)": [
-          "20"
+          20
         ],
         "Library Scorched Earth (3)": [
-          "30"
+          30
         ],
         "Library Host Shadowbeast (6)": [
-          "20"
+          20
         ],
         "Library Host Shadowbeast (8)": [
-          "30"
+          30
         ],
         "Library Host Shadowbeast (10) (only with Knowledgeable[1])": [
-          "40"
+          40
         ]
       }
     },
@@ -295,7 +297,7 @@
       "subType": "Inf",
       "irregular": false,
       "sizes": {
-        "1": "90"
+        "1": 90
       },
       "options": {}
     },
@@ -305,7 +307,7 @@
       "subType": "Inf",
       "irregular": false,
       "sizes": {
-        "1": "100"
+        "1": 100
       },
       "options": {}
     },
@@ -315,7 +317,7 @@
       "subType": "LrgCav",
       "irregular": false,
       "sizes": {
-        "1": "200"
+        "1": 200
       },
       "options": {}
     },
@@ -325,11 +327,11 @@
       "subType": "Inf",
       "irregular": false,
       "sizes": {
-        "1": "110"
+        "1": 110
       },
       "options": {
-        "Mount on a Brock, losing Wild Charge (D3) but increasing Speed to 8 and changing to Hero (Cav - Height: 3)": [
-          "30"
+        "Mount on a Brock": [
+          30
         ]
       }
     },
@@ -339,7 +341,7 @@
       "subType": "Inf",
       "irregular": false,
       "sizes": {
-        "1": "50"
+        "1": 50
       },
       "options": {}
     },
@@ -350,7 +352,7 @@
       "unique": "1",
       "irregular": false,
       "sizes": {
-        "1": "210"
+        "1": 210
       },
       "options": {}
     },
@@ -361,7 +363,7 @@
       "unique": "1",
       "irregular": false,
       "sizes": {
-        "1": "135"
+        "1": 135
       },
       "options": {}
     },
@@ -372,7 +374,7 @@
       "unique": "1",
       "irregular": false,
       "sizes": {
-        "1": "150"
+        "1": 150
       },
       "options": {}
     },
@@ -383,7 +385,7 @@
       "unique": "1",
       "irregular": false,
       "sizes": {
-        "1": "135"
+        "1": 135
       },
       "options": {}
     },

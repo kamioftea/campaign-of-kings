@@ -1,5 +1,6 @@
 {
   "name": "Nightstalkers",
+  "vanguardList": "nightstalkers",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1022.png",
   "alignment": "Evil",
   "units": [
@@ -7,149 +8,189 @@
       "name": "Scarecrows",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (20)": 80,
+        "Horde (40)": 130,
+        "Legion (60)": 190
+      },
       "options": {
-        "Regiment (20)": "80",
-        "Horde (40)": "130",
-        "Legion (60)": "190"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
       "name": "Doppelgangers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (20)": "145"
-      }
+      "sizes": {
+        "Regiment (20)": 145
+      },
+      "options": {}
     },
     {
       "name": "Blood Worms",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (20)": "120",
-        "Horde (40)": "200",
-        "Legion (60)": "290"
-      }
+      "sizes": {
+        "Regiment (20)": 120,
+        "Horde (40)": 200,
+        "Legion (60)": 290
+      },
+      "options": {}
     },
     {
       "name": "Reapers",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 135,
+        "Regiment (20)": 210
+      },
       "options": {
-        "Troop (10)": "135",
-        "Regiment (20)": "210"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
       "name": "Phantoms",
       "type": "Heavy Infantry",
       "irregular": true,
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 160
+      },
       "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "160"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
       "name": "Spectres",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "90",
-        "Regiment (20)": "120",
-        "Horde (40)": "200"
-      }
+      "sizes": {
+        "Troop (10)": 90,
+        "Regiment (20)": 120,
+        "Horde (40)": 200
+      },
+      "options": {}
     },
     {
       "name": "Shadowhounds",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "125",
-        "Regiment (10)": "190"
-      }
+      "sizes": {
+        "Troop (5)": 125,
+        "Regiment (10)": 190
+      },
+      "options": {}
     },
     {
       "name": "Needle-fangs",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "80",
-        "Horde (6)": "135"
-      }
+      "sizes": {
+        "Regiment (3)": 80,
+        "Horde (6)": 135
+      },
+      "options": {}
     },
     {
       "name": "Butchers",
       "type": "Large Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "125",
-        "Horde (6)": "205"
-      }
+      "sizes": {
+        "Regiment (3)": 125,
+        "Horde (6)": 205
+      },
+      "options": {}
     },
     {
       "name": "Mind-screech",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "150"
-      }
+      "sizes": {
+        "1": 150
+      },
+      "options": {}
     },
     {
       "name": "Planar Apparition",
       "type": "Monster",
       "irregular": false,
+      "sizes": {
+        "1": 165
+      },
       "options": {
-        "1": "165"
+        "Bastion (2) [1]": [
+          20
+        ],
+        "Icy Breath (8)": [
+          25
+        ]
       }
     },
     {
       "name": "Horror Riftweavers",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "110"
-      }
+      "sizes": {
+        "1": 110
+      },
+      "options": {}
     },
     {
       "name": "Fiends",
       "type": "Large Cavalry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "130",
-        "Horde (6)": "215"
-      }
+      "sizes": {
+        "Regiment (3)": 130,
+        "Horde (6)": 215
+      },
+      "options": {}
     },
     {
       "name": "Soulflayers",
       "type": "Large Cavalry",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "165"
-      }
+      "sizes": {
+        "Regiment (3)": 165
+      },
+      "options": {}
     },
     {
       "name": "Terror",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "250"
-      }
+      "sizes": {
+        "1": 250
+      },
+      "options": {}
     },
     {
       "name": "Shadow-hulk",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "225"
-      }
+      "sizes": {
+        "1": 225
+      },
+      "options": {}
     },
     {
       "name": "Portal of Despair",
       "type": "Titan",
       "unique": "1",
       "irregular": false,
+      "sizes": {
+        "1": 90
+      },
       "options": {
-        "1": "90"
+        "Gain Radiance of Life": [
+          35
+        ]
       }
     },
     {
@@ -157,26 +198,33 @@
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
-      "options": {
-        "1": "135"
-      }
+      "sizes": {
+        "1": 135
+      },
+      "options": {}
     },
     {
       "name": "Void Lurker",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "270"
-      }
+      "sizes": {
+        "1": 270
+      },
+      "options": {}
     },
     {
       "name": "Shade",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 135
+      },
       "options": {
-        "1": "135"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
@@ -184,8 +232,79 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 65
+      },
       "options": {
-        "1": "65"
+        "Weakness (2)": [
+          15
+        ],
+        "Mind Fog (2)": [
+          15
+        ],
+        "Aura (Vicious (Melee) - Infantry only)": [
+          30
+        ],
+        "Replace Lightning Bolt (3) with Bane Chant (2)": [
+          0
+        ],
+        "Bane Chant (2)": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3) (only with Knowledgeable[1])": [
+          15
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Celestial Restoration [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Barkskin [1](5) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8) (only with Knowledgeable[1])": [
+          30
+        ]
       }
     },
     {
@@ -193,17 +312,23 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "145"
-      }
+      "sizes": {
+        "1": 145
+      },
+      "options": {}
     },
     {
       "name": "Reaper Souldrinker",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 80
+      },
       "options": {
-        "1": "80"
+        "Screamshard": [
+          5
+        ]
       }
     },
     {
@@ -211,18 +336,20 @@
       "type": "Hero (Hv Inf)",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "195"
-      }
+      "sizes": {
+        "1": 195
+      },
+      "options": {}
     },
     {
       "name": "Butcher Fleshripper",
       "type": "Hero",
       "subType": "LrgInf",
       "irregular": false,
-      "options": {
-        "1": "110"
-      }
+      "sizes": {
+        "1": 110
+      },
+      "options": {}
     },
     {
       "name": "Esenyshra, the Wailing Shadow",
@@ -230,15 +357,17 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "160"
-      }
+      "sizes": {
+        "1": 160
+      },
+      "options": {}
     },
     {
       "name": "Beaststalker Doomhounds",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

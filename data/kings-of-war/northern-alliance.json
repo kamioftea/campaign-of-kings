@@ -1,5 +1,6 @@
 {
   "name": "Northern Alliance",
+  "vanguardList": "northern-alliance",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1023.png",
   "alignment": "Good",
   "units": [
@@ -7,150 +8,195 @@
       "name": "Human Clansmen",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 80,
+        "Regiment (20)": 120,
+        "Horde (40)": 200
+      },
       "options": {
-        "Troop (10)": "80",
-        "Regiment (20)": "120",
-        "Horde (40)": "200"
+        "Upgrade to Norj-Bik Clansmen (cannot take with two-handed weapons)": [
+          10,
+          15,
+          25
+        ],
+        "Exchange shields for two-handed weapons": [
+          0
+        ]
       }
     },
     {
       "name": "Dwarf Clansmen",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 75,
+        "Regiment (20)": 115
+      },
       "options": {
-        "Troop (10)": "75",
-        "Regiment (20)": "115"
+        "Exchange shields for two-handed Frost Hammers": [
+          0
+        ]
       }
     },
     {
       "name": "Half-Elf Berserkers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "115",
-        "Regiment (20)": "180"
-      }
+      "sizes": {
+        "Troop (10)": 115,
+        "Regiment (20)": 180
+      },
+      "options": {}
     },
     {
       "name": "Ice Naiads",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "90",
-        "Regiment (20)": "140",
-        "Horde (40)": "230"
-      }
+      "sizes": {
+        "Troop (10)": 90,
+        "Regiment (20)": 140,
+        "Horde (40)": 230
+      },
+      "options": {}
     },
     {
       "name": "Huscarls",
       "type": "Heavy Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "145",
-        "Regiment (20)": "225"
-      }
+      "sizes": {
+        "Troop (10)": 145,
+        "Regiment (20)": 225
+      },
+      "options": {}
     },
     {
       "name": "Pack Hunters",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 110,
+        "Regiment (20)": 145
+      },
       "options": {
-        "Troop (10)": "110",
-        "Regiment (20)": "145"
+        "Exchange Shortbows for Javelins: 12\"": [
+          5,
+          10
+        ]
       }
     },
     {
       "name": "Elf Clansmen",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "140"
-      }
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 140
+      },
+      "options": {}
     },
     {
       "name": "Ice Kin Hunters",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "135",
-        "Regiment (20)": "180"
-      }
+      "sizes": {
+        "Troop (10)": 135,
+        "Regiment (20)": 180
+      },
+      "options": {}
     },
     {
       "name": "Snow Foxes",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "80"
-      }
+      "sizes": {
+        "Regiment (3)": 80
+      },
+      "options": {}
     },
     {
       "name": "Ice Elementals",
       "type": "Large Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "145",
-        "Horde (6)": "240"
-      }
+      "sizes": {
+        "Regiment (3)": 145,
+        "Horde (6)": 240
+      },
+      "options": {}
     },
     {
       "name": "Tundra Wolves",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "115",
-        "Regiment (10)": "180"
-      }
+      "sizes": {
+        "Troop (5)": 115,
+        "Regiment (10)": 180
+      },
+      "options": {}
     },
     {
       "name": "Snow Trolls",
       "type": "Monstrous Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "130",
-        "Horde (6)": "220"
-      }
+      "sizes": {
+        "Regiment (3)": 130,
+        "Horde (6)": 220
+      },
+      "options": {}
     },
     {
       "name": "Frostfang Cavalry",
       "type": "Large Cavalry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "160",
-        "Horde (6)": "265"
-      }
+      "sizes": {
+        "Regiment (3)": 160,
+        "Horde (6)": 265
+      },
+      "options": {}
     },
     {
       "name": "Cavern Dweller",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "210"
-      }
+      "sizes": {
+        "1": 210
+      },
+      "options": {}
     },
     {
       "name": "Frost Giant",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "230"
-      }
+      "sizes": {
+        "1": 230
+      },
+      "options": {}
     },
     {
       "name": "Ice Kin Bolt Thrower",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "95"
-      }
+      "sizes": {
+        "1": 95
+      },
+      "options": {}
     },
     {
       "name": "Lord",
       "type": "Hero (Hv Inf)",
       "irregular": false,
+      "sizes": {
+        "1": 110
+      },
       "options": {
-        "1": "110"
+        "Horn of Winter [1]": [
+          10
+        ],
+        "Snow Fox": [
+          10
+        ],
+        "Mount on a Horse": [
+          35
+        ]
       }
     },
     {
@@ -158,25 +204,39 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "115"
-      }
+      "sizes": {
+        "1": 115
+      },
+      "options": {}
     },
     {
       "name": "Thegn on Frostfang",
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
+      "sizes": {
+        "1": 125
+      },
       "options": {
-        "1": "125"
+        "Snow Fox": [
+          10
+        ]
       }
     },
     {
       "name": "Thegn",
       "type": "Hero (Hv Inf)",
       "irregular": false,
+      "sizes": {
+        "1": 50
+      },
       "options": {
-        "1": "50"
+        "Talanaar's Standard [1]": [
+          15
+        ],
+        "Snow Fox": [
+          10
+        ]
       }
     },
     {
@@ -184,8 +244,13 @@
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
+      "sizes": {
+        "1": 190
+      },
       "options": {
-        "1": "190"
+        "Snow Fox": [
+          10
+        ]
       }
     },
     {
@@ -193,8 +258,97 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 80
+      },
       "options": {
-        "1": "80"
+        "Heal (5)": [
+          35
+        ],
+        "Surge (8)": [
+          30
+        ],
+        "Wind Blast (6)": [
+          25
+        ],
+        "Blizzard (2) [1]": [
+          30
+        ],
+        "Replace Icy Breath (10) with Surge (8)": [
+          0
+        ],
+        "Bane Chant (2)": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3)": [
+          15
+        ],
+        "Library Mindfog (4) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3)": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3)": [
+          30
+        ],
+        "Library Veil of Shadows [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Celestial Restoration [1](2)": [
+          25
+        ],
+        "Library Celestial Restoration [1](3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Barkskin [1](5)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3)": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3)": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8)": [
+          30
+        ],
+        "Library Host Shadowbeast (10) (only with Knowledgeable[1])": [
+          40
+        ]
       }
     },
     {
@@ -202,35 +356,39 @@
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "310"
-      }
+      "sizes": {
+        "1": 310
+      },
+      "options": {}
     },
     {
       "name": "Ice Blade",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "105"
-      }
+      "sizes": {
+        "1": 105
+      },
+      "options": {}
     },
     {
       "name": "Snow Troll Prime",
       "type": "Hero",
       "subType": "Mon",
       "irregular": false,
-      "options": {
-        "1": "120"
-      }
+      "sizes": {
+        "1": 120
+      },
+      "options": {}
     },
     {
       "name": "Skald",
       "type": "Hero (Hv Inf)",
       "irregular": false,
-      "options": {
-        "1": "55"
-      }
+      "sizes": {
+        "1": 55
+      },
+      "options": {}
     },
     {
       "name": "Orlaf the Barbarian",
@@ -238,9 +396,10 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "135"
-      }
+      "sizes": {
+        "1": 135
+      },
+      "options": {}
     },
     {
       "name": "Clarion",
@@ -248,9 +407,10 @@
       "subType": "Cav",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "115"
-      }
+      "sizes": {
+        "1": 115
+      },
+      "options": {}
     },
     {
       "name": "Hrimm, Legendary Ice Giant",
@@ -258,9 +418,10 @@
       "subType": "Ttn",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "260"
-      }
+      "sizes": {
+        "1": 260
+      },
+      "options": {}
     },
     {
       "name": "Serakina, the Ice Queen",
@@ -268,15 +429,17 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "130"
-      }
+      "sizes": {
+        "1": 130
+      },
+      "options": {}
     },
     {
       "name": "Orlaf's Raiders",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

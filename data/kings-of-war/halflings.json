@@ -1,5 +1,7 @@
 {
   "name": "Halflings",
+  "vanguardList": "league-of-rhodia",
+  "vanguardNotice": "There is no Halflings list for Vanguard, so the League of Rhodia warband is used instead",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/36.png",
   "alignment": "Neutral",
   "units": [
@@ -7,151 +9,224 @@
       "name": "Braves",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (20)": 80,
+        "Horde (40)": 130,
+        "Legion (60)": 190
+      },
       "options": {
-        "Regiment (20)": "80",
-        "Horde (40)": "130",
-        "Legion (60)": "190"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Spearspikes",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (20)": 100,
+        "Horde (40)": 165
+      },
       "options": {
-        "Regiment (20)": "100",
-        "Horde (40)": "165"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Stalwarts",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 75,
+        "Regiment (20)": 115,
+        "Horde (40)": 190
+      },
       "options": {
-        "Troop (10)": "75",
-        "Regiment (20)": "115",
-        "Horde (40)": "190"
+        "Relentless": [
+          5
+        ],
+        "Exchange shields for two-handed weapons": [
+          0
+        ]
       }
     },
     {
       "name": "Poachers",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 140
+      },
       "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "140"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Halfling Rifles",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 80,
+        "Regiment (20)": 115,
+        "Horde (40)": 200
+      },
       "options": {
-        "Troop (10)": "80",
-        "Regiment (20)": "115",
-        "Horde (40)": "200"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Juggers",
       "type": "Cavalry",
       "irregular": false,
+      "sizes": {
+        "Troop (5)": 125,
+        "Regiment (10)": 190,
+        "Horde (20)": 325
+      },
       "options": {
-        "Troop (5)": "125",
-        "Regiment (10)": "190",
-        "Horde (20)": "325"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Wild Lancers",
       "type": "Cavalry",
       "irregular": false,
+      "sizes": {
+        "Troop (5)": 100,
+        "Regiment (10)": 155,
+        "Horde (20)": 265
+      },
       "options": {
-        "Troop (5)": "100",
-        "Regiment (10)": "155",
-        "Horde (20)": "265"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Wild Runners",
       "type": "Cavalry",
       "irregular": false,
+      "sizes": {
+        "Troop (5)": 95,
+        "Regiment (10)": 145
+      },
       "options": {
-        "Troop (5)": "95",
-        "Regiment (10)": "145"
+        "Relentless": [
+          5
+        ],
+        "Exchange Shortbows for Blackpowder Weapons": [
+          10,
+          15
+        ]
       }
     },
     {
       "name": "Ej Grenadiers",
       "type": "Large Infantry",
       "irregular": true,
+      "sizes": {
+        "Regiment (3)": 105
+      },
       "options": {
-        "Regiment (3)": "105"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Forest Troll Gunners",
       "type": "Large Infantry",
       "irregular": true,
+      "sizes": {
+        "Regiment (3)": 140,
+        "Horde (6)": 230
+      },
       "options": {
-        "Regiment (3)": "140",
-        "Horde (6)": "230"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
       "name": "Forest Trolls",
       "type": "Large Infantry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "125",
-        "Horde (6)": "205"
-      }
+      "sizes": {
+        "Regiment (3)": 125,
+        "Horde (6)": 205
+      },
+      "options": {}
     },
     {
       "name": "Aeronauts",
       "type": "Large Cavalry",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "175"
-      }
+      "sizes": {
+        "Regiment (3)": 175
+      },
+      "options": {}
     },
     {
       "name": "Volley Gun",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "85"
-      }
+      "sizes": {
+        "1": 85
+      },
+      "options": {}
     },
     {
       "name": "Howitzer",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "90"
-      }
+      "sizes": {
+        "1": 90
+      },
+      "options": {}
     },
     {
       "name": "Harvester",
       "type": "Monster",
+      "subType": "Cht",
       "irregular": false,
-      "options": {
-        "1": "140"
-      }
+      "sizes": {
+        "1": 140
+      },
+      "options": {}
     },
     {
       "name": "Iron Beast",
       "type": "Titan",
       "irregular": false,
+      "sizes": {
+        "1": 210
+      },
       "options": {
-        "1": "210"
+        "Pride of the Shires [1]": [
+          30
+        ]
       }
     },
     {
       "name": "Sauceror",
       "type": "Hero (Hv Inf)",
       "irregular": false,
+      "sizes": {
+        "1": 80
+      },
       "options": {
-        "1": "80"
+        "Mount on a miniature aralez": [
+          25
+        ]
       }
     },
     {
@@ -159,8 +234,22 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 75
+      },
       "options": {
-        "1": "75"
+        "Aura (Wild charge(+1) - Tinker only)": [
+          10
+        ],
+        "Radiance of Life (Tinker only)": [
+          15
+        ],
+        "Swap Halfling Carbine for Halfling Long Rifle": [
+          15
+        ],
+        "Gadgets and Gizmos [1]": [
+          5
+        ]
       }
     },
     {
@@ -168,8 +257,25 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 55
+      },
       "options": {
-        "1": "55"
+        "Relentless": [
+          5
+        ],
+        "Gain Scout (This cannot be in addition to the mount)": [
+          10
+        ],
+        "Mount on a miniature aralez": [
+          25
+        ],
+        "Gain Bow": [
+          10
+        ],
+        "The Standard of Hodenburg [1]": [
+          25
+        ]
       }
     },
     {
@@ -177,25 +283,39 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 80
+      },
       "options": {
-        "1": "80"
+        "Relentless": [
+          5
+        ],
+        "Mount on a miniature aralez": [
+          35
+        ]
       }
     },
     {
       "name": "Feast Master",
       "type": "Hero (Hv Inf)",
       "irregular": false,
-      "options": {
-        "1": "90"
-      }
+      "sizes": {
+        "1": 90
+      },
+      "options": {}
     },
     {
       "name": "Muster Captain on Winged Aralez",
       "type": "Hero",
       "subType": "Mon",
       "irregular": false,
+      "sizes": {
+        "1": 195
+      },
       "options": {
-        "1": "195"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
@@ -203,8 +323,13 @@
       "type": "Hero",
       "subType": "LrgInf",
       "irregular": false,
+      "sizes": {
+        "1": 130
+      },
       "options": {
-        "1": "130"
+        "Relentless": [
+          5
+        ]
       }
     },
     {
@@ -212,33 +337,37 @@
       "type": "Hero (Hv Inf)",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "110"
-      }
+      "sizes": {
+        "1": 110
+      },
+      "options": {}
     },
     {
       "name": "Greedyguts",
       "type": "Hero (Hv Inf)",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "115"
-      }
+      "sizes": {
+        "1": 115
+      },
+      "options": {}
     },
     {
       "name": "Ally McSween",
       "type": "Hero (Hv Inf)",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "105"
-      }
+      "sizes": {
+        "1": 105
+      },
+      "options": {}
     },
     {
       "name": "McSween's Cutthroats",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

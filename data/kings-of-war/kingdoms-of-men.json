@@ -1,5 +1,6 @@
 {
   "name": "Kingdoms of Men",
+  "vanguardList": "kingdoms-of-men",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/3.png",
   "alignment": "Neutral",
   "units": [
@@ -7,176 +8,246 @@
       "name": "Shield Wall",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 65,
+        "Regiment (20)": 100,
+        "Horde (40)": 165
+      },
       "options": {
-        "Troop (10)": "65",
-        "Regiment (20)": "100",
-        "Horde (40)": "165"
+        "Indomitable Will": [
+          10
+        ]
       }
     },
     {
       "name": "Pole-Arms Block",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (20)": 105,
+        "Horde (40)": 175
+      },
       "options": {
-        "Regiment (20)": "105",
-        "Horde (40)": "175"
+        "Indomitable Will": [
+          10
+        ]
       }
     },
     {
       "name": "Spear Phalanx",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (20)": 120,
+        "Horde (40)": 200
+      },
       "options": {
-        "Regiment (20)": "120",
-        "Horde (40)": "200"
+        "Indomitable Will": [
+          10
+        ],
+        "Exchange Spears for Pikes": [
+          20,
+          30
+        ]
       }
     },
     {
       "name": "Foot Guard",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 90,
+        "Regiment (20)": 135,
+        "Horde (40)": 225
+      },
       "options": {
-        "Troop (10)": "90",
-        "Regiment (20)": "135",
-        "Horde (40)": "225"
+        "Indomitable Will": [
+          10
+        ],
+        "Exchange shields for two-handed weapons": [
+          0
+        ]
       }
     },
     {
       "name": "Militia Mob",
       "type": "Infantry",
       "irregular": true,
-      "options": {
-        "Regiment (20)": "60",
-        "Horde (40)": "105",
-        "Legion (60)": "155"
-      }
+      "sizes": {
+        "Regiment (20)": 65,
+        "Horde (40)": 105,
+        "Legion (60)": 155
+      },
+      "options": {}
     },
     {
       "name": "Fanatics",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "95",
-        "Regiment (20)": "145",
-        "Horde (40)": "240"
-      }
+      "sizes": {
+        "Troop (10)": 95,
+        "Regiment (20)": 145,
+        "Horde (40)": 240
+      },
+      "options": {}
     },
     {
       "name": "Bowmen",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "75",
-        "Regiment (20)": "100",
-        "Horde (40)": "175"
-      }
+      "sizes": {
+        "Troop (10)": 75,
+        "Regiment (20)": 100,
+        "Horde (40)": 175
+      },
+      "options": {}
     },
     {
       "name": "Crossbow Block",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 85,
+        "Regiment (20)": 115,
+        "Horde (40)": 200
+      },
       "options": {
-        "Troop (10)": "85",
-        "Regiment (20)": "115",
-        "Horde (40)": "200"
+        "Exchange Crossbows for Rifles": [
+          10,
+          15,
+          25
+        ]
       }
     },
     {
       "name": "Knights",
       "type": "Cavalry",
       "irregular": false,
+      "sizes": {
+        "Troop (5)": 125,
+        "Regiment (10)": 195,
+        "Horde (20)": 330
+      },
       "options": {
-        "Troop (5)": "125",
-        "Regiment (10)": "195",
-        "Horde (20)": "330"
+        "Indomitable Will": [
+          10
+        ]
       }
     },
     {
       "name": "Mounted Sergeants",
       "type": "Cavalry",
       "irregular": false,
-      "options": {
-        "Troop (5)": "100",
-        "Regiment (10)": "150"
-      }
+      "sizes": {
+        "Troop (5)": 100,
+        "Regiment (10)": 150
+      },
+      "options": {}
     },
     {
       "name": "Mounted Scouts",
       "type": "Cavalry",
       "irregular": true,
+      "sizes": {
+        "Troop (5)": 100,
+        "Regiment (10)": 155
+      },
       "options": {
-        "Troop (5)": "100",
-        "Regiment (10)": "155"
+        "Exchange Shortbows for Blackpowder Weapons": [
+          10,
+          15
+        ]
       }
     },
     {
       "name": "Beast Cavalry",
       "type": "Large Cavalry",
       "irregular": false,
+      "sizes": {
+        "Regiment (3)": 125,
+        "Horde (6)": 210
+      },
       "options": {
-        "Regiment (3)": "125",
-        "Horde (6)": "210"
+        "Gain Fly and Speed 10": [
+          25,
+          40
+        ],
+        "Gain Thunderous Charge (1) and Vicious (cannot take with Fly)": [
+          10,
+          20
+        ]
       }
     },
     {
       "name": "Charioteers",
       "type": "Chariot",
       "irregular": true,
-      "options": {
-        "Troop (2)": "125",
-        "Regiment (3)": "155",
-        "Horde (4)": "195",
-        "Legion (6)": "225"
-      }
+      "sizes": {
+        "Troop (2)": 125,
+        "Regiment (3)": 155,
+        "Horde (4)": 195,
+        "Legion (6)": 225
+      },
+      "options": {}
     },
     {
       "name": "Siege Artillery",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "90"
-      }
+      "sizes": {
+        "1": 90
+      },
+      "options": {}
     },
     {
       "name": "Ballista",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "75"
-      }
+      "sizes": {
+        "1": 75
+      },
+      "options": {}
     },
     {
       "name": "Cannon",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "100"
-      }
+      "sizes": {
+        "1": 100
+      },
+      "options": {}
     },
     {
       "name": "Mammoth",
       "type": "Monster",
       "subType": "Cht",
       "irregular": false,
-      "options": {
-        "1": "220"
-      }
+      "sizes": {
+        "1": 220
+      },
+      "options": {}
     },
     {
       "name": "Giant",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "225"
-      }
+      "sizes": {
+        "1": 225
+      },
+      "options": {}
     },
     {
       "name": "General",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 85
+      },
       "options": {
-        "1": "85"
+        "Mount on a Horse": [
+          35
+        ]
       }
     },
     {
@@ -184,26 +255,33 @@
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
-      "options": {
-        "1": "135"
-      }
+      "sizes": {
+        "1": 135
+      },
+      "options": {}
     },
     {
       "name": "General on Winged Beast",
       "type": "Hero",
       "subType": "Mon",
       "irregular": false,
-      "options": {
-        "1": "190"
-      }
+      "sizes": {
+        "1": 190
+      },
+      "options": {}
     },
     {
       "name": "Army Standard Bearer",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 50
+      },
       "options": {
-        "1": "50"
+        "Mount on a Horse": [
+          25
+        ]
       }
     },
     {
@@ -211,8 +289,16 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 40
+      },
       "options": {
-        "1": "40"
+        "Mount on a Horse": [
+          25
+        ],
+        "Indomitable Will": [
+          5
+        ]
       }
     },
     {
@@ -220,8 +306,13 @@
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
+      "sizes": {
+        "1": 90
+      },
       "options": {
-        "1": "90"
+        "Indomitable Will": [
+          5
+        ]
       }
     },
     {
@@ -229,8 +320,13 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 80
+      },
       "options": {
-        "1": "80"
+        "Indomitable Will": [
+          5
+        ]
       }
     },
     {
@@ -238,8 +334,13 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 85
+      },
       "options": {
-        "1": "85"
+        "Rallying (1 - Berserker only)": [
+          15
+        ]
       }
     },
     {
@@ -247,8 +348,85 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 50
+      },
       "options": {
-        "1": "50"
+        "Heal (3)": [
+          20
+        ],
+        "Lightning Bolt (3)": [
+          20
+        ],
+        "Mount on a Pegasus": [
+          35
+        ],
+        "Replace Fireball (6) with Lightning Bolt (3)": [
+          0
+        ],
+        "Wind Blast (5)": [
+          20
+        ],
+        "Mount on a Horse": [
+          25
+        ],
+        "Bane Chant (2)": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3) (only with Knowledgeable[1])": [
+          15
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Celestial Restoration [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Barkskin [1](5) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8) (only with Knowledgeable[1])": [
+          30
+        ]
       }
     },
     {
@@ -257,9 +435,10 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "120"
-      }
+      "sizes": {
+        "1": 120
+      },
+      "options": {}
     },
     {
       "name": "The Monarch",
@@ -267,8 +446,22 @@
       "subType": "Ttn",
       "unique": "1",
       "irregular": false,
+      "sizes": {
+        "1": 235
+      },
       "options": {
-        "1": "235"
+        "Upgrade with Wings": [
+          50
+        ],
+        "Monarch: Crown of Chivalry": [
+          20
+        ],
+        "Monarch: Sceptre of Vigor": [
+          20
+        ],
+        "Monarch: Sword of Mercy": [
+          15
+        ]
       }
     },
     {
@@ -276,6 +469,7 @@
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

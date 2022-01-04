@@ -8,148 +8,195 @@
       "name": "Blacksouls",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 75,
+        "Regiment (20)": 115,
+        "Horde (40)": 190
+      },
       "options": {
-        "Troop (10)": "75",
-        "Regiment (20)": "115",
-        "Horde (40)": "190"
+        "Throwing Mastiff": [
+          15
+        ],
+        "Exchange shields for two-handed weapons": [
+          0
+        ],
+        "Fiery Bulwark [1]": [
+          10
+        ]
       }
     },
     {
       "name": "Abyssal Berserkers",
       "type": "Infantry",
       "irregular": false,
-      "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "165"
-      }
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 165
+      },
+      "options": {}
     },
     {
       "name": "Immortal Guard",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 105,
+        "Regiment (20)": 160
+      },
       "options": {
-        "Troop (10)": "105",
-        "Regiment (20)": "160"
+        "Throwing Mastiff": [
+          15
+        ]
       }
     },
     {
       "name": "Slave Orcs",
       "type": "Heavy Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "60",
-        "Regiment (20)": "95",
-        "Horde (40)": "155"
-      }
+      "sizes": {
+        "Troop (10)": 60,
+        "Regiment (20)": 95,
+        "Horde (40)": 155
+      },
+      "options": {}
     },
     {
       "name": "Gargoyles",
       "type": "Heavy Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "85"
-      }
+      "sizes": {
+        "Troop (10)": 85
+      },
+      "options": {}
     },
     {
       "name": "Decimators",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 115,
+        "Regiment (20)": 155,
+        "Horde (40)": 260
+      },
       "options": {
-        "Troop (10)": "115",
-        "Regiment (20)": "155",
-        "Horde (40)": "260"
+        "Gain Mobile Katsuchan (Regiments & Hordes only)": [
+          20
+        ]
       }
     },
     {
       "name": "Mutated Mastiff Hunting Pack",
       "type": "Swarm",
       "irregular": true,
+      "sizes": {
+        "Regiment (3)": 65
+      },
       "options": {
-        "Regiment (3)": "65"
+        "Throwing Mastiff": [
+          15
+        ]
       }
     },
     {
       "name": "Abyssal Halfbreeds",
       "type": "Cavalry",
       "irregular": false,
-      "options": {
-        "Troop (5)": "130",
-        "Regiment (10)": "200"
-      }
+      "sizes": {
+        "Troop (5)": 130,
+        "Regiment (10)": 200
+      },
+      "options": {}
     },
     {
       "name": "Slave Orc Gore Riders",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "90",
-        "Regiment (10)": "140"
-      }
+      "sizes": {
+        "Troop (5)": 90,
+        "Regiment (10)": 140
+      },
+      "options": {}
     },
     {
       "name": "Lesser Obsidian Golems",
       "type": "Monstrous Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (3)": 130,
+        "Horde (6)": 215
+      },
       "options": {
-        "Regiment (3)": "130",
-        "Horde (6)": "215"
+        "Upgrade with a Charnox": [
+          30
+        ]
       }
     },
     {
       "name": "Abyssal Grotesques",
       "type": "Large Cavalry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "145",
-        "Horde (6)": "245"
-      }
+      "sizes": {
+        "Regiment (3)": 145,
+        "Horde (6)": 245
+      },
+      "options": {}
     },
     {
       "name": "G'rog Mortar",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "95"
-      }
+      "sizes": {
+        "1": 95
+      },
+      "options": {}
     },
     {
       "name": "Katsuchan Rocket Launcher",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "85"
-      }
+      "sizes": {
+        "1": 85
+      },
+      "options": {}
     },
     {
       "name": "Angkor Heavy Mortar",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "115"
-      }
+      "sizes": {
+        "1": 115
+      },
+      "options": {}
     },
     {
       "name": "Dragon Fire-team",
       "type": "War Engine",
       "irregular": false,
-      "options": {
-        "1": "85"
-      }
+      "sizes": {
+        "1": 85
+      },
+      "options": {}
     },
     {
       "name": "Greater Obsidian Golem",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "235"
-      }
+      "sizes": {
+        "1": 235
+      },
+      "options": {}
     },
     {
       "name": "Hellfane",
       "type": "Titan",
       "irregular": false,
+      "sizes": {
+        "1": 265
+      },
       "options": {
-        "1": "265"
+        "Hellforged Overmaster [1]": [
+          25
+        ]
       }
     },
     {
@@ -157,34 +204,100 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "55"
-      }
+      "sizes": {
+        "1": 55
+      },
+      "options": {}
     },
     {
       "name": "Infernox",
       "type": "Hero",
       "subType": "LrgInf",
       "irregular": false,
-      "options": {
-        "1": "140"
-      }
+      "sizes": {
+        "1": 140
+      },
+      "options": {}
     },
     {
       "name": "Overmaster",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 105
+      },
       "options": {
-        "1": "105"
+        "Infernal Advance [1]": [
+          20
+        ]
       }
     },
     {
       "name": "Hexcaster",
       "type": "Hero (Hv Inf)",
       "irregular": false,
+      "sizes": {
+        "1": 70
+      },
       "options": {
-        "1": "70"
+        "Weakness (3)": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3) (only with Knowledgeable[1])": [
+          15
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Celestial Restoration [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Barkskin [1](5) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2) (only with Knowledgeable[1])": [
+          25
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3) (only with Knowledgeable[1])": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8) (only with Knowledgeable[1])": [
+          30
+        ]
       }
     },
     {
@@ -192,54 +305,60 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "90"
-      }
+      "sizes": {
+        "1": 90
+      },
+      "options": {}
     },
     {
       "name": "Taskmaster on Chariot",
       "type": "Hero",
       "subType": "Cht",
       "irregular": false,
-      "options": {
-        "1": "110"
-      }
+      "sizes": {
+        "1": 110
+      },
+      "options": {}
     },
     {
       "name": "Abyssal Halfbreed Champion",
       "type": "Hero",
       "subType": "Cav",
       "irregular": false,
-      "options": {
-        "1": "145"
-      }
+      "sizes": {
+        "1": 145
+      },
+      "options": {}
     },
     {
       "name": "Overmaster on Ancient Winged Halfbreed",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "300"
-      }
+      "sizes": {
+        "1": 300
+      },
+      "options": {}
     },
     {
       "name": "Abyssal Grotesque Champion",
       "type": "Hero",
       "subType": "LrgCav",
       "irregular": false,
-      "options": {
-        "1": "140"
-      }
+      "sizes": {
+        "1": 140
+      },
+      "options": {}
     },
     {
       "name": "Supreme Iron-caster on Great Winged Halfbreed",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "270"
-      }
+      "sizes": {
+        "1": 270
+      },
+      "options": {}
     },
     {
       "name": "Brakki Barka",
@@ -247,27 +366,30 @@
       "subType": "Cav",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "200"
-      }
+      "sizes": {
+        "1": 200
+      },
+      "options": {}
     },
     {
       "name": "Ba'su'su the Vile",
       "type": "Hero (Hv Inf)",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "210"
-      }
+      "sizes": {
+        "1": 210
+      },
+      "options": {}
     },
     {
       "name": "Ba'su'su's Vile Brood",
       "type": "Heavy Infantry",
       "unique": "1",
       "irregular": true,
-      "options": {
-        "Troop (10)": "110"
-      }
+      "sizes": {
+        "Troop (10)": 110
+      },
+      "options": {}
     },
     {
       "name": "Dravak Dalkan",
@@ -275,24 +397,27 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "155"
-      }
+      "sizes": {
+        "1": 155
+      },
+      "options": {}
     },
     {
       "name": "Infernok",
       "type": "Titan",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "255"
-      }
+      "sizes": {
+        "1": 255
+      },
+      "options": {}
     },
     {
       "name": "The Damned Yaygar",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]

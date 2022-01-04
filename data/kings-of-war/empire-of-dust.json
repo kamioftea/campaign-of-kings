@@ -1,5 +1,6 @@
 {
   "name": "Empire of Dust",
+  "vanguardList": "empire-of-dust",
   "iconUrl": "https://mantic.easyarmy.com/Content/KingsOfWar/images/fact/1013.png",
   "alignment": "Evil",
   "units": [
@@ -7,149 +8,208 @@
       "name": "Skeleton Warriors",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 55,
+        "Regiment (20)": 85,
+        "Horde (40)": 140
+      },
       "options": {
-        "Troop (10)": "55",
-        "Regiment (20)": "85",
-        "Horde (40)": "140"
+        "Exchange shields for two-handed weapons": [
+          5,
+          5,
+          10
+        ],
+        "Casket of the Damned": [
+          10
+        ]
       }
     },
     {
       "name": "Skeleton Spearmen",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 70,
+        "Regiment (20)": 105,
+        "Horde (40)": 175
+      },
       "options": {
-        "Troop (10)": "70",
-        "Regiment (20)": "105",
-        "Horde (40)": "175"
+        "Casket of the Damned": [
+          10
+        ]
       }
     },
     {
       "name": "Revenants",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 80,
+        "Regiment (20)": 125,
+        "Horde (40)": 205
+      },
       "options": {
-        "Troop (10)": "80",
-        "Regiment (20)": "125",
-        "Horde (40)": "205"
+        "Casket of the Damned": [
+          10
+        ]
       }
     },
     {
       "name": "Mummies",
       "type": "Infantry",
       "irregular": false,
+      "sizes": {
+        "Troop (10)": 115,
+        "Regiment (20)": 180
+      },
       "options": {
-        "Troop (10)": "115",
-        "Regiment (20)": "180"
+        "Casket of the Damned": [
+          10
+        ]
       }
     },
     {
       "name": "Skeleton Archers",
       "type": "Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "70",
-        "Regiment (20)": "95",
-        "Horde (40)": "165"
-      }
+      "sizes": {
+        "Troop (10)": 70,
+        "Regiment (20)": 95,
+        "Horde (40)": 165
+      },
+      "options": {}
     },
     {
       "name": "Skeleton Deadeye Crossbows",
       "type": "Infantry",
       "irregular": true,
-      "options": {
-        "Troop (10)": "90",
-        "Regiment (20)": "120"
-      }
+      "sizes": {
+        "Troop (10)": 90,
+        "Regiment (20)": 120
+      },
+      "options": {}
     },
     {
       "name": "Revenant Cavalry",
       "type": "Cavalry",
       "irregular": false,
-      "options": {
-        "Troop (5)": "115",
-        "Regiment (10)": "180"
-      }
+      "sizes": {
+        "Troop (5)": 115,
+        "Regiment (10)": 180
+      },
+      "options": {}
     },
     {
       "name": "Skeleton Archer Cavalry",
       "type": "Cavalry",
       "irregular": true,
-      "options": {
-        "Troop (5)": "100",
-        "Regiment (10)": "155"
-      }
+      "sizes": {
+        "Troop (5)": 100,
+        "Regiment (10)": 155
+      },
+      "options": {}
     },
     {
       "name": "Desert Swarm",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "60",
-        "Horde (6)": "100"
-      }
+      "sizes": {
+        "Regiment (3)": 60,
+        "Horde (6)": 100
+      },
+      "options": {}
     },
     {
       "name": "Scavengers",
       "type": "Swarm",
       "irregular": true,
-      "options": {
-        "Regiment (3)": "90",
-        "Horde (6)": "150"
-      }
+      "sizes": {
+        "Regiment (3)": 90,
+        "Horde (6)": 150
+      },
+      "options": {}
     },
     {
       "name": "Revenant Chariots",
       "type": "Chariot",
       "irregular": false,
+      "sizes": {
+        "Troop (2)": 110,
+        "Regiment (3)": 140,
+        "Horde (4)": 175,
+        "Legion (6)": 205
+      },
       "options": {
-        "Troop (2)": "110",
-        "Regiment (3)": "140",
-        "Horde (4)": "175",
-        "Legion (6)": "205"
+        "Gain Cursebows": [
+          5,
+          5,
+          10,
+          15
+        ]
       }
     },
     {
       "name": "Enslaved Guardians",
       "type": "Large Infantry",
       "irregular": false,
+      "sizes": {
+        "Regiment (3)": 135,
+        "Horde (6)": 225
+      },
       "options": {
-        "Regiment (3)": "135",
-        "Horde (6)": "225"
+        "Wind Blast (5)": [
+          20
+        ],
+        "Casket of the Damned": [
+          10
+        ]
       }
     },
     {
       "name": "Enslaved Guardians Archers",
       "type": "Large Infantry",
       "irregular": true,
+      "sizes": {
+        "Regiment (3)": 140,
+        "Horde (6)": 235
+      },
       "options": {
-        "Regiment (3)": "140",
-        "Horde (6)": "235"
+        "Casket of the Damned": [
+          10
+        ]
       }
     },
     {
       "name": "Sandborne Wyrm Riders",
       "type": "Large Cavalry",
       "irregular": false,
-      "options": {
-        "Regiment (3)": "135",
-        "Horde (6)": "225"
-      }
+      "sizes": {
+        "Regiment (3)": 135,
+        "Horde (6)": 225
+      },
+      "options": {}
     },
     {
       "name": "Bone Giant",
       "type": "Monster",
       "irregular": false,
-      "options": {
-        "1": "190"
-      }
+      "sizes": {
+        "1": 190
+      },
+      "options": {}
     },
     {
       "name": "Reanimated Behemoth",
       "type": "Monster",
       "subType": "Cht",
       "irregular": false,
+      "sizes": {
+        "1": 190
+      },
       "options": {
-        "1": "190"
+        "Drain Life (6)": [
+          30
+        ]
       }
     },
     {
@@ -157,24 +217,31 @@
       "type": "Titan",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "120"
-      }
+      "sizes": {
+        "1": 120
+      },
+      "options": {}
     },
     {
       "name": "Undead Wyrm",
       "type": "Titan",
       "irregular": false,
-      "options": {
-        "1": "215"
-      }
+      "sizes": {
+        "1": 215
+      },
+      "options": {}
     },
     {
       "name": "Empire of Dust Balefire Catapult",
       "type": "War Engine",
       "irregular": false,
+      "sizes": {
+        "1": 95
+      },
       "options": {
-        "1": "95"
+        "Upgrade with Scarab Jars": [
+          10
+        ]
       }
     },
     {
@@ -182,17 +249,23 @@
       "type": "War Engine",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "150"
-      }
+      "sizes": {
+        "1": 150
+      },
+      "options": {}
     },
     {
       "name": "Undead Army Standard Bearer",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 50
+      },
       "options": {
-        "1": "50"
+        "Mount on an Undead Horse": [
+          25
+        ]
       }
     },
     {
@@ -200,8 +273,85 @@
       "type": "Hero",
       "subType": "Cht",
       "irregular": false,
+      "sizes": {
+        "1": 205
+      },
       "options": {
-        "1": "205"
+        "Upgrade to Rahs The Undying [1]": [
+          50
+        ],
+        "Surge (8)": [
+          15
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3)": [
+          15
+        ],
+        "Library Mindfog (4) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3)": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3)": [
+          30
+        ],
+        "Library Veil of Shadows [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Celestial Restoration [1](2)": [
+          25
+        ],
+        "Library Celestial Restoration [1](3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Barkskin [1](5)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3)": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3)": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8)": [
+          30
+        ],
+        "Library Host Shadowbeast (10) (only with Knowledgeable[1])": [
+          40
+        ]
       }
     },
     {
@@ -209,17 +359,92 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "65"
-      }
+      "sizes": {
+        "1": 65
+      },
+      "options": {}
     },
     {
       "name": "Ahmunite Pharaoh",
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
+      "sizes": {
+        "1": 160
+      },
       "options": {
-        "1": "160"
+        "Eternal Guard [1]": [
+          20
+        ],
+        "Knowledgeable [1] - Spellcaster tier +1": [
+          10
+        ],
+        "Incantation of the Tempest [1]": [
+          10
+        ],
+        "Library Mindfog (2)": [
+          10
+        ],
+        "Library Mindfog (3)": [
+          15
+        ],
+        "Library Mindfog (4) (only with Knowledgeable[1])": [
+          20
+        ],
+        "Library Hex (2)": [
+          15
+        ],
+        "Library Hex (3)": [
+          20
+        ],
+        "Library Veil of Shadows [1](2)": [
+          25
+        ],
+        "Library Veil of Shadows [1](3)": [
+          30
+        ],
+        "Library Veil of Shadows [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Celestial Restoration [1](2)": [
+          25
+        ],
+        "Library Celestial Restoration [1](3) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Barkskin [1](5)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](0)": [
+          15
+        ],
+        "Library Alchemist's Curse [1](2)": [
+          25
+        ],
+        "Library Alchemist's Curse [1](4) (only with Knowledgeable[1])": [
+          35
+        ],
+        "Library Wither and Perish (2)": [
+          25
+        ],
+        "Library Wither and Perish (3)": [
+          35
+        ],
+        "Library Scorched Earth (2)": [
+          20
+        ],
+        "Library Scorched Earth (3)": [
+          30
+        ],
+        "Library Host Shadowbeast (6)": [
+          20
+        ],
+        "Library Host Shadowbeast (8)": [
+          30
+        ],
+        "Library Host Shadowbeast (10) (only with Knowledgeable[1])": [
+          40
+        ]
       }
     },
     {
@@ -227,26 +452,33 @@
       "type": "Hero",
       "subType": "Inf",
       "irregular": false,
-      "options": {
-        "1": "85"
-      }
+      "sizes": {
+        "1": 85
+      },
+      "options": {}
     },
     {
       "name": "Revenant King on Undead Great Flying Wyrm",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
-      "options": {
-        "1": "265"
-      }
+      "sizes": {
+        "1": 265
+      },
+      "options": {}
     },
     {
       "name": "Revenant on Undead Great Burrowing Wyrm",
       "type": "Hero",
       "subType": "Ttn",
       "irregular": false,
+      "sizes": {
+        "1": 200
+      },
       "options": {
-        "1": "200"
+        "Gain Plagued Breath": [
+          15
+        ]
       }
     },
     {
@@ -255,9 +487,10 @@
       "subType": "Ttn",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "350"
-      }
+      "sizes": {
+        "1": 350
+      },
+      "options": {}
     },
     {
       "name": "Idol of Shobik",
@@ -265,9 +498,10 @@
       "subType": "Mon",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "290"
-      }
+      "sizes": {
+        "1": 290
+      },
+      "options": {}
     },
     {
       "name": "Sebekh-Rei the Accursed",
@@ -275,15 +509,17 @@
       "subType": "Inf",
       "unique": "1",
       "irregular": false,
-      "options": {
-        "1": "155"
-      }
+      "sizes": {
+        "1": 155
+      },
+      "options": {}
     },
     {
       "name": "The Bone Shakers",
       "type": "Formation",
       "unique": "1",
       "irregular": false,
+      "sizes": {},
       "options": {}
     }
   ]
