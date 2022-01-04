@@ -4,82 +4,102 @@
     {
       "name": "Ghekkotah Warrior",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Ceremonial Guard",
       "type": "Support",
-      "points": "19"
+      "points": 19,
+      "options": {}
     },
     {
       "name": "Ghekkotah Clutch Warden",
       "type": "Support",
-      "points": "27"
+      "points": 27,
+      "options": {
+        "Poison Darts": "2"
+      }
     },
     {
       "name": "Tyrant",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     },
     {
       "name": "Rhinosaur Cataphract",
       "type": "Large",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Ceremonial Guard Captain",
       "type": "Command",
-      "points": "36"
+      "points": 36,
+      "options": {}
     },
     {
       "name": "Lekelidon",
       "type": "Large",
-      "points": "30"
+      "points": 30,
+      "options": {}
     },
     {
       "name": "Corsair",
       "type": "Support",
-      "points": "21"
+      "points": 21,
+      "options": {}
     },
     {
       "name": "Firebrand*",
       "type": "Command",
-      "points": "54"
+      "points": 54,
+      "options": {}
     },
     {
       "name": "Prime",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {
+        "Two-handed Weapon": "2"
+      }
     },
     {
       "name": "Mage-Priest",
       "type": "Spellcaster",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Unblooded",
       "type": "Grunt",
-      "points": "11"
+      "points": 11,
+      "options": {}
     },
     {
       "name": "Ghekkotah Hunter",
       "type": "Warrior",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Fire Elemental",
       "type": "Large",
-      "points": "38"
+      "points": 38,
+      "options": {}
     },
     {
       "name": "Battle-Captain",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Veteran",
       "type": "Command",
-      "points": "18"
+      "points": 18,
+      "options": {}
     }
   ]
 }

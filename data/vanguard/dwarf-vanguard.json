@@ -4,82 +4,100 @@
     {
       "name": "Levy",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {
+        "spear": "1"
+      }
     },
     {
       "name": "Ironwatch",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Ironclad",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "Ranger",
       "type": "Warrior",
-      "points": "19"
+      "points": 19,
+      "options": {}
     },
     {
       "name": "Shieldbreaker",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Ironguard",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Brock Rider",
       "type": "Support",
-      "points": "30"
+      "points": 30,
+      "options": {}
     },
     {
       "name": "Mastiff Packmaster",
       "type": "Warrior",
-      "points": "20"
+      "points": 20,
+      "options": {}
     },
     {
       "name": "Dwarf Sergeant",
       "type": "Command",
-      "points": "31"
+      "points": 31,
+      "options": {}
     },
     {
       "name": "Ranger Captain",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Stone Priest",
       "type": "Spellcaster",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Earth Elemental",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     },
     {
       "name": "Battle Driller",
       "type": "Support",
-      "points": "29"
+      "points": 29,
+      "options": {}
     },
     {
       "name": "Flame Priest",
       "type": "Support",
-      "points": "30"
+      "points": 30,
+      "options": {}
     },
     {
       "name": "Steel Juggernaut*",
       "type": "Large",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Dwarf Berserker Lord",
       "type": "Command",
-      "points": "43"
+      "points": 43,
+      "options": {}
     }
   ]
 }

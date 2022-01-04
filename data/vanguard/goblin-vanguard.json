@@ -4,77 +4,94 @@
     {
       "name": "Spitter",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Rabble",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {
+        "spear": "1"
+      }
     },
     {
       "name": "Luggit",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Mawbeast",
       "type": "Support",
-      "points": "19"
+      "points": 19,
+      "options": {}
     },
     {
       "name": "Banggit",
       "type": "Support",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Biggit",
       "type": "Command",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Wiz",
       "type": "Spellcaster",
-      "points": "29"
+      "points": 29,
+      "options": {}
     },
     {
       "name": "Troll",
       "type": "Large",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Mawpup Launcher",
       "type": "Support",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Blaggit*",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Snaggit",
       "type": "Support",
-      "points": "18"
+      "points": 18,
+      "options": {}
     },
     {
       "name": "Winggit",
       "type": "Large",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Magwa & Jo‘os*",
       "type": "Command",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Stinggit",
       "type": "Command",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Sneak",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {}
     }
   ]
 }

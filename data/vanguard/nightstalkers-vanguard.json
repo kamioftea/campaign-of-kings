@@ -4,67 +4,80 @@
     {
       "name": "Phantom",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Reaper",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Scarecrow",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Needlefangs",
       "type": "Grunt",
-      "points": "11"
+      "points": 11,
+      "options": {}
     },
     {
       "name": "Butcher",
       "type": "Large",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Horror",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Shadowhound",
       "type": "Support",
-      "points": "17"
+      "points": 17,
+      "options": {}
     },
     {
       "name": "Reaper Souldrinker",
       "type": "Command",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Spectre",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Butcher Fleshripper",
       "type": "Command, Large",
-      "points": "41"
+      "points": 41,
+      "options": {}
     },
     {
       "name": "Mind-screech",
       "type": "Large, Spellcaster",
-      "points": "31"
+      "points": 31,
+      "options": {}
     },
     {
       "name": "Shade",
       "type": "Command",
-      "points": "40"
+      "points": 40,
+      "options": {}
     },
     {
       "name": "Banshee",
       "type": "Command",
-      "points": "39"
+      "points": 39,
+      "options": {}
     }
   ]
 }

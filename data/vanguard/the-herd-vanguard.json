@@ -4,42 +4,54 @@
     {
       "name": "Tribal Warrior",
       "type": "Grunt",
-      "points": "7"
+      "points": 7,
+      "options": {
+        "spear": "1"
+      }
     },
     {
       "name": "Harpy",
       "type": "Support",
-      "points": "17"
+      "points": 17,
+      "options": {}
     },
     {
       "name": "Longhorn",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {
+        "Two-handed Weapon": "2"
+      }
     },
     {
       "name": "Shaman",
       "type": "Spellcaster",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Lycan",
       "type": "Large",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Tribal Hunter",
       "type": "Support",
-      "points": "26"
+      "points": 26,
+      "options": {}
     },
     {
       "name": "Spirit Walker",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Great Chieftan",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     }
   ]
 }

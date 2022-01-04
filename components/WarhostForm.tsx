@@ -345,7 +345,6 @@ export function WarhostForm({user}: ForceFormProps) {
         elements.push(<p>TODO: Vanguard</p>)
     }
 
-
     return <>
         {elements}
     </>

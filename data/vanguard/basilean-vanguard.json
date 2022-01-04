@@ -4,72 +4,88 @@
     {
       "name": "Paladin Defender",
       "type": "Warrior",
-      "points": "17"
+      "points": 17,
+      "options": {}
     },
     {
       "name": "Crossbowman",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Sisterhood",
       "type": "Warrior",
-      "points": "11"
+      "points": 11,
+      "options": {}
     },
     {
       "name": "Gur Panther",
       "type": "Support",
-      "points": "15"
+      "points": 15,
+      "options": {}
     },
     {
       "name": "Sergeant",
       "type": "Warrior",
-      "points": "17"
+      "points": 17,
+      "options": {}
     },
     {
       "name": "Sisterhood Scout",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Veteran Sergeant",
       "type": "Command",
-      "points": "30"
+      "points": 30,
+      "options": {}
     },
     {
       "name": "Paladin Chaplain",
       "type": "Spellcaster",
-      "points": "38"
+      "points": 38,
+      "options": {}
     },
     {
       "name": "Man-at-arms",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {
+        "spear": "1"
+      }
     },
     {
       "name": "War-Wizard",
       "type": "Spellcaster",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Veteran Sister",
       "type": "Support",
-      "points": "20"
+      "points": 20,
+      "options": {}
     },
     {
       "name": "Ogre Palace Guard",
       "type": "Large",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Dictator",
       "type": "Command",
-      "points": "41"
+      "points": 41,
+      "options": {}
     },
     {
       "name": "Abbess",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     }
   ]
 }

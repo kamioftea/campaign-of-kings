@@ -4,52 +4,62 @@
     {
       "name": "Kindred Archer",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Guardian Shambler",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     },
     {
       "name": "Kindred Tallspear",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "Kindred Gladestalker",
       "type": "Support",
-      "points": "26"
+      "points": 26,
+      "options": {}
     },
     {
       "name": "Battle-mage",
       "type": "Spellcaster",
-      "points": "38"
+      "points": 38,
+      "options": {}
     },
     {
       "name": "Prince",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Battle-cat",
       "type": "Support",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "Citizen Levy",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Silverbreeze Gladewarden",
       "type": "Support",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Seaguard",
       "type": "Warrior",
-      "points": "22"
+      "points": 22,
+      "options": {}
     }
   ]
 }

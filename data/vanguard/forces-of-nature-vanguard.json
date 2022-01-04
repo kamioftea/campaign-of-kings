@@ -4,77 +4,94 @@
     {
       "name": "Centaur Bray-Strider",
       "type": "Warrior",
-      "points": "22"
+      "points": 22,
+      "options": {}
     },
     {
       "name": "Druid",
       "type": "Spellcaster",
-      "points": "36"
+      "points": 36,
+      "options": {}
     },
     {
       "name": "Salamander Unblooded",
       "type": "Grunt",
-      "points": "11"
+      "points": 11,
+      "options": {}
     },
     {
       "name": "Naiad",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {
+        "Harpoon-gun": "3"
+      }
     },
     {
       "name": "Naiad Ensnarer",
       "type": "Support",
-      "points": "20"
+      "points": 20,
+      "options": {}
     },
     {
       "name": "Centaur Chief",
       "type": "Command",
-      "points": "43"
+      "points": 43,
+      "options": {}
     },
     {
       "name": "Wild Companion",
       "type": "Support",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "Forest Shambler",
       "type": "Large",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Gladewalker Druid",
       "type": "Command, Spellcaster",
-      "points": "40"
+      "points": 40,
+      "options": {}
     },
     {
       "name": "Fire Elemental",
       "type": "Large",
-      "points": "40"
+      "points": 40,
+      "options": {}
     },
     {
       "name": "Earth Elemental",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     },
     {
       "name": "Water Elemental",
       "type": "Large",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Centaur Bray-Hunter",
       "type": "Warrior",
-      "points": "20"
+      "points": 20,
+      "options": {}
     },
     {
       "name": "Centaur Tenderhoof",
       "type": "Grunt",
-      "points": "15"
+      "points": 15,
+      "options": {}
     },
     {
       "name": "Salamander Veteran",
       "type": "Command",
-      "points": "28"
+      "points": 28,
+      "options": {}
     }
   ]
 }

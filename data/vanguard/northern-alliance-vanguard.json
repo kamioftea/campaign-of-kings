@@ -4,72 +4,88 @@
     {
       "name": "Human Clansman",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Snow Troll",
       "type": "Large",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Huscarl",
       "type": "Warrior",
-      "points": "15"
+      "points": 15,
+      "options": {}
     },
     {
       "name": "Ice Kin Hunter",
       "type": "Support",
-      "points": "22"
+      "points": 22,
+      "options": {}
     },
     {
       "name": "Ice Naiad",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Half-Elf Berserker",
       "type": "Warrior",
-      "points": "19"
+      "points": 19,
+      "options": {}
     },
     {
       "name": "Dwarf Clansman",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {
+        "Frosthammer": "1"
+      }
     },
     {
       "name": "Snow Troll Prime",
       "type": "Command, Large",
-      "points": "54"
+      "points": 54,
+      "options": {}
     },
     {
       "name": "Elf Clansman",
       "type": "Grunt",
-      "points": "11"
+      "points": 11,
+      "options": {}
     },
     {
       "name": "Ice Blade",
       "type": "Command",
-      "points": "42"
+      "points": 42,
+      "options": {}
     },
     {
       "name": "Ice Elemental",
       "type": "Large",
-      "points": "47"
+      "points": 47,
+      "options": {}
     },
     {
       "name": "Ice Queen",
       "type": "Spellcaster",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Thegn",
       "type": "Command",
-      "points": "39"
+      "points": 39,
+      "options": {}
     },
     {
       "name": "Frostfang Cavalry",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     }
   ]
 }

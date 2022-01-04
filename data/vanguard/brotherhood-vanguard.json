@@ -4,42 +4,50 @@
     {
       "name": "Bowman",
       "type": "Grunt",
-      "points": "7"
+      "points": 7,
+      "options": {}
     },
     {
       "name": "Poacher",
       "type": "Support",
-      "points": "22"
+      "points": 22,
+      "options": {}
     },
     {
       "name": "Spearmen",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Devoted",
       "type": "Spellcaster",
-      "points": "26"
+      "points": 26,
+      "options": {}
     },
     {
       "name": "Mounted Knight",
       "type": "Warrior",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Water Elemental",
       "type": "Large",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Exemplar",
       "type": "Command",
-      "points": "41"
+      "points": 41,
+      "options": {}
     },
     {
       "name": "Foot Knight",
       "type": "Warrior",
-      "points": "15"
+      "points": 15,
+      "options": {}
     }
   ]
 }

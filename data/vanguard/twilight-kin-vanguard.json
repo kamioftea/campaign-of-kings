@@ -4,42 +4,50 @@
     {
       "name": "Citizen Levy",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Impaler",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "Shadow",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Shadowhound",
       "type": "Support",
-      "points": "17"
+      "points": 17,
+      "options": {}
     },
     {
       "name": "Butcher",
       "type": "Large",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Summoner Crone",
       "type": "Spellcaster",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Blade Dancer",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Executioner",
       "type": "Command",
-      "points": "42"
+      "points": 42,
+      "options": {}
     }
   ]
 }

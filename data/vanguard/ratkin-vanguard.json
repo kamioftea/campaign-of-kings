@@ -4,77 +4,94 @@
     {
       "name": "Swarm-crier",
       "type": "Support",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Twitch Keenear*",
       "type": "Spellcaster",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Nightmare Gunner",
       "type": "Large",
-      "points": "27"
+      "points": 27,
+      "options": {}
     },
     {
       "name": "Nightmare Driller",
       "type": "Large",
-      "points": "31"
+      "points": 31,
+      "options": {}
     },
     {
       "name": "Birthing Daughter*",
       "type": "Command",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Vermintide",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Wretch",
       "type": "Grunt",
-      "points": "6"
+      "points": 6,
+      "options": {
+        "spear": "1"
+      }
     },
     {
       "name": "Hackpaw",
       "type": "Warrior",
-      "points": "18"
+      "points": 18,
+      "options": {}
     },
     {
       "name": "Ratkin Warrior",
       "type": "Warrior",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Scurrier",
       "type": "Support",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Brute Enforcer",
       "type": "Large",
-      "points": "39"
+      "points": 39,
+      "options": {}
     },
     {
       "name": "Shock Trooper",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "War-Chief",
       "type": "Command",
-      "points": "36"
+      "points": 36,
+      "options": {}
     },
     {
       "name": "Night Terror",
       "type": "Large",
-      "points": "26"
+      "points": 26,
+      "options": {}
     },
     {
       "name": "Warlock",
       "type": "Spellcaster",
-      "points": "31"
+      "points": 31,
+      "options": {}
     }
   ]
 }

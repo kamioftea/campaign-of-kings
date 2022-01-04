@@ -4,72 +4,86 @@
     {
       "name": "Lower Abyssal",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Flamebearer",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Imps",
       "type": "Grunt",
-      "points": "13"
+      "points": 13,
+      "options": {}
     },
     {
       "name": "Abyssal Guard",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Gargoyle",
       "type": "Support",
-      "points": "18"
+      "points": 18,
+      "options": {}
     },
     {
       "name": "Succubus Lurker",
       "type": "Support",
-      "points": "24"
+      "points": 24,
+      "options": {}
     },
     {
       "name": "Hellequin",
       "type": "Support",
-      "points": "29"
+      "points": 29,
+      "options": {}
     },
     {
       "name": "Abyssal Warlock",
       "type": "Spellcaster",
-      "points": "36"
+      "points": 36,
+      "options": {}
     },
     {
       "name": "Tormentor (Champion)",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Hellequin Blood-masque",
       "type": "Command",
-      "points": "42"
+      "points": 42,
+      "options": {}
     },
     {
       "name": "Succubus",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Hellhound",
       "type": "Support",
-      "points": "15"
+      "points": 15,
+      "options": {}
     },
     {
       "name": "Despoiler",
       "type": "Large",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Seductress",
       "type": "Command",
-      "points": "45"
+      "points": 45,
+      "options": {}
     }
   ]
 }

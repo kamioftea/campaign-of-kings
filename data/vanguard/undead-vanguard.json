@@ -4,92 +4,110 @@
     {
       "name": "Crypt Gouger",
       "type": "Command",
-      "points": "31"
+      "points": 31,
+      "options": {}
     },
     {
       "name": "Zombie",
       "type": "Grunt",
-      "points": "6"
+      "points": 6,
+      "options": {}
     },
     {
       "name": "Skeleton",
       "type": "Grunt",
-      "points": "6"
+      "points": 6,
+      "options": {}
     },
     {
       "name": "Barrow Wight",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Ghoul",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Revenant",
       "type": "Warrior",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Wraith",
       "type": "Support",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Skeletal Dog Pack",
       "type": "Grunt",
-      "points": "9"
+      "points": 9,
+      "options": {}
     },
     {
       "name": "Vampire Halfling",
       "type": "Command",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Necromancer",
       "type": "Command, Spellcaster",
-      "points": "39"
+      "points": 39,
+      "options": {}
     },
     {
       "name": "Soul Reaver",
       "type": "Support",
-      "points": "20"
+      "points": 20,
+      "options": {}
     },
     {
       "name": "Werewolf",
       "type": "Large",
-      "points": "33"
+      "points": 33,
+      "options": {}
     },
     {
       "name": "Ghost",
       "type": "Support",
-      "points": "17"
+      "points": 17,
+      "options": {}
     },
     {
       "name": "Armoured Zombie Orc",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Goreblight",
       "type": "Large",
-      "points": "40"
+      "points": 40,
+      "options": {}
     },
     {
       "name": "Zombie Troll",
       "type": "Large",
-      "points": "30"
+      "points": 30,
+      "options": {}
     },
     {
       "name": "Skeleton Archer",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Vampire Bat Swarm",
       "type": "Grunt",
-      "points": "10"
+      "points": 10,
+      "options": {}
     }
   ]
 }

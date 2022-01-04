@@ -4,42 +4,84 @@
     {
       "name": "Thrall",
       "type": "Grunt",
-      "points": "6"
+      "points": 6,
+      "options": {
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Night Raider",
       "type": "Support",
-      "points": "24"
+      "points": 24,
+      "options": {
+        "REPLACE Bow with a Poisoned Throwing Weapon": "2",
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Warrior",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {
+        "Two-handed Weapon": "2",
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Direfang Rider",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Bloodsworn",
       "type": "Warrior",
-      "points": "13"
+      "points": 13,
+      "options": {
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Reaver",
       "type": "Support",
-      "points": "16"
+      "points": 16,
+      "options": {
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Magus",
       "type": "Spellcaster",
-      "points": "30"
+      "points": 30,
+      "options": {
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     },
     {
       "name": "Chieftan",
       "type": "Command",
-      "points": "40"
+      "points": 40,
+      "options": {
+        "Gift of Korgaan: Brand of the Warrior": "4",
+        "Gift of Korgaan: Guise of the Deceiver": "3",
+        "Gift of Korgaan: Mask of the Reaper": "5"
+      }
     }
   ]
 }

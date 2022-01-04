@@ -4,87 +4,106 @@
     {
       "name": "Thuul",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Riverguard",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Otter Bevy",
       "type": "Grunt",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Naiad Lurker",
       "type": "Support",
-      "points": "18"
+      "points": 18,
+      "options": {}
     },
     {
       "name": "Thuul Mythican",
       "type": "Spellcaster",
-      "points": "26"
+      "points": 26,
+      "options": {}
     },
     {
       "name": "Water Elemental",
       "type": "Large",
-      "points": "32"
+      "points": 32,
+      "options": {}
     },
     {
       "name": "Naiad Centurion",
       "type": "Command",
-      "points": "45"
+      "points": 45,
+      "options": {}
     },
     {
       "name": "Naiad Heartpiercer",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Giga",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     },
     {
       "name": "Riverguard Sentinel",
       "type": "Command",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Riverguard Treeleaper",
       "type": "Support",
-      "points": "19"
+      "points": 19,
+      "options": {}
     },
     {
       "name": "Riverguard Dambuster",
       "type": "Large",
-      "points": "35"
+      "points": 35,
+      "options": {}
     },
     {
       "name": "Riverguard Dambuster Sentinel",
       "type": "Command, Large",
-      "points": "45"
+      "points": 45,
+      "options": {}
     },
     {
       "name": "Naiad Initiate",
       "type": "Grunt",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Mythican Aquamage",
       "type": "Command, Spellcaster",
-      "points": "40"
+      "points": 40,
+      "options": {
+        "1 additional Water Elemental": "32"
+      }
     },
     {
       "name": "Placoderm Defender",
       "type": "Support",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Naiad Envoy",
       "type": "Support",
-      "points": "24"
+      "points": 24,
+      "options": {}
     }
   ]
 }

@@ -4,87 +4,104 @@
     {
       "name": "Decimator",
       "type": "Warrior",
-      "points": "21"
+      "points": 21,
+      "options": {}
     },
     {
       "name": "Blacksoul",
       "type": "Warrior",
-      "points": "14"
+      "points": 14,
+      "options": {}
     },
     {
       "name": "Mobile Katsuchan",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Gargoyle",
       "type": "Support",
-      "points": "15"
+      "points": 15,
+      "options": {}
     },
     {
       "name": "Abyssal Halfbreed",
       "type": "Warrior",
-      "points": "24"
+      "points": 24,
+      "options": {}
     },
     {
       "name": "Slave Driver",
       "type": "Command",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Slave Orc",
       "type": "Grunt",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Lesser Obsidian Golem",
       "type": "Large",
-      "points": "37"
+      "points": 37,
+      "options": {}
     },
     {
       "name": "Immortal Guard",
       "type": "Support",
-      "points": "20"
+      "points": 20,
+      "options": {}
     },
     {
       "name": "Iron Caster",
       "type": "Spellcaster",
-      "points": "28"
+      "points": 28,
+      "options": {}
     },
     {
       "name": "Ratkin Slave",
       "type": "Grunt",
-      "points": "6"
+      "points": 6,
+      "options": {}
     },
     {
       "name": "Mutated Mastiff",
       "type": "Grunt",
-      "points": "8"
+      "points": 8,
+      "options": {}
     },
     {
       "name": "Hexcaster*",
       "type": "Support",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Infernox",
       "type": "Large",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Charnox",
       "type": "Large",
-      "points": "40"
+      "points": 40,
+      "options": {}
     },
     {
       "name": "Overmaster",
       "type": "Command",
-      "points": "42"
+      "points": 42,
+      "options": {}
     },
     {
       "name": "Immortal Guardian",
       "type": "Command",
-      "points": "41"
+      "points": 41,
+      "options": {}
     }
   ]
 }

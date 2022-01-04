@@ -4,52 +4,62 @@
     {
       "name": "Skeleton",
       "type": "Grunt",
-      "points": "6"
+      "points": 6,
+      "options": {}
     },
     {
       "name": "Skeleton Archer",
       "type": "Grunt",
-      "points": "7"
+      "points": 7,
+      "options": {}
     },
     {
       "name": "Revenant",
       "type": "Warrior",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Desert Swarm",
       "type": "Grunt",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Enslaved Guardian",
       "type": "Large, Spellcaster",
-      "points": "44"
+      "points": 44,
+      "options": {}
     },
     {
       "name": "Pharoahs Champion",
       "type": "Command",
-      "points": "48"
+      "points": 48,
+      "options": {}
     },
     {
       "name": "Revenant Champion",
       "type": "Support",
-      "points": "26"
+      "points": 26,
+      "options": {}
     },
     {
       "name": "Sand Wraith",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Mummy",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "High Priest",
       "type": "Command, Spellcaster",
-      "points": "39"
+      "points": 39,
+      "options": {}
     }
   ]
 }

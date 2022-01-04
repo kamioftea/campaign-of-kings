@@ -4,52 +4,62 @@
     {
       "name": "Ax",
       "type": "Grunt",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Greatax",
       "type": "Warrior",
-      "points": "16"
+      "points": 16,
+      "options": {}
     },
     {
       "name": "Krudger",
       "type": "Command",
-      "points": "45"
+      "points": 45,
+      "options": {}
     },
     {
       "name": "Godspeaker",
       "type": "Spellcaster",
-      "points": "31"
+      "points": 31,
+      "options": {}
     },
     {
       "name": "Morax",
       "type": "Warrior",
-      "points": "22"
+      "points": 22,
+      "options": {}
     },
     {
       "name": "Orclings",
       "type": "Grunt",
-      "points": "10"
+      "points": 10,
+      "options": {}
     },
     {
       "name": "Gore Rider",
       "type": "Support",
-      "points": "24"
+      "points": 24,
+      "options": {}
     },
     {
       "name": "Troll",
       "type": "Large",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Krusher",
       "type": "Command",
-      "points": "34"
+      "points": 34,
+      "options": {}
     },
     {
       "name": "Skulk",
       "type": "Grunt",
-      "points": "12"
+      "points": 12,
+      "options": {}
     }
   ]
 }

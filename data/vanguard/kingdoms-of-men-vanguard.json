@@ -4,47 +4,60 @@
     {
       "name": "Foot Soldier",
       "type": "Grunt",
-      "points": "7"
+      "points": 7,
+      "options": {
+        "REPLACE Spear with Heavy Weapon": "2"
+      }
     },
     {
       "name": "Leader of Men",
       "type": "Command",
-      "points": "41"
+      "points": 41,
+      "options": {}
     },
     {
       "name": "Berserker",
       "type": "Warrior",
-      "points": "21"
+      "points": 21,
+      "options": {}
     },
     {
       "name": "Knight",
       "type": "Support",
-      "points": "29"
+      "points": 29,
+      "options": {}
     },
     {
       "name": "Veteran Soldier",
       "type": "Support",
-      "points": "23"
+      "points": 23,
+      "options": {}
     },
     {
       "name": "Foot Guard",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {
+        "Large Shield": "2"
+      }
     },
     {
       "name": "Arquebusier",
       "type": "Warrior",
-      "points": "12"
+      "points": 12,
+      "options": {}
     },
     {
       "name": "Ogre Warrier",
       "type": "Large",
-      "points": "24"
+      "points": 24,
+      "options": {}
     },
     {
       "name": "Wizard",
       "type": "Spellcaster",
-      "points": "24"
+      "points": 24,
+      "options": {}
     }
   ]
 }
