@@ -1,0 +1,303 @@
+{
+  "Blade of Slashing": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Fire-Oil": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Healing Brew": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Liliana's Tear": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Mace of Crushing": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Staying Stone": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "War-Bow of Kaba": {
+    "cost": 5,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Banner of Eternal Darkness": {
+    "cost": 10,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Hann's Sanguinary Scripture": {
+    "cost": 10,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Mead of Madness": {
+    "cost": 10,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Orb of Towering Presence": {
+    "cost": 10,
+    "hordeCost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Piercing Arrow": {
+    "cost": 10,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Pipes of Terror": {
+    "cost": 10,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Skirmisher's Boots": {
+    "cost": 10,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Aegis of the Elohi": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Blood of the Old King": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Chalice of Wrath": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Dwarven Ale": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Helm of Confidence": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Helm of the Drunken Ram": {
+    "cost": 15,
+    "hordeCost": 20,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Sacred Horn": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Sir Jesse's Boots of Striding": {
+    "cost": 15,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Blessing of the Gods": {
+    "cost": 20,
+    "hordeCost": 30,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Brew of Haste": {
+    "cost": 20,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Chant of Hate": {
+    "cost": 20,
+    "hordeCost": 30,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Dragonshard Shield": {
+    "cost": 20,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Hammer of Measured Force": {
+    "cost": 20,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Maccwar's Potion of the Caterpillar": {
+    "cost": 20,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "The Scrying Gem": {
+    "cost": 25,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Brew of Strength": {
+    "cost": 30,
+    "hordeCost": 40,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Diadem of Dragonkind": {
+    "cost": 30,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Brew of Sharpness": {
+    "cost": 35,
+    "hordeCost": 45,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Wine of Elvenkind": {
+    "cost": 40,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Crystal Pendent of Retribution": {
+    "cost": 50,
+    "heroOnly": false,
+    "individualOnly": false
+  },
+  "Ej Periscope": {
+    "cost": 5,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Amulet of the Fireheart": {
+    "cost": 10,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Conjurer's Staff": {
+    "cost": 10,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Torc of Dissonance": {
+    "cost": 10,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Wingbane Cloak": {
+    "cost": 10,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Crown of the Wizard King": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Talisman of Silence": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Trickster's Wand": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Wand of Borrowed Time": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Banner of Abbetshire": {
+    "cost": 20,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Blade of the Beast Slayer": {
+    "cost": 20,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Inspiring Talisman": {
+    "cost": 20,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Tome of Darkness": {
+    "cost": 20,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Zephyr Crown": {
+    "cost": 20,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Lute of Insatiable Darkness": {
+    "cost": 25,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Shroud of the Saint": {
+    "cost": 25,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "The Boomstick": {
+    "cost": 25,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Boots of Levitation": {
+    "cost": 30,
+    "heroOnly": true,
+    "individualOnly": false
+  },
+  "Darklord's Onyx Ring": {
+    "cost": 10,
+    "heroOnly": true,
+    "individualOnly": true
+  },
+  "Gnome-Glass Shield": {
+    "cost": 10,
+    "heroOnly": true,
+    "individualOnly": true
+  },
+  "Axe of the Giant Slayer": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": true
+  },
+  "Mournful Blade": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": true
+  },
+  "Scythe of the Harvester": {
+    "cost": 15,
+    "heroOnly": true,
+    "individualOnly": true
+  },
+  "Boots of the Seven Leagues": {
+    "cost": 30,
+    "heroOnly": true,
+    "individualOnly": true
+  },
+  "Wings of Honeymaze": {
+    "cost": 40,
+    "heroOnly": true,
+    "individualOnly": true
+  }
+}

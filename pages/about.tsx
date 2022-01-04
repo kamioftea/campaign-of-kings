@@ -105,7 +105,7 @@ const About: NextPage = () => {
                     <tbody>
                         <tr>
                             <td>-</td>
-                            <td>Base camp</td>
+                            <td>Base Camp</td>
                             <td>
                                 Two standard* unit types<br/>
                                 One hero type<br/>

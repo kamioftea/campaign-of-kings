@@ -17,12 +17,24 @@ export interface WarhostData {
     lists: ListSummary[],
     army?: ArmyData,
     warband?: WarbandData,
+    artefacts: {[keys: string]: Artefact},
 }
+
+export interface Artefact {
+    cost: number,
+    hordeCost?:number,
+    heroOnly: boolean,
+    individualOnly: true,
+}
+
+export type UnitCategory = 'Standard' | 'Irregular' | 'Monster' | 'Titan' | 'War Engine' | 'Hero';
+
+type UnitType = "Infantry" | "Heavy Infantry" | "Large Infantry" | "Monstrous Infantry" | "Cavalry" | "Large Cavalry"
+    | "Chariot" | "Monster" | "Titan" | "War Engine" | "Hero" | 'Formation';
 
 export interface Unit {
     name: string,
-    type: "Infantry" | "Heavy Infantry" | "Large Infantry" | "Monstrous Infantry" | "Cavalry" | "Large Cavalry"
-        | "Chariot" | "Monster" | "Titan" | "War Engine" | "Hero" | 'Formation',
+    type: UnitType,
     subType?: "Inf" | "Hv Inf" | "Lrg Inf" | "Mon-Inf" | "Cav" | "Lrg Cav" | "Cht" | "Mon-Cht" | "Ttn",
     irregular: boolean,
     sizes: { [key: string]: number[] },
@@ -31,11 +43,13 @@ export interface Unit {
 
 export type Alignment = "Good" | "Neutral" | "Evil";
 
+export type UnitBreakdown = { [category in UnitCategory]: Unit[] };
+
 export interface ArmyData {
     name: string,
     alignment: Alignment,
     vanguardList?: string,
-    units: Unit[],
+    units: UnitBreakdown,
 }
 
 export interface Model {
@@ -49,6 +63,28 @@ export interface WarbandData {
     units: Model[],
 }
 
+const emptyUnitData = (): UnitBreakdown => ({
+    Standard: [],
+    Irregular: [],
+    Monster: [],
+    Titan: [],
+    'War Engine': [],
+    Hero: [],
+})
+
+function categoryFromUnit(unit: Unit): UnitCategory | undefined {
+    switch (unit.type) {
+        case "Monster":
+        case "Titan":
+        case "War Engine":
+        case "Hero":
+            return unit.type;
+        case "Formation":
+            return undefined;
+        default:
+            return unit.irregular ? 'Irregular' : 'Standard'
+    }
+}
 
 export const army_lists: Promise<{ [key: string]: ArmyData }> = glob('./data/kings-of-war/*.json')
     .then(files => Promise.all([...files.map(f => fs.readFile(f, 'utf-8').then(json => [json, f]))]))
@@ -56,11 +92,23 @@ export const army_lists: Promise<{ [key: string]: ArmyData }> = glob('./data/kin
         Object.fromEntries(
             contents.map(
                 ([json, file]) => {
-                    const data = JSON.parse(json) as ArmyData;
-                    let list_name = Path.parse(file).name;
+                    const data = JSON.parse(json);
+                    const list_name = Path.parse(file).name;
+
+                    data.units = (data.units as Unit[]).reduce(
+                        (acc, unit) => {
+                            const category = categoryFromUnit(unit);
+                            if(category !== undefined) {
+                                acc[category].push(unit)
+                            }
+                            return acc;
+                        },
+                        emptyUnitData()
+                    )
+
                     return [
                         list_name,
-                        {vanguardList: list_name, ...data}
+                        data
                     ]
                 }
             )
@@ -99,3 +147,6 @@ export const warhost_lists: Promise<ListSummary[]> = Promise.all([army_lists, wa
             };
         })
     )
+
+export const artefacts: Promise<{[keys: string]: Artefact}> =
+    fs.readFile('./data/artefacts.json', 'utf-8').then(contents => JSON.parse(contents));

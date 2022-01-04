@@ -69,3 +69,27 @@ td > .button-group {
   }
 }
 
+.fieldset {
+  legend {
+    font-family: $header-font-family;
+    font-size: 1.5rem;
+
+    a {
+      font-family: $body-font-family;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+label.inline {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "Left Right"
+                       "Below Below";
+  align-items: center;
+  grid-gap: 0.5rem;
+
+  & > select, & > input, & > textarea, & > .form-error {
+    margin: 0;
+  }
+}
