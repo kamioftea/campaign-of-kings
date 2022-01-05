@@ -3,61 +3,111 @@
   "units": [
     {
       "name": "Ax",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 12,
       "options": {}
     },
     {
       "name": "Greatax",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Krudger",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 45,
       "options": {}
     },
     {
       "name": "Godspeaker",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 31,
       "options": {}
     },
     {
       "name": "Morax",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 22,
       "options": {}
     },
     {
       "name": "Orclings",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Orclings"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Gore Rider",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 24,
       "options": {}
     },
     {
       "name": "Troll",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Troll"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Krusher",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Skulk",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Orc"
+      ],
       "points": 12,
       "options": {}
     }

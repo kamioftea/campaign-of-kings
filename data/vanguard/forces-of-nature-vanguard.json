@@ -3,25 +3,45 @@
   "units": [
     {
       "name": "Centaur Bray-Strider",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Nature"
+      ],
       "points": 22,
       "options": {}
     },
     {
       "name": "Druid",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Nature"
+      ],
       "points": 36,
       "options": {}
     },
     {
       "name": "Salamander Unblooded",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Salamander"
+      ],
       "points": 11,
       "options": {}
     },
     {
       "name": "Naiad",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 12,
       "options": {
         "Harpoon-gun": "3"
@@ -29,67 +49,125 @@
     },
     {
       "name": "Naiad Ensnarer",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 20,
       "options": {}
     },
     {
       "name": "Centaur Chief",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Nature"
+      ],
       "points": 43,
       "options": {}
     },
     {
       "name": "Wild Companion",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Nature",
+        "Beast"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "Forest Shambler",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Nature",
+        "Beast"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "Gladewalker Druid",
-      "type": "Command, Spellcaster",
+      "types": [
+        "Command",
+        "Spellcaster"
+      ],
+      "races": [
+        "Nature"
+      ],
       "points": 40,
       "options": {}
     },
     {
       "name": "Fire Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 40,
       "options": {}
     },
     {
       "name": "Earth Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 35,
       "options": {}
     },
     {
       "name": "Water Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 32,
       "options": {}
     },
     {
       "name": "Centaur Bray-Hunter",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Nature"
+      ],
       "points": 20,
       "options": {}
     },
     {
       "name": "Centaur Tenderhoof",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Nature"
+      ],
       "points": 15,
       "options": {}
     },
     {
       "name": "Salamander Veteran",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Salamander"
+      ],
       "points": 28,
       "options": {}
     }

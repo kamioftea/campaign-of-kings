@@ -3,61 +3,122 @@
   "units": [
     {
       "name": "Skeleton",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 6,
       "options": {}
     },
     {
       "name": "Skeleton Archer",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 7,
       "options": {}
     },
     {
       "name": "Revenant",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Desert Swarm",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Empire of Dust",
+        "Beast"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Enslaved Guardian",
-      "type": "Large, Spellcaster",
+      "types": [
+        "Large",
+        "Spellcaster"
+      ],
+      "races": [
+        "Empire of Dust"
+      ],
       "points": 44,
       "options": {}
     },
     {
       "name": "Pharoahs Champion",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 48,
       "options": {}
     },
     {
       "name": "Revenant Champion",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 26,
       "options": {}
     },
     {
       "name": "Sand Wraith",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Mummy",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "High Priest",
-      "type": "Command, Spellcaster",
+      "types": [
+        "Command",
+        "Spellcaster"
+      ],
+      "races": [
+        "Undead",
+        "Empire of Dust"
+      ],
       "points": 39,
       "options": {}
     }

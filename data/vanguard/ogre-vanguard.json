@@ -3,97 +3,190 @@
   "units": [
     {
       "name": "Paymaster",
-      "type": "Large, Support",
+      "types": [
+        "Large",
+        "Support"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 24,
       "options": {}
     },
     {
       "name": "Crocodog",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Beast"
+      ],
       "points": 7,
       "options": {}
     },
     {
       "name": "Shooter",
-      "type": "Large, Warrior",
+      "types": [
+        "Large",
+        "Warrior"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 25,
       "options": {}
     },
     {
       "name": "Cleaver",
-      "type": "Large, Warrior",
+      "types": [
+        "Large",
+        "Warrior"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 22,
       "options": {}
     },
     {
       "name": "Siege Breaker",
-      "type": "Large, Support",
+      "types": [
+        "Large",
+        "Support"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Berserker Brave",
-      "type": "Large, Warrior",
+      "types": [
+        "Large",
+        "Warrior"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Brawler",
-      "type": "Large, Warrior",
+      "types": [
+        "Large",
+        "Warrior"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 18,
       "options": {}
     },
     {
       "name": "Red Goblin",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Goblin"
+      ],
       "points": 6,
       "options": {}
     },
     {
       "name": "Red Goblin Biggit",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Goblin"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Boomer",
-      "type": "Large, Warrior",
+      "types": [
+        "Large",
+        "Warrior"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "Ogre Warlock",
-      "type": "Large, Spellcaster",
+      "types": [
+        "Large",
+        "Spellcaster"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 31,
       "options": {}
     },
     {
       "name": "Ogre Sergeant",
-      "type": "Command, Large",
+      "types": [
+        "Command",
+        "Large"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 37,
       "options": {}
     },
     {
       "name": "Hunter",
-      "type": "Large, Warrior",
+      "types": [
+        "Large",
+        "Warrior"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 21,
       "options": {}
     },
     {
       "name": "Boomer Sergeant",
-      "type": "Large, Support",
+      "types": [
+        "Large",
+        "Support"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 37,
       "options": {}
     },
     {
       "name": "Berserker Bully",
-      "type": "Command, Large",
+      "types": [
+        "Command",
+        "Large"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 42,
       "options": {}
     },
     {
       "name": "The Matriarch*",
-      "type": "Command, Large",
+      "types": [
+        "Command",
+        "Large"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 33,
       "options": {}
     }

@@ -3,49 +3,95 @@
   "units": [
     {
       "name": "Bowman",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Villein",
+        "Human"
+      ],
       "points": 7,
       "options": {}
     },
     {
       "name": "Poacher",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Villein",
+        "Human"
+      ],
       "points": 22,
       "options": {}
     },
     {
       "name": "Spearmen",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Villein",
+        "Human"
+      ],
       "points": 9,
       "options": {}
     },
     {
       "name": "Devoted",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 26,
       "options": {}
     },
     {
       "name": "Mounted Knight",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Knight",
+        "Human"
+      ],
       "points": 28,
       "options": {}
     },
     {
       "name": "Water Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 32,
       "options": {}
     },
     {
       "name": "Exemplar",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Knight",
+        "Human"
+      ],
       "points": 41,
       "options": {}
     },
     {
       "name": "Foot Knight",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Knight",
+        "Human"
+      ],
       "points": 15,
       "options": {}
     }

@@ -3,61 +3,112 @@
   "units": [
     {
       "name": "Kindred Archer",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Guardian Shambler",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Nature",
+        "Beast"
+      ],
       "points": 35,
       "options": {}
     },
     {
       "name": "Kindred Tallspear",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "Kindred Gladestalker",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 26,
       "options": {}
     },
     {
       "name": "Battle-mage",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 38,
       "options": {}
     },
     {
       "name": "Prince",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 44,
       "options": {}
     },
     {
       "name": "Battle-cat",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Beast"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "Citizen Levy",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 8,
       "options": {}
     },
     {
       "name": "Silverbreeze Gladewarden",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 28,
       "options": {}
     },
     {
       "name": "Seaguard",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 22,
       "options": {}
     }

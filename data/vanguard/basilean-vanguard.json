@@ -3,55 +3,100 @@
   "units": [
     {
       "name": "Paladin Defender",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 17,
       "options": {}
     },
     {
       "name": "Crossbowman",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 9,
       "options": {}
     },
     {
       "name": "Sisterhood",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 11,
       "options": {}
     },
     {
       "name": "Gur Panther",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Beast"
+      ],
       "points": 15,
       "options": {}
     },
     {
       "name": "Sergeant",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 17,
       "options": {}
     },
     {
       "name": "Sisterhood Scout",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Veteran Sergeant",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 30,
       "options": {}
     },
     {
       "name": "Paladin Chaplain",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 38,
       "options": {}
     },
     {
       "name": "Man-at-arms",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 8,
       "options": {
         "spear": "1"
@@ -59,31 +104,57 @@
     },
     {
       "name": "War-Wizard",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "Veteran Sister",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 20,
       "options": {}
     },
     {
       "name": "Ogre Palace Guard",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Ogre",
+        "Basilean"
+      ],
       "points": 32,
       "options": {}
     },
     {
       "name": "Dictator",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 41,
       "options": {}
     },
     {
       "name": "Abbess",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Basilean"
+      ],
       "points": 44,
       "options": {}
     }

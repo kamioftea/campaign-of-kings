@@ -3,7 +3,12 @@
   "units": [
     {
       "name": "Levy",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 8,
       "options": {
         "spear": "1"
@@ -11,91 +16,166 @@
     },
     {
       "name": "Ironwatch",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Ironclad",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "Ranger",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 19,
       "options": {}
     },
     {
       "name": "Shieldbreaker",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Ironguard",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Brock Rider",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 30,
       "options": {}
     },
     {
       "name": "Mastiff Packmaster",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 20,
       "options": {}
     },
     {
       "name": "Dwarf Sergeant",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 31,
       "options": {}
     },
     {
       "name": "Ranger Captain",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 44,
       "options": {}
     },
     {
       "name": "Stone Priest",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 28,
       "options": {}
     },
     {
       "name": "Earth Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 35,
       "options": {}
     },
     {
       "name": "Battle Driller",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 29,
       "options": {}
     },
     {
       "name": "Flame Priest",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 30,
       "options": {}
     },
     {
       "name": "Steel Juggernaut*",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 44,
       "options": {}
     },
     {
       "name": "Dwarf Berserker Lord",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 43,
       "options": {}
     }

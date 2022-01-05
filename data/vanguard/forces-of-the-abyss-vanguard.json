@@ -3,85 +3,156 @@
   "units": [
     {
       "name": "Lower Abyssal",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 8,
       "options": {}
     },
     {
       "name": "Flamebearer",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 9,
       "options": {}
     },
     {
       "name": "Imps",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "Abyssal Guard",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Gargoyle",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 18,
       "options": {}
     },
     {
       "name": "Succubus Lurker",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 24,
       "options": {}
     },
     {
       "name": "Hellequin",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 29,
       "options": {}
     },
     {
       "name": "Abyssal Warlock",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 36,
       "options": {}
     },
     {
       "name": "Tormentor (Champion)",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 44,
       "options": {}
     },
     {
       "name": "Hellequin Blood-masque",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 42,
       "options": {}
     },
     {
       "name": "Succubus",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Hellhound",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Beast",
+        "Abyssal"
+      ],
       "points": 15,
       "options": {}
     },
     {
       "name": "Despoiler",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 37,
       "options": {}
     },
     {
       "name": "Seductress",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 45,
       "options": {}
     }

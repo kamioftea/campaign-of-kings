@@ -3,7 +3,12 @@
   "units": [
     {
       "name": "Foot Soldier",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 7,
       "options": {
         "REPLACE Spear with Heavy Weapon": "2"
@@ -11,31 +16,56 @@
     },
     {
       "name": "Leader of Men",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 41,
       "options": {}
     },
     {
       "name": "Berserker",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 21,
       "options": {}
     },
     {
       "name": "Knight",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 29,
       "options": {}
     },
     {
       "name": "Veteran Soldier",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Foot Guard",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 12,
       "options": {
         "Large Shield": "2"
@@ -43,19 +73,34 @@
     },
     {
       "name": "Arquebusier",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 12,
       "options": {}
     },
     {
       "name": "Ogre Warrier",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Ogre"
+      ],
       "points": 24,
       "options": {}
     },
     {
       "name": "Wizard",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 24,
       "options": {}
     }

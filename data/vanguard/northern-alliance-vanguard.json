@@ -3,43 +3,78 @@
   "units": [
     {
       "name": "Human Clansman",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 8,
       "options": {}
     },
     {
       "name": "Snow Troll",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Troll"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Huscarl",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 15,
       "options": {}
     },
     {
       "name": "Ice Kin Hunter",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 22,
       "options": {}
     },
     {
       "name": "Ice Naiad",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 12,
       "options": {}
     },
     {
       "name": "Half-Elf Berserker",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Half-elf"
+      ],
       "points": 19,
       "options": {}
     },
     {
       "name": "Dwarf Clansman",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Dwarf"
+      ],
       "points": 8,
       "options": {
         "Frosthammer": "1"
@@ -47,43 +82,80 @@
     },
     {
       "name": "Snow Troll Prime",
-      "type": "Command, Large",
+      "types": [
+        "Command",
+        "Large"
+      ],
+      "races": [
+        "Troll"
+      ],
       "points": 54,
       "options": {}
     },
     {
       "name": "Elf Clansman",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 11,
       "options": {}
     },
     {
       "name": "Ice Blade",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Half-elf"
+      ],
       "points": 42,
       "options": {}
     },
     {
       "name": "Ice Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 47,
       "options": {}
     },
     {
       "name": "Ice Queen",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "Thegn",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 39,
       "options": {}
     },
     {
       "name": "Frostfang Cavalry",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Half-elf",
+        "Beast"
+      ],
       "points": 35,
       "options": {}
     }

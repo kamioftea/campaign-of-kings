@@ -3,7 +3,12 @@
   "units": [
     {
       "name": "Tribal Warrior",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 7,
       "options": {
         "spear": "1"
@@ -11,13 +16,24 @@
     },
     {
       "name": "Harpy",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Beastman",
+        "Beast"
+      ],
       "points": 17,
       "options": {}
     },
     {
       "name": "Longhorn",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 13,
       "options": {
         "Two-handed Weapon": "2"
@@ -25,31 +41,56 @@
     },
     {
       "name": "Shaman",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 32,
       "options": {}
     },
     {
       "name": "Lycan",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "Tribal Hunter",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 26,
       "options": {}
     },
     {
       "name": "Spirit Walker",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Great Chieftan",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Beastman"
+      ],
       "points": 44,
       "options": {}
     }

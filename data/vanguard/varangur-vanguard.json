@@ -3,7 +3,12 @@
   "units": [
     {
       "name": "Thrall",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 6,
       "options": {
         "Gift of Korgaan: Brand of the Warrior": "4",
@@ -13,7 +18,12 @@
     },
     {
       "name": "Night Raider",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 24,
       "options": {
         "REPLACE Bow with a Poisoned Throwing Weapon": "2",
@@ -24,7 +34,12 @@
     },
     {
       "name": "Warrior",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 8,
       "options": {
         "Two-handed Weapon": "2",
@@ -35,7 +50,13 @@
     },
     {
       "name": "Direfang Rider",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Human",
+        "Beast"
+      ],
       "points": 35,
       "options": {
         "Gift of Korgaan: Brand of the Warrior": "4",
@@ -45,7 +66,12 @@
     },
     {
       "name": "Bloodsworn",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 13,
       "options": {
         "Gift of Korgaan: Brand of the Warrior": "4",
@@ -55,7 +81,12 @@
     },
     {
       "name": "Reaver",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 16,
       "options": {
         "Gift of Korgaan: Brand of the Warrior": "4",
@@ -65,7 +96,12 @@
     },
     {
       "name": "Magus",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 30,
       "options": {
         "Gift of Korgaan: Brand of the Warrior": "4",
@@ -75,7 +111,12 @@
     },
     {
       "name": "Chieftan",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 40,
       "options": {
         "Gift of Korgaan: Brand of the Warrior": "4",

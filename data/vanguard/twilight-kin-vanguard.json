@@ -3,49 +3,90 @@
   "units": [
     {
       "name": "Citizen Levy",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 9,
       "options": {}
     },
     {
       "name": "Impaler",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "Shadow",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Shadowhound",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Nightstalker",
+        "Beast"
+      ],
       "points": 17,
       "options": {}
     },
     {
       "name": "Butcher",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Nightstalker"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "Summoner Crone",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Blade Dancer",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Executioner",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Elf"
+      ],
       "points": 42,
       "options": {}
     }

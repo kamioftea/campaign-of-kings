@@ -3,7 +3,12 @@
   "units": [
     {
       "name": "City Militia",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 7,
       "options": {
         "spear": "1"
@@ -11,13 +16,23 @@
     },
     {
       "name": "Household Knight",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 29,
       "options": {}
     },
     {
       "name": "House Guard",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 11,
       "options": {
         "Halberd": "2"
@@ -25,7 +40,12 @@
     },
     {
       "name": "Rhor Marksman",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 26,
       "options": {
         "REPLACE Crossbow with Musket": "3"
@@ -33,19 +53,35 @@
     },
     {
       "name": "Honour Guard",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Human",
+        "Beast"
+      ],
       "points": 33,
       "options": {}
     },
     {
       "name": "House Guard Captain",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Human"
+      ],
       "points": 42,
       "options": {}
     },
     {
       "name": "Halfling Brave",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Halfling"
+      ],
       "points": 13,
       "options": {
         "Bow": "1"
@@ -53,7 +89,12 @@
     },
     {
       "name": "Halfling Sorcerer",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Halfling"
+      ],
       "points": 28,
       "options": {}
     }

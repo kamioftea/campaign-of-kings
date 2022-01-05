@@ -3,91 +3,169 @@
   "units": [
     {
       "name": "Thuul",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 12,
       "options": {}
     },
     {
       "name": "Riverguard",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Otter Bevy",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Neritican",
+        "Beast"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Naiad Lurker",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 18,
       "options": {}
     },
     {
       "name": "Thuul Mythican",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 26,
       "options": {}
     },
     {
       "name": "Water Elemental",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 32,
       "options": {}
     },
     {
       "name": "Naiad Centurion",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 45,
       "options": {}
     },
     {
       "name": "Naiad Heartpiercer",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Giga",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 35,
       "options": {}
     },
     {
       "name": "Riverguard Sentinel",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 37,
       "options": {}
     },
     {
       "name": "Riverguard Treeleaper",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 19,
       "options": {}
     },
     {
       "name": "Riverguard Dambuster",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 35,
       "options": {}
     },
     {
       "name": "Riverguard Dambuster Sentinel",
-      "type": "Command, Large",
+      "types": [
+        "Command",
+        "Large"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 45,
       "options": {}
     },
     {
       "name": "Naiad Initiate",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Mythican Aquamage",
-      "type": "Command, Spellcaster",
+      "types": [
+        "Command",
+        "Spellcaster"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 40,
       "options": {
         "1 additional Water Elemental": "32"
@@ -95,13 +173,23 @@
     },
     {
       "name": "Placoderm Defender",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 28,
       "options": {}
     },
     {
       "name": "Naiad Envoy",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Neritican"
+      ],
       "points": 24,
       "options": {}
     }

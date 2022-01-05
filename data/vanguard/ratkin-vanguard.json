@@ -3,43 +3,78 @@
   "units": [
     {
       "name": "Swarm-crier",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Twitch Keenear*",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 28,
       "options": {}
     },
     {
       "name": "Nightmare Gunner",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 27,
       "options": {}
     },
     {
       "name": "Nightmare Driller",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 31,
       "options": {}
     },
     {
       "name": "Birthing Daughter*",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 37,
       "options": {}
     },
     {
       "name": "Vermintide",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Beast"
+      ],
       "points": 8,
       "options": {}
     },
     {
       "name": "Wretch",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 6,
       "options": {
         "spear": "1"
@@ -47,49 +82,89 @@
     },
     {
       "name": "Hackpaw",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 18,
       "options": {}
     },
     {
       "name": "Ratkin Warrior",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Scurrier",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Brute Enforcer",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 39,
       "options": {}
     },
     {
       "name": "Shock Trooper",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 13,
       "options": {}
     },
     {
       "name": "War-Chief",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 36,
       "options": {}
     },
     {
       "name": "Night Terror",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 26,
       "options": {}
     },
     {
       "name": "Warlock",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Ratkin"
+      ],
       "points": 31,
       "options": {}
     }

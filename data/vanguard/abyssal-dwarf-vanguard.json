@@ -3,103 +3,191 @@
   "units": [
     {
       "name": "Decimator",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 21,
       "options": {}
     },
     {
       "name": "Blacksoul",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 14,
       "options": {}
     },
     {
       "name": "Mobile Katsuchan",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 23,
       "options": {}
     },
     {
       "name": "Gargoyle",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Abyssal"
+      ],
       "points": 15,
       "options": {}
     },
     {
       "name": "Abyssal Halfbreed",
-      "type": "Warrior",
+      "types": [
+        "Warrior"
+      ],
+      "races": [
+        "Halfbreed"
+      ],
       "points": 24,
       "options": {}
     },
     {
       "name": "Slave Driver",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Slave Orc",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Slave",
+        "Orc"
+      ],
       "points": 10,
       "options": {}
     },
     {
       "name": "Lesser Obsidian Golem",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 37,
       "options": {}
     },
     {
       "name": "Immortal Guard",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 20,
       "options": {}
     },
     {
       "name": "Iron Caster",
-      "type": "Spellcaster",
+      "types": [
+        "Spellcaster"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 28,
       "options": {}
     },
     {
       "name": "Ratkin Slave",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Slave",
+        "Ratkin"
+      ],
       "points": 6,
       "options": {}
     },
     {
       "name": "Mutated Mastiff",
-      "type": "Grunt",
+      "types": [
+        "Grunt"
+      ],
+      "races": [
+        "Slave",
+        "Beast"
+      ],
       "points": 8,
       "options": {}
     },
     {
       "name": "Hexcaster*",
-      "type": "Support",
+      "types": [
+        "Support"
+      ],
+      "races": [
+        "Beast"
+      ],
       "points": 16,
       "options": {}
     },
     {
       "name": "Infernox",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 34,
       "options": {}
     },
     {
       "name": "Charnox",
-      "type": "Large",
+      "types": [
+        "Large"
+      ],
+      "races": [
+        "Elemental"
+      ],
       "points": 40,
       "options": {}
     },
     {
       "name": "Overmaster",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 42,
       "options": {}
     },
     {
       "name": "Immortal Guardian",
-      "type": "Command",
+      "types": [
+        "Command"
+      ],
+      "races": [
+        "Abyssal Dwarf"
+      ],
       "points": 41,
       "options": {}
     }
