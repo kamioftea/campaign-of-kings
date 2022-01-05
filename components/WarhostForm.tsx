@@ -278,24 +278,29 @@ export function WarhostForm({user}: ForceFormProps) {
         return <p>Loading</p>
     }
 
+    let elements = [];
+
     if (error || !warhostData) {
-        return <div className="callout alert">
-            <FiAlertTriangle/>
-            <p>{error ?? 'Failed to load army data'}</p>
-        </div>
+        elements.push(
+            <div key="error" className="callout alert">
+                <p><FiAlertTriangle/> {error?.message ?? 'Failed to load army data'}</p>
+            </div>
+        )
     }
 
-    let elements = [];
     if (!user.warhost) {
         user.warhost = {name: ''};
     }
 
-    if (!user.warhost?.army?.list) {
-        elements.push(<ArmyChooser key="army-chooser" lists={warhostData.lists} onSelect={(army) => updateWarhost({"army.list": army})}/>)
-    }
-    else if(!user.warhost.army.complete) {
+    if ((error && !error.renderPage) || !warhostData) {
+        return;
+    } else if (!user.warhost?.army?.list) {
+        elements.push(<ArmyChooser key="army-chooser" lists={warhostData.lists}
+                                   onSelect={(army) => updateWarhost({"army.list": army})}/>)
+    } else if (!user.warhost.army.complete) {
         elements.push(
             <TerritoryChooser
+                key="territory-chooser"
                 territories={user.warhost.army.territories}
                 units={warhostData.army?.units}
                 artefacts={warhostData.artefacts}
@@ -327,7 +332,7 @@ export function WarhostForm({user}: ForceFormProps) {
         }
 
         elements.push(
-            <div className="submit-row">
+            <div key="submit-territories" className="submit-row">
                 <button className="button primary"
                         onClick={handleBack}
                         onKeyPress={handleBack}>

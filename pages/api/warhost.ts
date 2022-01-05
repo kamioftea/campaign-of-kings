@@ -1,9 +1,10 @@
 import {BadRequest, getLoginSession, UserError} from '../../lib/auth'
 import {NextApiRequest, NextApiResponse} from "next";
 import {Role} from "../../model/UserDocument";
-import {army_lists, artefacts, warband_lists, warhost_lists, WarhostData} from "../../model/WarhostData";
+import {eventual_army_lists, eventual_artefacts, warband_lists, warhost_lists, WarhostData} from "../../model/WarhostData";
 import {validUpdateKeys, Warhost, WarhostUpdates} from "../../model/Warhost";
 import {userResponse} from "../../model/User";
+import {ValidationError} from "yup";
 
 export default async function handle(req: NextApiRequest, res: NextApiResponse) {
     switch (req.method) {
@@ -24,7 +25,7 @@ async function getWarhostData(req: NextApiRequest, res: NextApiResponse) {
         const army_list = req.query.army_list as string;
 
         const lists = await warhost_lists;
-        const army = army_list ? (await army_lists)[army_list] : undefined;
+        const army = army_list ? (await eventual_army_lists)[army_list] : undefined;
         let warbandData = await warband_lists;
         const warband = army?.vanguardList ? warbandData[army.vanguardList] : undefined;
 
@@ -32,7 +33,7 @@ async function getWarhostData(req: NextApiRequest, res: NextApiResponse) {
             lists,
             army,
             warband,
-            artefacts: await artefacts,
+            artefacts: await eventual_artefacts,
         }
 
         res.status(200).json(data);
@@ -65,23 +66,28 @@ async function updateWarhost(req: NextApiRequest, res: NextApiResponse) {
     try {
         const {user} = await getLoginSession(req, Role.PLAYER)
         const updates = req.body as WarhostUpdates;
-        const validators = await validUpdateKeys();
+        const validators = (await validUpdateKeys())(user, updates);
         user.warhost = user.warhost || {name: ''};
-        Object.entries(updates).forEach(
-            ([key, value]) => {
+        await Promise.all(Object.entries(updates).map(
+            async ([key, value]) => {
                 let validator = validators[key as keyof WarhostUpdates];
                 if(!validator) {
                     throw new BadRequest(`No validator for ${key}.`);
                 }
-                value = validator.cast(value);
-                deepSet(user.warhost as Warhost, key, value);
+
+                const validated = await validator.validate(value);
+                deepSet(user.warhost as Warhost, key, validated);
             }
-        );
+        ));
 
         await user.save();
 
         res.status(200).json(userResponse(user))
     } catch (error) {
+        if((error as Error).name === 'ValidationError') {
+            const validationError = error as ValidationError;
+            return res.status(400).send(validationError.message)
+        }
         res.status((error as UserError).status_code ?? 500).end((error as UserError).user_message ?? "Unexpected error")
     }
 }

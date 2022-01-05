@@ -10,4 +10,8 @@ module.exports = {
       path.join(__dirname, 'node_modules', 'foundation-sites', 'scss'),
     ],
   },
+  i18n: {
+    locales: ["en-GB"],
+    defaultLocale: "en-GB",
+  },
 }

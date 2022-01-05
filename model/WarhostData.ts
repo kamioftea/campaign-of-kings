@@ -86,7 +86,7 @@ function categoryFromUnit(unit: Unit): UnitCategory | undefined {
     }
 }
 
-export const army_lists: Promise<{ [key: string]: ArmyData }> = glob('./data/kings-of-war/*.json')
+export const eventual_army_lists: Promise<{ [key: string]: ArmyData }> = glob('./data/kings-of-war/*.json')
     .then(files => Promise.all([...files.map(f => fs.readFile(f, 'utf-8').then(json => [json, f]))]))
     .then(contents =>
         Object.fromEntries(
@@ -132,7 +132,7 @@ export const warband_lists: Promise<{ [key: string]: WarbandData }> = glob('./da
         )
     );
 
-export const warhost_lists: Promise<ListSummary[]> = Promise.all([army_lists, warband_lists])
+export const warhost_lists: Promise<ListSummary[]> = Promise.all([eventual_army_lists, warband_lists])
     .then(([armies, warbands]) =>
         Object.entries(armies).map(([key, army_data]) => {
             const warband_list = army_data.vanguardList ?? key;
@@ -148,5 +148,5 @@ export const warhost_lists: Promise<ListSummary[]> = Promise.all([army_lists, wa
         })
     )
 
-export const artefacts: Promise<{[keys: string]: Artefact}> =
+export const eventual_artefacts: Promise<{[keys: string]: Artefact}> =
     fs.readFile('./data/artefacts.json', 'utf-8').then(contents => JSON.parse(contents));

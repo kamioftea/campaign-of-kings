@@ -18,5 +18,6 @@ export function DefaultHead({title, description}: DefaultHeadProps) {
         <meta name="description"
               content={description}/>
         <link rel="icon" href="/favicon.ico"/>
+        <meta name="l"/>
     </Head>;
 }
