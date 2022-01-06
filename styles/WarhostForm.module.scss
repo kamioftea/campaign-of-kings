@@ -40,3 +40,31 @@
     }
   }
 }
+
+.warbandContainer {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-gap: divide($global-margin, 2);
+  grid-template-areas: "Retinue Retinue Unspent"
+                       "Roster Caravan Caravan";
+
+  :global .fieldset {
+    margin: 0;
+  }
+
+  & > *:nth-child(1) {
+    grid-area: Retinue;
+  }
+
+  & > *:nth-child(2) {
+    grid-area: Unspent;
+  }
+
+  & > *:nth-child(3) {
+    grid-area: Roster;
+  }
+
+  & > *:nth-child(4) {
+    grid-area: Caravan;
+  }
+}

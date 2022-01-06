@@ -52,15 +52,17 @@ export interface ArmyData {
     units: UnitBreakdown,
 }
 
-export interface Model {
+export interface ModelType {
     name: string,
-    type: string,
+    types: string[],
+    races: string[],
+    options: {[keys: string]: number}
     points: number,
 }
 
 export interface WarbandData {
     name: string,
-    units: Model[],
+    units: ModelType[],
 }
 
 const emptyUnitData = (): UnitBreakdown => ({

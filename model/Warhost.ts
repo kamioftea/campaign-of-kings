@@ -22,12 +22,34 @@ const armySchema = new Schema<Army>({
     complete: Boolean,
 });
 
+export interface Model {
+    type: string,
+    name?: string,
+    xp: number,
+    upgrades: string[]
+}
+
 export interface Warband {
     list: string
+    unspent: number,
+    retinue: {
+        leader?: Model
+    },
+    roster: Model[]
 }
+
+const modelSchema = new Schema<Model>({
+    type: String,
+    name: String,
+    xp: Number,
+    upgrades: [String]
+})
 
 const warbandSchema = new Schema<Warband>({
     list: String,
+    unspent: Number,
+    retinue: {type: Map, of: modelSchema},
+    roster: [modelSchema]
 })
 
 export type SlotType = UnitCategory | 'Artefact';
@@ -50,6 +72,7 @@ export interface Warhost {
     name: string,
     army?: Army,
     warband?: Warband,
+    skipVanguard?: boolean,
 }
 
 export const warhostSchema = new Schema<Warhost>({
@@ -62,6 +85,8 @@ export interface WarhostUpdates {
     "army.list"?: string,
     "army.territories"?: Territory[]
     "army.complete"?: boolean
+    "skipVanguard"?: boolean
+    "warband"?: Warband
 }
 
 export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: WarhostUpdates) => { [key in keyof WarhostUpdates]: yup.AnySchema }> => {
@@ -129,7 +154,9 @@ export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: W
                         }
                     })
             ),
-            "army.complete": yup.boolean()
+            "army.complete": yup.boolean(),
+            "skipVanguard": yup.boolean(),
+            "warband": yup.object(),
         });
     };
 };

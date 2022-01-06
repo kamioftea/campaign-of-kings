@@ -1,10 +1,10 @@
 import {UserDocument} from "../model/UserDocument";
 import {useWarhostData} from "../hooks/useWarhostData";
-import {Alignment, Artefact, ListSummary, UnitBreakdown, UnitCategory} from "../model/WarhostData";
+import {Alignment, Artefact, ListSummary, UnitBreakdown, UnitCategory, WarbandData} from "../model/WarhostData";
 import styles from '../styles/WarhostForm.module.scss';
-import {FiAlertTriangle, FiCheck, FiChevronLeft} from "react-icons/fi";
+import {FiAlertTriangle, FiCheck, FiChevronLeft, FiInfo} from "react-icons/fi";
 import {ChangeEvent, KeyboardEvent, MouseEvent, useState} from "react";
-import {SlotType, Territory, TerritorySlot, TerritoryType} from "../model/Warhost";
+import {SlotType, Territory, TerritorySlot, TerritoryType, Warband} from "../model/Warhost";
 
 type ForceFormProps = { user: UserDocument };
 
@@ -271,6 +271,99 @@ function TerritoryChooser({territories, units, artefacts, onChange}: TerritoryCh
     </>
 }
 
+interface VanguardRosterBuilderProps {
+    list: WarbandData | undefined
+    warband: Warband
+    onUpdate: (warband: Warband) => void
+}
+
+function VanguardRosterBuilder({list, warband, onUpdate}: VanguardRosterBuilderProps) {
+    const [skipBoxChecked, toggleSkipBox] = useState<boolean>(false);
+    const [skipBoxClosed, setSkipBoxClosed] = useState<boolean>(false);
+
+    if (!list) {
+        return <p>Loading...</p>
+    }
+
+    const handleRetinueChange = (key: keyof typeof warband.retinue) => (e: ChangeEvent<HTMLSelectElement>) => {
+        e.preventDefault();
+        const name = e.currentTarget.value;
+
+        const oldModel = list?.units.find(m => m.name === warband.retinue[key]?.type)
+        const newModel = list?.units.find(m => m.name === name);
+        warband.unspent = warband.unspent + (oldModel?.points ?? 0) - (newModel?.points ?? 0)
+
+        warband.retinue[key] = {type: name, upgrades: ['Leader Bonus: +1 Red Power Die'], xp: 0};
+
+        onUpdate(warband);
+    }
+
+    return <>
+        <p>
+            Having secured your landing site, you start to plan your next moves. If your campaign is going to succeed
+            you need more information. Hell's Claw is keeping its secrets shrouded in thick mists, and you suspect your
+            force is not the only one to take interest in the power here. You assemble your elite scouts...
+        </p>
+        <h2>Vanguard Roster</h2>
+        {!skipBoxClosed
+            ? <div className="callout info">
+                <button className="close-button" aria-label="Close alert"
+                        type="button"
+                        onClick={() => setSkipBoxClosed(true)}
+                        onKeyPress={() => setSkipBoxClosed(true)}
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p>
+                    <small>
+                        <FiInfo/> The Vanguard aspect of the campaign is optional. If you'd rather just play Kings of
+                        War you can skip this section. Note: that this will mean you can roll at most three dice on the
+                        territory table. You will lose out on the bonus die for winning the Vanguard game.
+                    </small>
+                </p>
+                <div className="submit-row">
+                    <label>
+                        <input type="checkbox"
+                               checked={skipBoxChecked}
+                               onChange={() => { toggleSkipBox(!skipBoxChecked)}}
+                        />
+                        I do not want to play in the Vanguard Campaign
+                    </label>
+                    <button className={`button info ${skipBoxChecked ? '' : 'disabled'} margin-bottom-0 small`}>
+                        Skip
+                    </button>
+                </div>
+            </div>
+            : null
+        }
+        <div className={styles.warbandContainer}>
+            <fieldset className='fieldset'>
+                <legend>Retinue</legend>
+                <label className="inline">
+                    Leader
+                    <select value={warband.retinue.leader?.type} onChange={handleRetinueChange('leader')}>
+                        <option value={undefined}>-- Choose A Leader --</option>
+                        {list.units.filter(m => m.types.includes('Command'))
+                            .map(m => <option key={m.name} value={m.name}>{m.name} ({m.points} pts)</option>)
+                        }
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset className='fieldset'>
+                <legend>Unspent</legend>
+                <div className="stat">{warband.unspent}</div>
+            </fieldset>
+            <fieldset className='fieldset'>
+                <legend>Roster</legend>
+            </fieldset>
+            <fieldset className='fieldset'>
+                <legend>Supply Caravan</legend>
+            </fieldset>
+
+        </div>
+    </>
+}
+
 export function WarhostForm({user}: ForceFormProps) {
     const {warhostData, isLoading, error, updateWarhost} = useWarhostData(user.warhost?.army?.list);
 
@@ -347,7 +440,23 @@ export function WarhostForm({user}: ForceFormProps) {
         )
     }
     else {
-        elements.push(<p>TODO: Vanguard</p>)
+        const warband = user.warhost.warband ?? {
+            list: warhostData.army?.vanguardList ?? '',
+            unspent: 200,
+            retinue: {
+                leader: undefined
+            },
+            roster: []
+        };
+
+        elements.push(
+            <VanguardRosterBuilder key="vanguard-roster-builder"
+                                   list={warhostData.warband}
+                                   warband={warband}
+                                   onUpdate={warband => updateWarhost({"warband": warband})}
+
+            />
+        )
     }
 
     return <>

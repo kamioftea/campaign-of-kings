@@ -1,0 +1,257 @@
+{
+  "Bandages": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Common"
+  },
+  "Bodkin Arrow": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Common"
+  },
+  "Bow": {
+    "cost": 2,
+    "type": "Ranged",
+    "rarity": "Common"
+  },
+  "Brew of Courage": {
+    "cost": 1,
+    "type": "Sundries",
+    "rarity": "Common"
+  },
+  "Buckler": {
+    "cost": 2,
+    "type": "Armour",
+    "rarity": "Common"
+  },
+  "Common Mount": {
+    "cost": 5,
+    "type": "Mount",
+    "rarity": "Common"
+  },
+  "Crossbow": {
+    "cost": 2,
+    "type": "Ranged",
+    "rarity": "Common"
+  },
+  "Crude Throwing Knife": {
+    "cost": 1,
+    "type": "Ranged",
+    "rarity": "Common"
+  },
+  "Dwarven Ale": {
+    "cost": 3,
+    "type": "Sundries",
+    "rarity": "Common"
+  },
+  "Heavy Weapon": {
+    "cost": 3,
+    "type": "Melee",
+    "rarity": "Common"
+  },
+  "Large Shield": {
+    "cost": 3,
+    "type": "Armour",
+    "rarity": "Common"
+  },
+  "Light Crossbow": {
+    "cost": 2,
+    "type": "Ranged",
+    "rarity": "Common"
+  },
+  "Lucky Charm": {
+    "cost": 1,
+    "type": "Magic",
+    "rarity": "Common"
+  },
+  "Sheaf of Arrows": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Common"
+  },
+  "Smelling Salts": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Common"
+  },
+  "Spear": {
+    "cost": 2,
+    "type": "Melee",
+    "rarity": "Common"
+  },
+  "Wicked Dagger": {
+    "cost": 1,
+    "type": "Melee",
+    "rarity": "Common"
+  },
+  "Armour of Confusion": {
+    "cost": 6,
+    "type": "Armour",
+    "rarity": "Rare"
+  },
+  "Banner of the Griffin": {
+    "cost": 8,
+    "type": "Magic",
+    "rarity": "Rare"
+  },
+  "Battle Potion": {
+    "cost": 3,
+    "type": "Sundries",
+    "rarity": "Rare"
+  },
+  "Blade of Slashing": {
+    "cost": 4,
+    "type": "Melee",
+    "rarity": "Rare"
+  },
+  "Blade of the Beast Slayer": {
+    "cost": 4,
+    "type": "Melee",
+    "rarity": "Rare"
+  },
+  "Darklord's Onyx Ring": {
+    "cost": 5,
+    "type": "Magic",
+    "rarity": "Rare"
+  },
+  "Elixir of Resilience": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Rare"
+  },
+  "Forgebreaker": {
+    "cost": 8,
+    "type": "Melee",
+    "rarity": "Rare"
+  },
+  "Full Plate Armour": {
+    "cost": 8,
+    "type": "Armour",
+    "rarity": "Rare"
+  },
+  "Healing Herbs": {
+    "cost": 3,
+    "type": "Sundries",
+    "rarity": "Rare"
+  },
+  "Long Bow": {
+    "cost": 3,
+    "type": "Ranged",
+    "rarity": "Rare"
+  },
+  "Marksman's Rifle": {
+    "cost": 6,
+    "type": "Ranged",
+    "rarity": "Rare"
+  },
+  "Orcsbain's Amulet of Thorns": {
+    "cost": 3,
+    "type": "Magic",
+    "rarity": "Rare"
+  },
+  "Potion of Concentration": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Rare"
+  },
+  "Potion of Haste": {
+    "cost": 2,
+    "type": "Sundries",
+    "rarity": "Rare"
+  },
+  "Rare Mount": {
+    "cost": 8,
+    "type": "Mount",
+    "rarity": "Rare"
+  },
+  "Battle Mount": {
+    "cost": 12,
+    "type": "Mount",
+    "rarity": "Unique"
+  },
+  "Cloak of the Chameleon": {
+    "cost": 10,
+    "type": "Magic",
+    "rarity": "Unique"
+  },
+  "Dunstan's Amulet of Protection": {
+    "cost": 5,
+    "type": "Magic",
+    "rarity": "Unique"
+  },
+  "Explorer's Map": {
+    "cost": 3,
+    "type": "Sundries",
+    "rarity": "Unique"
+  },
+  "Firescorch Scroll": {
+    "cost": 6,
+    "type": "Ranged",
+    "rarity": "Unique"
+  },
+  "Healing Potion": {
+    "cost": 5,
+    "type": "Sundries",
+    "rarity": "Unique"
+  },
+  "Helm of Command": {
+    "cost": 8,
+    "type": "Magic",
+    "rarity": "Unique"
+  },
+  "Helm of Confidence": {
+    "cost": 5,
+    "type": "Magic",
+    "rarity": "Unique"
+  },
+  "Holy Hand Grenades": {
+    "cost": 8,
+    "type": "Ranged",
+    "rarity": "Unique"
+  },
+  "Holy Water": {
+    "cost": 8,
+    "type": "Sundries",
+    "rarity": "Unique"
+  },
+  "Lifeleach Blade": {
+    "cost": 10,
+    "type": "Melee",
+    "rarity": "Unique"
+  },
+  "Medallion of Life": {
+    "cost": 8,
+    "type": "Magic",
+    "rarity": "Unique"
+  },
+  "Power Rune": {
+    "cost": 8,
+    "type": "Magic",
+    "rarity": "Unique"
+  },
+  "Restorative Brew": {
+    "cost": 8,
+    "type": "Sundries",
+    "rarity": "Unique"
+  },
+  "Soulthirst Blade": {
+    "cost": 10,
+    "type": "Melee",
+    "rarity": "Unique"
+  },
+  "Soulthirst Bow": {
+    "cost": 10,
+    "type": "Ranged",
+    "rarity": "Unique"
+  },
+  "Spidersilk Armour": {
+    "cost": 15,
+    "type": "Armour",
+    "rarity": "Unique"
+  },
+  "Wings of Honeymaze": {
+    "cost": 10,
+    "type": "Magic",
+    "rarity": "Unique"
+  }
+}
