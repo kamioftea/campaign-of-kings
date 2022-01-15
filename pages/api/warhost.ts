@@ -1,7 +1,14 @@
 import {BadRequest, getLoginSession, UserError} from '../../lib/auth'
 import {NextApiRequest, NextApiResponse} from "next";
 import {Role} from "../../model/UserDocument";
-import {eventual_army_lists, eventual_artefacts, warband_lists, warhost_lists, WarhostData} from "../../model/WarhostData";
+import {
+    eventual_army_lists,
+    eventual_artefacts,
+    eventual_equipment,
+    warband_lists,
+    warhost_lists,
+    WarhostData
+} from "../../model/WarhostData";
 import {validUpdateKeys, Warhost, WarhostUpdates} from "../../model/Warhost";
 import {userResponse} from "../../model/User";
 import {ValidationError} from "yup";
@@ -34,6 +41,7 @@ async function getWarhostData(req: NextApiRequest, res: NextApiResponse) {
             army,
             warband,
             artefacts: await eventual_artefacts,
+            equipment: await eventual_equipment,
         }
 
         res.status(200).json(data);

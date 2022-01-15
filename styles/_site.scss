@@ -20,7 +20,7 @@ th {
 
 @each $name, $color in $foundation-palette {
   .text-#{$name} {
-    color: $color
+    color: darken($color, 10%)
   }
 }
 
@@ -86,26 +86,39 @@ td > .button-group {
   }
 }
 
-label.inline {
+.inline {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 8rem auto;
   grid-template-areas: "Left Right"
                        "Below Below";
   align-items: center;
   grid-gap: 0.5rem;
 
-  & > select, & > input, & > textarea, & > .form-error {
+  & > select, & > input, & > textarea, & > .form-error, & > .input-group {
     margin: 0;
   }
 }
 
-.submit-row {
+.left-right-row {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.split-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: left;
+  align-items: stretch;
+  justify-items: stretch;
+  @include grid-gap();
+  margin-bottom: $global-margin;
 
-  >:nth-child(2n) {
-    justify-self: right;
+  .fieldset {
+    margin: 0;
   }
+}
+
+.input-group > select {
+  margin-bottom: 0;
 }

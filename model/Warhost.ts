@@ -1,6 +1,6 @@
 import {Schema} from "mongoose";
 import * as yup from "yup";
-import {ArmyData, eventual_army_lists, eventual_artefacts, Unit, UnitCategory} from "./WarhostData";
+import {ArmyData, Equipment, eventual_army_lists, eventual_artefacts, Unit, UnitCategory} from "./WarhostData";
 import {UserDocument} from "./UserDocument";
 
 export interface Army {
@@ -26,30 +26,47 @@ export interface Model {
     type: string,
     name?: string,
     xp: number,
-    upgrades: string[]
+    options: string[],
+    upgrades: string[],
+    cost: number,
 }
 
 export interface Warband {
-    list: string
+    list: string,
+    totalPoints: number,
     unspent: number,
     retinue: {
-        leader?: Model
+        leader?: Model,
     },
-    roster: Model[]
+    roster: Model[],
+    supplyCaravan: Equipment[],
+    warbandComplete: boolean,
 }
 
 const modelSchema = new Schema<Model>({
     type: String,
     name: String,
     xp: Number,
-    upgrades: [String]
+    options: [String],
+    upgrades: [String],
+    cost: Number,
+})
+
+const equipmentSchema = new Schema<Equipment>({
+    name: String,
+    cost: Number,
+    type: String,
+    rarity: String,
 })
 
 const warbandSchema = new Schema<Warband>({
     list: String,
+    totalPoints: Number,
     unspent: Number,
     retinue: {type: Map, of: modelSchema},
-    roster: [modelSchema]
+    roster: [modelSchema],
+    supplyCaravan: [equipmentSchema],
+    warbandComplete: Boolean,
 })
 
 export type SlotType = UnitCategory | 'Artefact';
@@ -79,6 +96,7 @@ export const warhostSchema = new Schema<Warhost>({
     name: String,
     army: armySchema,
     warband: warbandSchema,
+    skipVanguard: Boolean
 })
 
 export interface WarhostUpdates {
@@ -95,7 +113,7 @@ export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: W
 
     return (user, updates) => {
         return ({
-            "army.list": yup.string().optional().oneOf([...Object.keys(army_lists)]),
+            "army.list": yup.string().oneOf([...Object.keys(army_lists), '']).optional(),
             "army.territories": yup.array().of(
                 yup.object().shape({
                     type: yup.string().oneOf(['Base Camp', 'Cave', 'Mountain', 'Forest', 'Village', 'Training Camp', 'Ancient Ruins']).optional(),
@@ -108,7 +126,8 @@ export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: W
                             .test(
                                 'validate_slot_value',
                                 ({value: slot}) => {
-                                    return `${slot.value} is not a valid ${slot.type}${slot.type === 'Artefact' ? '' : ' Unit'}.`; },
+                                    return `${slot.value} is not a valid ${slot.type}${slot.type === 'Artefact' ? '' : ' Unit'}.`;
+                                },
                                 (slot) => {
                                     if (slot.value === undefined) return true;
                                     if (slot.type === undefined) return false;  // Type can only be undefined if value is
@@ -126,33 +145,37 @@ export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: W
                         'validate_slot',
                         ({value}) => `Incorrect slots for territory type ${value.type}`,
                         (obj) => {
-                        const expectSlotTypes = (...expected: SlotType[]): boolean => {
-                            if (expected.length !== obj.slots?.length) return false;
-                            expected.sort()
-                            const actual = obj.slots.map(s => s.type).sort();
-                            for(const i in expected) {
-                                if(expected[i] !== actual[i]) return false;
+                            if(obj.type == undefined) {
+                                return true
                             }
-                            return true;
-                        }
 
-                        switch (obj.type as TerritoryType) {
-                            case "Cave":
-                                return expectSlotTypes( "Monster");
-                            case "Mountain":
-                                return expectSlotTypes( "Titan");
-                            case "Forest":
-                                return expectSlotTypes( "War Engine");
-                            case "Village":
-                                return expectSlotTypes( "Standard");
-                            case "Training Camp":
-                                return expectSlotTypes( "Irregular");
-                            case "Ancient Ruins":
-                                return expectSlotTypes( "Hero", "Artefact");
-                            case 'Base Camp':
-                                return expectSlotTypes('Standard', 'Standard', "Hero", "Artefact");
-                        }
-                    })
+                            const expectSlotTypes = (...expected: SlotType[]): boolean => {
+                                if (expected.length !== obj.slots?.length) return false;
+                                expected.sort()
+                                const actual = obj.slots.map(s => s.type).sort();
+                                for (const i in expected) {
+                                    if (expected[i] !== actual[i]) return false;
+                                }
+                                return true;
+                            }
+
+                            switch (obj.type as TerritoryType) {
+                                case "Cave":
+                                    return expectSlotTypes("Monster");
+                                case "Mountain":
+                                    return expectSlotTypes("Titan");
+                                case "Forest":
+                                    return expectSlotTypes("War Engine");
+                                case "Village":
+                                    return expectSlotTypes("Standard");
+                                case "Training Camp":
+                                    return expectSlotTypes("Irregular");
+                                case "Ancient Ruins":
+                                    return expectSlotTypes("Hero", "Artefact");
+                                case 'Base Camp':
+                                    return expectSlotTypes('Standard', 'Standard', "Hero", "Artefact");
+                            }
+                        })
             ),
             "army.complete": yup.boolean(),
             "skipVanguard": yup.boolean(),

@@ -11,7 +11,7 @@
       ],
       "points": 7,
       "options": {
-        "REPLACE Spear with Heavy Weapon": "2"
+        "REPLACE Spear with Heavy Weapon": 2
       }
     },
     {
@@ -68,7 +68,7 @@
       ],
       "points": 12,
       "options": {
-        "Large Shield": "2"
+        "Large Shield": 2
       }
     },
     {

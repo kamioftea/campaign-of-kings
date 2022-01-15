@@ -33,7 +33,7 @@
       ],
       "points": 27,
       "options": {
-        "Poison Darts": "2"
+        "Poison Darts": 2
       }
     },
     {
@@ -112,7 +112,7 @@
       ],
       "points": 14,
       "options": {
-        "Two-handed Weapon": "2"
+        "Two-handed Weapon": 2
       }
     },
     {

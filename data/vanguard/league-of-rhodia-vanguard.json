@@ -11,7 +11,7 @@
       ],
       "points": 7,
       "options": {
-        "spear": "1"
+        "spear": 1
       }
     },
     {
@@ -35,7 +35,7 @@
       ],
       "points": 11,
       "options": {
-        "Halberd": "2"
+        "Halberd": 2
       }
     },
     {
@@ -48,7 +48,7 @@
       ],
       "points": 26,
       "options": {
-        "REPLACE Crossbow with Musket": "3"
+        "REPLACE Crossbow with Musket": 3
       }
     },
     {
@@ -84,7 +84,7 @@
       ],
       "points": 13,
       "options": {
-        "Bow": "1"
+        "Bow": 1
       }
     },
     {

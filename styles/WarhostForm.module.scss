@@ -41,30 +41,103 @@
   }
 }
 
-.warbandContainer {
+.warbandHeader {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
-  grid-gap: divide($global-margin, 2);
-  grid-template-areas: "Retinue Retinue Unspent"
-                       "Roster Caravan Caravan";
+  grid-template-columns: 5fr 1fr;
+  @include grid-gap();
 
   :global .fieldset {
     margin: 0;
   }
+}
 
-  & > *:nth-child(1) {
-    grid-area: Retinue;
+.optionContainer {
+  [type=checkbox] {
+    margin-bottom: 0;
+  }
+}
+
+.modelContainer {
+  display: grid;
+  grid-template-columns: 3fr 2fr 5rem 3rem;
+  padding: divide($global-padding, 4) $global-padding;
+  margin: 0 (-$global-padding);
+
+  .modelTypes {
+    color: $secondary-color;
+    font-style: italic;
   }
 
-  & > *:nth-child(2) {
-    grid-area: Unspent;
+  .modelCost {
+    text-align: right;
   }
 
-  & > *:nth-child(3) {
-    grid-area: Roster;
+  .modelActions {
+    text-align: right;
+    grid-area: 1 / 4 / 99 / 5;
+
+    place-self: center right;
+
+    :global .button {
+      margin-bottom: 0;
+      padding: 0.34rem 0.4rem;
+      height: 100%;
+    }
   }
 
-  & > *:nth-child(4) {
-    grid-area: Caravan;
+  .modelOptions {
+    grid-column: 1 / 4;
+    font-style: italic;
+    font-size: $small-font-size;
+  }
+
+  &:nth-child(2n) {
+    background-color: rgba($medium-gray, 0.4);
+  }
+
+  &:nth-child(2n-1) {
+    background-color: rgba($light-gray, 0.4);
+  }
+
+  &:hover {
+    background-color: rgba($secondary-color, 0.3);
+  }
+}
+
+.equipmentRow {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-items: left;
+  justify-content: space-between;
+
+  padding: divide($global-padding, 4) $global-padding;
+  margin: 0 (-$global-padding);
+
+  :global .button {
+    margin-bottom: 0;
+    padding: 0.34rem 0.4rem;
+    height: 100%;
+  }
+
+  small {
+    color: $secondary-color;
+    font-style: italic;
+  }
+
+  >:nth-child(2n) {
+    justify-self: right;
+  }
+
+  &:nth-child(2n) {
+    background-color: rgba($medium-gray, 0.4);
+  }
+
+  &:nth-child(2n-1) {
+    background-color: rgba($light-gray, 0.4);
+  }
+
+  &:hover {
+    background-color: rgba($secondary-color, 0.3);
   }
 }

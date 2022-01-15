@@ -1,14 +1,24 @@
 import {UserDocument} from "../model/UserDocument";
 import {useWarhostData} from "../hooks/useWarhostData";
-import {Alignment, Artefact, ListSummary, UnitBreakdown, UnitCategory, WarbandData} from "../model/WarhostData";
+import {
+    Alignment,
+    Artefact,
+    Equipment,
+    ListSummary,
+    ModelType,
+    UnitBreakdown,
+    UnitCategory,
+    WarbandData
+} from "../model/WarhostData";
 import styles from '../styles/WarhostForm.module.scss';
-import {FiAlertTriangle, FiCheck, FiChevronLeft, FiInfo} from "react-icons/fi";
+import {FiAlertTriangle, FiCheck, FiChevronLeft, FiInfo, FiPlus, FiTrash, FiX} from "react-icons/fi";
 import {ChangeEvent, KeyboardEvent, MouseEvent, useState} from "react";
-import {SlotType, Territory, TerritorySlot, TerritoryType, Warband} from "../model/Warhost";
+import {Model, SlotType, Territory, TerritorySlot, TerritoryType, Warband} from "../model/Warhost";
+import {label} from "aws-sdk/clients/sns";
 
 type ForceFormProps = { user: UserDocument };
 
-const alignmentCopy: {[a in Alignment]: string} = {
+const alignmentCopy: { [a in Alignment]: string } = {
     "Good": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world. A" +
         " crusade to purge this place has been a long time coming. Maybe you also have more personal reasons, a" +
         " quest for a stolen relic of the Shining Ones, or to serve justice on a fiend that has fled here.",
@@ -142,9 +152,7 @@ function TerritoryForm({territory, picked, units, artefacts, onChange}: Territor
         const filterPicked = (arr: string[], val: string | undefined): string[] => arr.filter(v => v === val || !picked.includes(v))
         const updateSlot = (index: number) => (event: ChangeEvent<HTMLSelectElement>) => {
             event.preventDefault();
-            territory.slots[index].value = event.currentTarget.value;
-            console.log(territory.slots)
-            console.log( event.currentTarget.value)
+            territory.slots[index].value = event.currentTarget.value || undefined;
             onChange(territory);
         }
 
@@ -152,8 +160,8 @@ function TerritoryForm({territory, picked, units, artefacts, onChange}: Territor
             options.push(
                 <label key={i} className="inline">
                     {slot.type}
-                    <select value={slot.value} onChange={updateSlot(i)}>
-                        <option value={undefined}>-- Choose {
+                    <select value={slot.value ?? ''} onChange={updateSlot(i)}>
+                        <option value={''}>-- Choose {
                             slot.type === 'Artefact'
                                 ? 'an Artefact'
                                 : `${indefiniteArticle(slot.type)} ${slot.type} Unit`
@@ -271,32 +279,283 @@ function TerritoryChooser({territories, units, artefacts, onChange}: TerritoryCh
     </>
 }
 
-interface VanguardRosterBuilderProps {
-    list: WarbandData | undefined
-    warband: Warband
-    onUpdate: (warband: Warband) => void
+interface ModelBuilderProps {
+    label: string
+    units: ModelType[],
+    value: Model | null
+    onChange: (model: Model | null) => void
+    onSubmit?: () => void
 }
 
-function VanguardRosterBuilder({list, warband, onUpdate}: VanguardRosterBuilderProps) {
+function ModelBuilder({label, value, units, onChange, onSubmit}: ModelBuilderProps) {
+    const handleAdd = (e: MouseEvent | KeyboardEvent) => {
+        e.preventDefault();
+        onSubmit?.();
+    }
+    const selectedModel = units.find(u => u.name === value?.type);
+
+    const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        e.preventDefault();
+        const name = e.currentTarget.value;
+        const unit = units.find(u => u.name === name);
+
+        onChange(unit
+            ? {
+                cost: unit.points,
+                options: [],
+                type: name,
+                upgrades: [],
+                xp: 0
+            }
+            : null,
+        );
+    }
+
+    const handleChecked = (option: string, cost: number) => (e: ChangeEvent<HTMLInputElement>) => {
+        if (value === null) {
+            return;
+        }
+
+        const updated = {...value}
+
+        if (option.startsWith('Gift of Korgaan:')) {
+            const existing = value.options.find(o => o.startsWith('Gift of Korgaan:'));
+            const existingCost = existing ? selectedModel?.options[existing] : undefined
+
+            if (existing && existingCost != undefined) {
+                updated.cost -= existingCost;
+                updated.options = value.options.filter(o => o !== existing)
+            }
+        }
+
+        onChange({
+            ...updated,
+            options: e.currentTarget.checked
+                ? [...updated.options, option]
+                : updated.options.filter(o => o !== option),
+            cost: e.currentTarget.checked
+                ? updated.cost + cost
+                : updated.cost - cost
+        })
+    }
+
+    return <>
+        <label className="inline">
+            {label}
+            <div className="input-group">
+                <select value={value?.type ?? ''} onChange={handleChange}>
+                    <option>-- Pick a Model --</option>
+                    {units
+                        .sort((a, b) => a.name.localeCompare(b.name))
+                        .map(
+                            model =>
+                                <option key={model.name} value={model.name}>
+                                    {model.name}{' '}
+                                    [{(model.types as string[]).concat(model.races ?? []).join(', ')}] {model.points}pts
+                                </option>
+                        )
+                    }
+                </select>
+                {typeof onSubmit === 'function'
+                    ? <div className="input-group-button">
+                        <button className={`button ${value ? '' : 'disabled'}`}
+                                onClick={handleAdd}
+                                onKeyPress={handleAdd}
+                        >
+                            <FiPlus/>
+                        </button>
+                    </div>
+                    : null
+                }
+            </div>
+        </label>
+        {Object.entries(selectedModel?.options ?? {}).map(([option, cost]) =>
+            <div className="inline" key={option}>
+                <div/>
+                <label className={styles.optionContainer}>
+                    <input type="checkbox"
+                           checked={value?.options.includes(option)}
+                           onChange={handleChecked(option, cost)}
+                    />
+                    {option} ({cost}pts)
+                </label>
+            </div>
+        )}
+    </>
+}
+
+interface AddModelProps {
+    units: ModelType[]
+    onSubmit: (model: Model) => void
+}
+
+function AddModel({units, onSubmit}: AddModelProps) {
+    const [model, setModel] = useState<Model | null>(null);
+
+    return <ModelBuilder label={'Add Model'}
+                         units={units}
+                         value={model}
+                         onChange={setModel}
+                         onSubmit={() => model !== null ? onSubmit(model) : null}
+    />
+}
+
+interface WarbandRequirementsProps {
+    requirements: RequirementResult[]
+}
+
+interface RequirementResult {
+    message: string,
+    passed: boolean
+}
+
+export function checkRequirements(warband: Warband, list: WarbandData): RequirementResult[] {
+    const units = warband.roster.map(m => list.units.find(u => u.name === m.type));
+    const types = units.map(u => u?.types ?? []);
+    const troopCount = types.filter(ts => ts.includes('Grunt') || ts.includes('Warrior')).length;
+
+    const requirements = [
+        () => ({
+            message: 'Must have a Leader',
+            passed: (warband.retinue.leader?.type ?? '') != ''
+        }),
+        () => ({
+            message: `${troopCount} / 5 required Grunts or Warriors`,
+            passed: troopCount >= 5
+        }),
+        () => {
+            const supportCount = types.filter(ts => ts.includes('Support')).length;
+            const supported = Math.floor(troopCount / 3)
+
+            return {
+                message: `You have ${supportCount} / ${supported} Support units`,
+                passed: supportCount <= supported
+            };
+        },
+        () => {
+            const spellcaster = types.filter(ts => ts.includes('Spellcaster')).length;
+            const supported = Math.floor(troopCount / 3)
+
+            return {
+                message: `You have ${spellcaster} / ${supported} Spellcaster units`,
+                passed: spellcaster <= supported
+            };
+        },
+        () => {
+            let allowedCommandLargeUsed = false;
+            const largeCount = units.filter(ts => {
+                if (ts?.types.includes('Large')) {
+                    if (warband.list === 'ogre' && ts.races.includes('Ogre')) {
+                        return false
+                    }
+                    if (ts.types.includes('Command') && allowedCommandLargeUsed) {
+                        allowedCommandLargeUsed = true;
+                        return false;
+                    }
+                    return true;
+                }
+                return false;
+            }).length;
+            const supported = Math.floor(warband.totalPoints / 150) + (warband.list === 'northern-alliance' ? 1 : 0);
+
+            return {
+                message: `You have ${largeCount} / ${supported} Large units`,
+                passed: largeCount <= supported
+            };
+        },
+        () => ({
+            message: `You have spent ${warband.totalPoints - warband.unspent} / ${warband.totalPoints} pts`,
+            passed: warband.unspent >= 0
+        })
+    ]
+
+    return requirements.map(f => f());
+}
+
+function WarbandRequirements({requirements}: WarbandRequirementsProps) {
+    return <>
+        {requirements.map((r, i) =>
+            <div className={styles.requirementRow} key={i}>
+                {r.passed ? <FiCheck className="text-success"/> : <FiX className="text-alert"/>}{' '}
+                {r.message}
+            </div>
+        )}
+    </>
+}
+
+interface VanguardRosterBuilderProps {
+    list: WarbandData | undefined
+    notice?: string
+    warband: Warband
+    equipment: { [keys: string]: Equipment }
+    requirements: RequirementResult[]
+    onUpdate: (warband: Warband | undefined, skip?: boolean) => void
+}
+
+function VanguardRosterBuilder({list, notice, warband, equipment, requirements, onUpdate}: VanguardRosterBuilderProps) {
     const [skipBoxChecked, toggleSkipBox] = useState<boolean>(false);
     const [skipBoxClosed, setSkipBoxClosed] = useState<boolean>(false);
+    const [noticeClosed, setNoticeClosed] = useState<boolean>(false);
 
     if (!list) {
         return <p>Loading...</p>
     }
 
-    const handleRetinueChange = (key: keyof typeof warband.retinue) => (e: ChangeEvent<HTMLSelectElement>) => {
-        e.preventDefault();
-        const name = e.currentTarget.value;
+    const handleRetinueChange = (key: keyof typeof warband.retinue) => (model: Model | null) => {
+        warband.unspent = warband.unspent + (warband.retinue[key]?.cost ?? 0) - (model?.cost ?? 0)
+        if (model) {
+            model.upgrades = ['Leader Bonus: +1 Red Power Die'];
+        }
 
-        const oldModel = list?.units.find(m => m.name === warband.retinue[key]?.type)
-        const newModel = list?.units.find(m => m.name === name);
-        warband.unspent = warband.unspent + (oldModel?.points ?? 0) - (newModel?.points ?? 0)
+        warband.retinue[key] = model ?? undefined;
+        onUpdate(warband);
+    }
 
-        warband.retinue[key] = {type: name, upgrades: ['Leader Bonus: +1 Red Power Die'], xp: 0};
+    const handleAddModel = (model: Model) => {
+        warband.unspent = warband.unspent - model.cost;
+        warband.roster.push(model);
 
         onUpdate(warband);
     }
+
+    const handleRemoveModel = (index: number) => (e: MouseEvent | KeyboardEvent) => {
+        e.preventDefault()
+        const [model] = warband.roster.splice(index, 1)
+        warband.unspent = warband.unspent + model.cost;
+
+        onUpdate(warband);
+    }
+
+    const handleAddEquipment = (e: ChangeEvent<HTMLSelectElement>) => {
+        e.preventDefault();
+        const selectedEquipment = equipment[e.currentTarget.value];
+        if (!selectedEquipment) {
+            return;
+        }
+        warband.unspent = warband.unspent - selectedEquipment.cost;
+        warband.supplyCaravan.push(selectedEquipment);
+
+        onUpdate(warband);
+    }
+
+    const handleRemoveEquipment = (index: number) => (e: MouseEvent | KeyboardEvent) => {
+        e.preventDefault()
+        const [equipment] = warband.supplyCaravan.splice(index, 1)
+        warband.unspent = warband.unspent + equipment.cost;
+
+        onUpdate(warband);
+    }
+
+    const handleSkip = (e: MouseEvent | KeyboardEvent) => {
+        e.preventDefault()
+        onUpdate(undefined, true)
+    }
+
+    const commonEquipmentCount = warband.supplyCaravan.filter(i => i.rarity === 'Common').length;
+
+    const takenUnique = [...(warband.retinue.leader ? [warband.retinue.leader] : []), ...warband.roster]
+        .map(m => m.type)
+        .filter(t => t.includes('*'));
 
     return <>
         <p>
@@ -307,7 +566,7 @@ function VanguardRosterBuilder({list, warband, onUpdate}: VanguardRosterBuilderP
         <h2>Vanguard Roster</h2>
         {!skipBoxClosed
             ? <div className="callout info">
-                <button className="close-button" aria-label="Close alert"
+                <button className="close-button" aria-label="Close skip vanguard information box"
                         type="button"
                         onClick={() => setSkipBoxClosed(true)}
                         onKeyPress={() => setSkipBoxClosed(true)}
@@ -315,13 +574,15 @@ function VanguardRosterBuilder({list, warband, onUpdate}: VanguardRosterBuilderP
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <p>
+                    <FiInfo/>{' '}
                     <small>
-                        <FiInfo/> The Vanguard aspect of the campaign is optional. If you'd rather just play Kings of
-                        War you can skip this section. Note: that this will mean you can roll at most three dice on the
-                        territory table. You will lose out on the bonus die for winning the Vanguard game.
+                        The Vanguard campaign is optional. If you'd rather just play Kings of War you can skip
+                        this section. <br/>
+                        <em>Note</em>: This will mean you can roll at most three dice on the territory table per game.
+                        You will lose out on the bonus die for winning the Vanguard game.
                     </small>
                 </p>
-                <div className="submit-row">
+                <div className="left-right-row">
                     <label>
                         <input type="checkbox"
                                checked={skipBoxChecked}
@@ -329,37 +590,119 @@ function VanguardRosterBuilder({list, warband, onUpdate}: VanguardRosterBuilderP
                         />
                         I do not want to play in the Vanguard Campaign
                     </label>
-                    <button className={`button info ${skipBoxChecked ? '' : 'disabled'} margin-bottom-0 small`}>
+                    <button className={`button info ${skipBoxChecked ? '' : 'disabled'} margin-bottom-0 small`}
+                            onClick={handleSkip}
+                            onKeyPress={handleSkip}
+                    >
                         Skip
                     </button>
                 </div>
             </div>
             : null
         }
-        <div className={styles.warbandContainer}>
-            <fieldset className='fieldset'>
+        {
+            notice && !noticeClosed
+                ? <div className="callout warning">
+                    <button className="close-button" aria-label="Close different warband notice"
+                            type="button"
+                            onClick={() => setNoticeClosed(true)}
+                            onKeyPress={() => setNoticeClosed(true)}
+                    >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>{notice}</p>
+                </div>
+                : null
+        }
+        <div className={styles.warbandHeader}>
+            <fieldset className="fieldset">
                 <legend>Retinue</legend>
-                <label className="inline">
-                    Leader
-                    <select value={warband.retinue.leader?.type} onChange={handleRetinueChange('leader')}>
-                        <option value={undefined}>-- Choose A Leader --</option>
-                        {list.units.filter(m => m.types.includes('Command'))
-                            .map(m => <option key={m.name} value={m.name}>{m.name} ({m.points} pts)</option>)
-                        }
-                    </select>
-                </label>
+                <ModelBuilder
+                    units={list.units.filter(u =>
+                        u.types.includes("Command")
+                        && ((!takenUnique.includes(u.name)) || u.name === warband.retinue.leader?.type))}
+                    label={'Leader'}
+                    onChange={handleRetinueChange('leader')}
+                    value={warband.retinue.leader ?? null}
+                />
             </fieldset>
-            <fieldset className='fieldset'>
+            <fieldset className="fieldset">
                 <legend>Unspent</legend>
                 <div className="stat">{warband.unspent}</div>
             </fieldset>
-            <fieldset className='fieldset'>
-                <legend>Roster</legend>
-            </fieldset>
-            <fieldset className='fieldset'>
-                <legend>Supply Caravan</legend>
-            </fieldset>
+        </div>
+        <fieldset className="fieldset">
+            <legend>Roster</legend>
+            <AddModel units={list.units.filter(u => !takenUnique.includes(u.name))}
+                      onSubmit={handleAddModel}/>
 
+            {warband.roster.map((model, i) => {
+                    const stats = list?.units.find(m => m.name === model.type)
+                    return <div className={styles.modelContainer} key={i}>
+                        <div className={styles.modelLabel}>{model.type}</div>
+                        <div
+                            className={styles.modelTypes}>{(stats?.types as string[]).concat(stats?.races ?? []).join(', ')}</div>
+                        <div className={styles.modelCost}>{model.cost}pts</div>
+                        <div className={styles.modelActions}>
+                            <button className="button alert hollow"
+                                    onClick={handleRemoveModel(i)}
+                                    onKeyPress={handleRemoveModel(i)}
+                            >
+                                <FiTrash/>
+                            </button>
+                        </div>
+                        {model.options.map(option =>
+                            <div className={styles.modelOptions}>{option}</div>
+                        )}
+                    </div>;
+                }
+            )}
+
+        </fieldset>
+        <div className="split-row">
+            <fieldset className="fieldset">
+                <legend>Supply Caravan</legend>
+                <label className="inline">
+                    Add Item
+                    <select value="" onChange={handleAddEquipment}>
+                        <option>-- Pick Equipment --</option>
+                        {Object.values(equipment)
+                            .filter(i => i.rarity === "Common" ? commonEquipmentCount < 6 : warband.supplyCaravan.find(sc => sc.name === i.name) == undefined)
+                            .sort((a, b) => a.name.localeCompare(b.name))
+                            .map(
+                                (item) =>
+                                    <option key={item.name} value={item.name}>
+                                        {item.name}{' '}
+                                        [{item.type}, {item.rarity}]{' '}
+                                        {item.cost} pts
+                                    </option>
+                            )
+                        }
+                    </select>
+                </label>
+                {warband.supplyCaravan
+                    .sort((a, b) => a.name.localeCompare(b.name))
+                    .map((item, i) =>
+                        <div className={styles.equipmentRow} key={i}>
+                            <div className={styles.equipmentLabel}>
+                                {item.name}{' '}
+                                <small>{item.type}, {item.rarity}</small>
+                            </div>
+                            <div className={styles.equipmentActions}>
+                                <button className="button alert hollow"
+                                        onClick={handleRemoveEquipment(i)}
+                                        onKeyPress={handleRemoveEquipment(i)}
+                                >
+                                    <FiTrash/>
+                                </button>
+                            </div>
+                        </div>
+                    )}
+            </fieldset>
+            <fieldset className="fieldset">
+                <legend>Requirements</legend>
+                <WarbandRequirements requirements={requirements}/>
+            </fieldset>
         </div>
     </>
 }
@@ -425,7 +768,7 @@ export function WarhostForm({user}: ForceFormProps) {
         }
 
         elements.push(
-            <div key="submit-territories" className="submit-row">
+            <div key="submit-territories" className="left-right-row">
                 <button className="button primary"
                         onClick={handleBack}
                         onKeyPress={handleBack}>
@@ -438,26 +781,101 @@ export function WarhostForm({user}: ForceFormProps) {
                 </button>
             </div>
         )
-    }
-    else {
+    } else if (user.warhost.warband?.warbandComplete !== true && !user.warhost.skipVanguard) {
+        if (user.warhost.warband?.list !== warhostData.army?.vanguardList) {
+            user.warhost.warband = undefined
+        }
+
         const warband = user.warhost.warband ?? {
             list: warhostData.army?.vanguardList ?? '',
+            totalPoints: 200,
             unspent: 200,
             retinue: {
                 leader: undefined
             },
-            roster: []
+            roster: [],
+            supplyCaravan: [],
+            warbandComplete: false,
         };
+
+        warband.totalPoints = warband.totalPoints ?? 200
+
+        const requirements: RequirementResult[] = warhostData.warband
+            ? checkRequirements(warband, warhostData.warband)
+            : [{message: 'No warband assigned', passed: false}];
 
         elements.push(
             <VanguardRosterBuilder key="vanguard-roster-builder"
                                    list={warhostData.warband}
+                                   notice={warhostData.army?.vanguardNotice}
                                    warband={warband}
-                                   onUpdate={warband => updateWarhost({"warband": warband})}
+                                   equipment={warhostData.equipment}
+                                   requirements={requirements}
+                                   onUpdate={(warband, skip = false) => updateWarhost({
+                                       "warband": warband,
+                                       "skipVanguard": skip
+                                   })}
 
             />
         )
+
+        const handleBack = (e: MouseEvent | KeyboardEvent) => {
+            e.preventDefault();
+            updateWarhost({
+                "army.complete": false,
+            });
+        }
+
+        const canProgress = requirements.every(r => r.passed);
+
+        const handleNext = (e: MouseEvent | KeyboardEvent) => {
+            e.preventDefault();
+            if (canProgress) {
+                warband.warbandComplete = true
+                updateWarhost({
+                    "warband": warband,
+                });
+            }
+        }
+
+        elements.push(
+            <div key="submit-vanguard" className="left-right-row">
+                <button className="button primary"
+                        onClick={handleBack}
+                        onKeyPress={handleBack}>
+                    <FiChevronLeft/> Back
+                </button>
+                <button className={`button ${canProgress ? 'primary' : 'secondary disabled'}`}
+                        onClick={handleNext}
+                        onKeyPress={handleNext}>
+                    <FiCheck/> Next
+                </button>
+            </div>
+        )
+    } else {
+        const handleBack = (e: MouseEvent | KeyboardEvent) => {
+            e.preventDefault();
+            if (user.warhost?.warband) {
+                user.warhost.warband.warbandComplete = false;
+            }
+
+            updateWarhost({
+                "skipVanguard": false,
+                "warband": user.warhost?.warband
+            });
+        }
+
+        elements.push(
+            <div key="submit-vanguard" className="left-right-row">
+                <button className="button primary"
+                        onClick={handleBack}
+                        onKeyPress={handleBack}>
+                    <FiChevronLeft/> Back
+                </button>
+            </div>
+        )
     }
+
 
     return <>
         {elements}

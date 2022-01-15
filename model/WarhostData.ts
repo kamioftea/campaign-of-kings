@@ -17,14 +17,22 @@ export interface WarhostData {
     lists: ListSummary[],
     army?: ArmyData,
     warband?: WarbandData,
-    artefacts: {[keys: string]: Artefact},
+    artefacts: { [keys: string]: Artefact },
+    equipment: { [keys: string]: Equipment },
 }
 
 export interface Artefact {
     cost: number,
-    hordeCost?:number,
+    hordeCost?: number,
     heroOnly: boolean,
     individualOnly: true,
+}
+
+export interface Equipment {
+    name: string,
+    cost: number,
+    type: 'Sundries' | 'Ranged' | 'Armour' | 'Mount' | 'Melee' | 'Magic',
+    rarity: 'Common' | 'Rare' | 'Unique',
 }
 
 export type UnitCategory = 'Standard' | 'Irregular' | 'Monster' | 'Titan' | 'War Engine' | 'Hero';
@@ -49,12 +57,13 @@ export interface ArmyData {
     name: string,
     alignment: Alignment,
     vanguardList?: string,
+    vanguardNotice?: string,
     units: UnitBreakdown,
 }
 
 export interface ModelType {
     name: string,
-    types: string[],
+    types: ('Command' | 'Grunt' | 'Warrior' | 'Support' | 'Spellcaster' | 'Large')[],
     races: string[],
     options: {[keys: string]: number}
     points: number,
@@ -150,5 +159,13 @@ export const warhost_lists: Promise<ListSummary[]> = Promise.all([eventual_army_
         })
     )
 
-export const eventual_artefacts: Promise<{[keys: string]: Artefact}> =
+export const eventual_artefacts: Promise<{ [keys: string]: Artefact }> =
     fs.readFile('./data/artefacts.json', 'utf-8').then(contents => JSON.parse(contents));
+
+export const eventual_equipment: Promise<{ [keys: string]: Equipment }> =
+    fs.readFile('./data/equipment.json', 'utf-8').then(contents =>
+        Object.fromEntries(
+            Object.entries(JSON.parse(contents) as { [keys: string]: Equipment })
+                .map(([name, equipment]) => [name, {...equipment, name}])
+        )
+    );
