@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@hapi/iron": "^6.0.0",
-    "aws-sdk": "^2.1064.0",
+    "aws-sdk": "^2.1065.0",
     "bcryptjs": "^2.4.3",
     "cookie": "^0.4.1",
     "formidable": "^2.0.1",
