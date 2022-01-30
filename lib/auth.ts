@@ -75,7 +75,7 @@ export async function setLoginSession(res: NextApiResponse, session: Session) {
   setTokenCookie(res, token)
 }
 
-export async function getLoginSession(req: NextApiRequest, role?: Role): Promise<Session> {
+export async function getLoginSession(req: NextApiRequest, roles?: Role | Role[]): Promise<Session> {
   const token = getTokenCookie(req)
   if (!token) {
     throw new Unauthenticated()
@@ -97,8 +97,13 @@ export async function getLoginSession(req: NextApiRequest, role?: Role): Promise
     throw new Unauthenticated()
   }
 
-  if (role != undefined && !user.roles.includes(role)) {
-    throw new Unauthorised()
+  if (roles != undefined) {
+    if(!Array.isArray(roles)) {
+      roles = [roles];
+    }
+    if(!roles.find(r => user.roles.includes(r))) {
+      throw new Unauthorised()
+    }
   }
 
   return {user}

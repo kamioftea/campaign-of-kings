@@ -12,9 +12,21 @@ import {
 } from "../model/WarhostData";
 import styles from '../styles/WarhostForm.module.scss';
 import {FiAlertTriangle, FiCheck, FiChevronLeft, FiInfo, FiPlus, FiTrash, FiX} from "react-icons/fi";
-import {ChangeEvent, KeyboardEvent, MouseEvent, useState} from "react";
-import {Model, SlotType, Territory, TerritorySlot, TerritoryType, Warband} from "../model/Warhost";
+import {ChangeEvent, Fragment, KeyboardEvent, MouseEvent, useState} from "react";
+import {
+    Model,
+    SlotType,
+    Territory,
+    TerritorySlot,
+    TerritoryType,
+    Warband,
+    Warhost,
+    WarhostUpdates
+} from "../model/Warhost";
 import {label} from "aws-sdk/clients/sns";
+import {RichTextbox} from "./RichTextbox";
+import {SaveableInput} from "./SaveableInput";
+import {ImageUpload} from "./Dropzone";
 
 type ForceFormProps = { user: UserDocument };
 
@@ -707,6 +719,29 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
     </>
 }
 
+interface PersonaliseWarhostProps {
+    warhost: Warhost,
+    onUpdate: (updates: WarhostUpdates) => void
+}
+
+function PersonaliseWarhost({warhost, onUpdate}: PersonaliseWarhostProps) {
+    return <>
+        <ImageUpload imageUrl={warhost.coverImageUrl ?? 'https://placehold.it/600x200'} onDrop={coverImageUrl => onUpdate({coverImageUrl})}/>
+        <label className="inline">
+            Name
+            <SaveableInput type="text" value={warhost.name} onSave={(name) => onUpdate({name})}/>
+        </label>
+        <label className="inline">
+            Description
+            {window ?
+                <RichTextbox value={warhost.description || ''}
+                             onSave={(description) => onUpdate({description})}/>
+                : null
+            }
+        </label>
+    </>
+}
+
 export function WarhostForm({user}: ForceFormProps) {
     const {warhostData, isLoading, error, updateWarhost} = useWarhostData(user.warhost?.army?.list);
 
@@ -853,6 +888,15 @@ export function WarhostForm({user}: ForceFormProps) {
             </div>
         )
     } else {
+        elements.push(<PersonaliseWarhost key="personalise-warhost" warhost={user.warhost} onUpdate={updateWarhost}/>)
+
+        elements.push(
+            <Fragment key={"kow-summary"}>
+                <h2>Kings of War</h2>
+            </Fragment>
+        )
+
+
         const handleBack = (e: MouseEvent | KeyboardEvent) => {
             e.preventDefault();
             if (user.warhost?.warband) {

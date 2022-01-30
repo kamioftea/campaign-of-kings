@@ -87,6 +87,8 @@ export interface Territory {
 
 export interface Warhost {
     name: string,
+    coverImageUrl?: string,
+    description?: string,
     army?: Army,
     warband?: Warband,
     skipVanguard?: boolean,
@@ -94,6 +96,8 @@ export interface Warhost {
 
 export const warhostSchema = new Schema<Warhost>({
     name: String,
+    coverImageUrl: String,
+    description: String,
     army: armySchema,
     warband: warbandSchema,
     skipVanguard: Boolean
@@ -105,6 +109,9 @@ export interface WarhostUpdates {
     "army.complete"?: boolean
     "skipVanguard"?: boolean
     "warband"?: Warband
+    "name"?: string,
+    "coverImageUrl"?:string
+    "description"?:string
 }
 
 export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: WarhostUpdates) => { [key in keyof WarhostUpdates]: yup.AnySchema }> => {
@@ -180,6 +187,9 @@ export const validUpdateKeys = async (): Promise<(User: UserDocument, updates: W
             "army.complete": yup.boolean(),
             "skipVanguard": yup.boolean(),
             "warband": yup.object(),
+            "name": yup.string(),
+            "coverImageUrl": yup.string().url(),
+            "description": yup.string(),
         });
     };
 };

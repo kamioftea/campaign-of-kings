@@ -1,7 +1,6 @@
-import AWS, {AWSError, SES} from 'aws-sdk';
-import {PromiseResult} from "aws-sdk/lib/request";
+import { SESClient, SendEmailCommand, SendEmailCommandInput, SendEmailCommandOutput, Body} from '@aws-sdk/client-ses';
 
-AWS.config.update({region: 'eu-west-2'});
+const client = new SESClient({region: 'eu-west-2'});
 
 interface Email {
     to: string[],
@@ -12,15 +11,15 @@ interface Email {
     text?: string,
 }
 
-function toContent(data: string): SES.Types.Content {
+function toContent(data: string)  {
     return {
         Charset: 'UTF-8',
         Data: data
     }
 }
 
-export function sendEmail(email: Email): Promise<PromiseResult<SES.Types.SendEmailResponse, AWSError>> {
-    const body: SES.Types.Body = {}
+export function sendEmail(email: Email): Promise<SendEmailCommandOutput> {
+    const body: Body = {}
     if(email.html) {
         body.Html = toContent(email.html);
     }
@@ -28,7 +27,7 @@ export function sendEmail(email: Email): Promise<PromiseResult<SES.Types.SendEma
         body.Text = toContent(email.text);
     }
 
-    const params: SES.Types.SendEmailRequest = {
+    const params: SendEmailCommandInput = {
         Source: 'jeff@goblinoid.co.uk',
         ReplyToAddresses: [
             'jeff@goblinoid.co.uk'
@@ -44,5 +43,5 @@ export function sendEmail(email: Email): Promise<PromiseResult<SES.Types.SendEma
         },
     };
 
-    return new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(params).promise();
+    return client.send(new SendEmailCommand(params))
 }

@@ -119,6 +119,17 @@ td > .button-group {
   }
 }
 
-.input-group > select {
+.input-group {
+  & > select, & > input {
+    margin-bottom: 0;
+  }
+}
+
+textarea.mde-text {
   margin-bottom: 0;
+  font-family: $font-family-monospace;
+}
+
+.mde-header .mde-tabs button {
+  padding: 0 0.333rem;
 }
