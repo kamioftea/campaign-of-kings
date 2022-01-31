@@ -1,0 +1,29 @@
+@import "settings";
+
+.tabsContainer {
+  display: grid;
+  position: sticky;
+  top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-gap: 1rem;
+  background-color: $white;
+  margin: -$global-margin;
+  margin-bottom: $global-margin;
+
+  .tabSelector {
+    cursor: pointer;
+    border-bottom: thick $secondary-color solid;
+    text-align: center;
+    padding: $global-padding;
+    margin: $global-margin;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover, &:focus-within {
+      background-color: rgba($medium-gray, 0.5);
+    }
+
+    &.selected {
+      border-bottom: thick $primary-color solid;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import {Schema} from "mongoose";
 import * as yup from "yup";
 import {ArmyData, Equipment, eventual_army_lists, eventual_artefacts, Unit, UnitCategory} from "./WarhostData";
 import {UserDocument} from "./UserDocument";
+import {ObjectID} from "bson";
 
 export interface Army {
     list: string,
@@ -87,6 +88,7 @@ export interface Territory {
 
 export interface Warhost {
     name: string,
+    slug?: string,
     coverImageUrl?: string,
     description?: string,
     army?: Army,
@@ -94,8 +96,17 @@ export interface Warhost {
     skipVanguard?: boolean,
 }
 
+export interface WarhostSummary {
+    name: string,
+    coverImageUrl?: string,
+    user_id: ObjectID,
+    user_name: string,
+    army: string
+}
+
 export const warhostSchema = new Schema<Warhost>({
     name: String,
+    slug: String,
     coverImageUrl: String,
     description: String,
     army: armySchema,

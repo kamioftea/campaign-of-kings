@@ -21,7 +21,7 @@ export function TopBar() {
             </Link>
 
             <Link href="/warhosts">
-                <a>War Hosts</a>
+                <a>Warhosts</a>
             </Link>
         </div>
         <div className={styles.topBarRight}>

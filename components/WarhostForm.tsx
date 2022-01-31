@@ -764,7 +764,7 @@ export function WarhostForm({user}: ForceFormProps) {
     }
 
     if ((error && !error.renderPage) || !warhostData) {
-        return;
+        return null;
     } else if (!user.warhost?.army?.list) {
         elements.push(<ArmyChooser key="army-chooser" lists={warhostData.lists}
                                    onSelect={(army) => updateWarhost({"army.list": army})}/>)

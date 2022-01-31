@@ -10,8 +10,9 @@ import {
     WarhostData
 } from "../../model/WarhostData";
 import {validUpdateKeys, Warhost, WarhostUpdates} from "../../model/Warhost";
-import {userResponse} from "../../model/User";
+import {User, userResponse} from "../../model/User";
 import {ValidationError} from "yup";
+import {titleSlug} from "../../lib/text";
 
 export default async function handle(req: NextApiRequest, res: NextApiResponse) {
     switch (req.method) {
@@ -88,7 +89,29 @@ async function updateWarhost(req: NextApiRequest, res: NextApiResponse) {
             }
         ));
 
-        await user.save();
+        if(user.warhost.name === '' && (user.warhost.skipVanguard || user.warhost.warband?.warbandComplete)) {
+            user.warhost.name = `${user.name}'s ${titleSlug(user.warhost.army?.list)}`
+        }
+
+        if(user.warhost.name) {
+            const expectedSlug = user.warhost.name.toLocaleLowerCase().replaceAll(/[^a-z]+/g, '-');
+            const actualSlug = user.warhost.slug?.match(/^([a-z-]+)(-\d+)?$/)?.[1];
+            if(expectedSlug != actualSlug) {
+                const users = await User.find({"warhost.slug": 1})
+                const maxNum = users.map(u => u.warhost?.slug)
+                    .reduce((acc: number | null, slug) => {
+                        const matches = slug?.match(/^([a-z-]+)(-\d+)?$/)
+                        if(matches && matches[1] === expectedSlug) {
+                            return parseInt(matches[2] ?? '0')
+                        }
+                        return acc
+                    }, null)
+
+                user.warhost.slug = `${expectedSlug}${maxNum == null ? '' : `-${maxNum + 1}`}`
+            }
+        }
+
+        await user.save()
 
         res.status(200).json(userResponse(user))
     } catch (error) {
@@ -96,6 +119,7 @@ async function updateWarhost(req: NextApiRequest, res: NextApiResponse) {
             const validationError = error as ValidationError;
             return res.status(400).send(validationError.message)
         }
+
         res.status((error as UserError).status_code ?? 500).end((error as UserError).user_message ?? "Unexpected error")
     }
 }
