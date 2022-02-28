@@ -43,7 +43,7 @@
     "@types/react-dropzone": "^5.1.0",
     "@types/sharp": "^0.29.5",
     "@types/uuid": "^8.3.4",
-    "eslint": "8.9.0",
+    "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
     "jest": "^27.5.1",
     "node-fetch": "^3.1.0",
