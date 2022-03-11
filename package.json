@@ -41,7 +41,7 @@
     "@types/node": "17.0.21",
     "@types/react": "17.0.40",
     "@types/react-dropzone": "^5.1.0",
-    "@types/sharp": "^0.29.5",
+    "@types/sharp": "^0.30.0",
     "@types/uuid": "^8.3.4",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
