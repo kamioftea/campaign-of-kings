@@ -27,7 +27,7 @@
     "react-dropzone": "^14.2.1",
     "react-icons": "^4.3.1",
     "react-markdown": "^8.0.3",
-    "react-mde": "^12.0.7",
+    "react-mde": "^12.0.8",
     "sass": "^1.51.0",
     "uuid": "^8.3.2",
     "yup": "^0.32.11"
