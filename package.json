@@ -45,7 +45,7 @@
     "@types/uuid": "^8.3.4",
     "eslint": "8.18.0",
     "eslint-config-next": "12.2.0",
-    "jest": "^28.1.1",
+    "jest": "^28.1.2",
     "node-fetch": "^3.2.6",
     "sharp": "^0.30.7",
     "typescript": "4.7.4"
