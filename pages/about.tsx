@@ -74,10 +74,10 @@ const About: NextPage = () => {
                     100pts. Any unspent points can be carried forward to the next roster expansion opportunity.
                 </p>
                 <p>
-                    The first month's pairings will be random. The pairings and scenarios to be played will be announced
+                    The first month&apos;s pairings will be random. The pairings and scenarios to be played will be announced
                     at the start of the month. Both Vanguard and Kings of War games will be scored out of maximum 15
                     points. Five points for a win, two for a draw, 0 for a loss. There will be up to five points for the
-                    amount of your opponent's force that was routed, and up to five points from the scenario objectives.
+                    amount of your opponent&apos;s force that was routed, and up to five points from the scenario objectives.
                     The precise kill point boundaries and objective scoring will be published with the scenario
                     announcement each month. If there are enough players that you will not face every opponent then
                     pairings will use Swiss ranking. Otherwise pairings will be random until everyone has faced
@@ -197,7 +197,7 @@ const About: NextPage = () => {
                 </p>
 
                 <p>
-                    Alice has been paired up to play against Bob's Herd. The scenarios are Supply Grab, and Invade.
+                    Alice has been paired up to play against Bob&apos;s Herd. The scenarios are Supply Grab, and Invade.
                 </p>
 
                 <p>
@@ -211,11 +211,11 @@ const About: NextPage = () => {
                     Alice loses the Kings of War game. This means she only gets three dice to roll on the territory
                     table, two D6 as a base, and one extra for winning the Vanguard game. She rolls a 3, 4, and 6. She
                     picks the forest (3) and decides to unlock Mawpup Launchers. Bob also gets to roll three dice, two
-                    base, plus one for winning the Kings of War game. He rolls a 1, 3, and 5. The Herd don't have any
-                    War Machines in their force list, and Bob already took a cave (1) as his choice for extra terrain
-                    at the start, unlocking the only monster available to him - the Beast of Nature. Because of this he
-                    can re-roll both the 1 and 3, getting a 4 and another 5. He takes one of the 5s to build a training
-                    camp, choosing to add Tribal Trappers to his unit options.
+                    base, plus one for winning the Kings of War game. He rolls a 1, 3, and 5. The Herd don&apos;t have
+                    any War Machines in their force list, and Bob already took a cave (1) as his choice for extra
+                    terrain at the start, unlocking the only monster available to him - the Beast of Nature. Because of
+                    this he can re-roll both the 1 and 3, getting a 4 and another 5. He takes one of the 5s to build a
+                    training camp, choosing to add Tribal Trappers to his unit options.
                 </p>
 
                 <h1>About Chesterfield Open Gaming Society</h1>

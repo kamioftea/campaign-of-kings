@@ -7,7 +7,7 @@ const Users: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Users | Admin | The Conquest of Hell's Claw</title>
+                <title>Users | Admin | The Conquest of Hell&apos;s Claw</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 

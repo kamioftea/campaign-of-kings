@@ -19,7 +19,7 @@ const Error403: NextPage = () => {
                 <a href="mailto:jeff@goblinoid.co.uk">jeff@goblinoid.co.uk</a> for assistance.
             </p>
             <Link href={"/"}>
-                <a>Return to Conquest of Hell's Claw Home</a>
+                <a>Return to Conquest of Hell&apos;s Claw Home</a>
             </Link>
         </div>
     </>

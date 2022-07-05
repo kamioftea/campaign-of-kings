@@ -16,7 +16,7 @@ const Profile: NextPage = () => {
             // noinspection JSIgnoredPromiseFromCall
             router.push('/sign-in')
         }
-    }, [user, loadingState]);
+    }, [user, loadingState, router]);
 
     return (
         <>

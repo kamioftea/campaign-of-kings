@@ -30,7 +30,8 @@ export function Tabs({children}: TabsProps) {
     return <>
         <div className={styles.tabsContainer}>
             {filtered.map(c =>
-                <div className={`${styles.tabSelector} ${c.props.id === selected ? styles.selected : ''}`}
+                <div key={c.props.id}
+                     className={`${styles.tabSelector} ${c.props.id === selected ? styles.selected : ''}`}
                      onClick={() => setSelected(c.props.id)}
                      tabIndex={0}
                 >

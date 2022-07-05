@@ -46,7 +46,7 @@ export const Dropdown = ({
         <div className={`${styles.dropdownContainer} ${disabled ? 'disabled' : ''} ${className}`}
              ref={container}
              onClick={() => !disabled && toggleOpen(!isOpen)}
-             onKeyPress={() => !disabled && toggleOpen(!isOpen)}
+             onKeyUp={() => !disabled && toggleOpen(!isOpen)}
              tabIndex={0}
              {...props}
         >
@@ -83,9 +83,13 @@ interface ButtonTriggerProps {
     hollow?: boolean
 }
 
-export const buttonTrigger = ({label, color = 'primary', hollow = true}: ButtonTriggerProps) =>
-    (isOpen: boolean) =>
+export const buttonTrigger = ({label, color = 'primary', hollow = true}: ButtonTriggerProps) => {
+    // noinspection UnnecessaryLocalVariableJS
+    const ToggleButton = (isOpen: boolean) =>
         <button className={`button ${color} ${hollow ? 'hollow' : ''}`}>
             {label}{' '}
             {isOpen ? <FiChevronUp height={0.8}/> : <FiChevronDown/>}
-        </button>
+        </button>;
+
+    return ToggleButton;
+}

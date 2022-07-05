@@ -27,17 +27,18 @@ import {label} from "aws-sdk/clients/sns";
 import {RichTextbox} from "./RichTextbox";
 import {SaveableInput} from "./SaveableInput";
 import {ImageUpload} from "./Dropzone";
+import Image from "next/image";
 
 type ForceFormProps = { user: UserDocument };
 
 const alignmentCopy: { [a in Alignment]: string } = {
-    "Good": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world. A" +
+    "Good": "With its isolation, Hell&apos;s Claw has always been a retreat for the most powerful evils in the world. A" +
         " crusade to purge this place has been a long time coming. Maybe you also have more personal reasons, a" +
         " quest for a stolen relic of the Shining Ones, or to serve justice on a fiend that has fled here.",
-    "Neutral": "With so much interest in Hell's Claw, there is a lot of money to be made as a sell-sword here. For" +
+    "Neutral": "With so much interest in Hell&apos;s Claw, there is a lot of money to be made as a sell-sword here. For" +
         " the more adventurous, if the rumours are true, there will be plenty of opportunities to loot long lost" +
         " hordes. ",
-    "Evil": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world." +
+    "Evil": "With its isolation, Hell&apos;s Claw has always been a retreat for the most powerful evils in the world." +
         " If the rumours are true, the power that is awakening here could be a boon to your nefarious plans. Perhaps" +
         " you seek something more specific, a necromantic tome long lost, or vengeance against an old rival?"
 }
@@ -59,9 +60,9 @@ function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army:
         <button className="button dark hollow"
                 key={summary.army_list}
                 onClick={factionClickHandler(summary.army_list)}
-                onKeyPress={factionClickHandler(summary.army_list)}
+                onKeyUp={factionClickHandler(summary.army_list)}
         >
-            <img className={styles.armyIcon}
+            <Image className={styles.armyIcon}
                  src={`/images/icons/${summary.army_list}.png`}
                  alt={`${summary.army_label} Icon`}/>
             <span>{summary.army_label}</span>
@@ -80,7 +81,7 @@ function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army:
         {!alignment
             ?<>
                 <p>
-                    The journey to Hell's Claw will be long and treacherous. Most will brave the storms and monsters
+                    The journey to Hell&apos;s Claw will be long and treacherous. Most will brave the storms and monsters
                     of the open ocean, but there are other ways. Maybe you have an experimental airship, or can open a
                     portal and quest through the horrors of the Ethereal Plane. One thing however is certain, there is
                     something there you think is worth the cost.
@@ -88,9 +89,10 @@ function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army:
                 <h2>Where does your allegiance lie?</h2>
             <div className={styles.alignmentContainer}>
                 {(['Good', 'Neutral', 'Evil'] as Alignment[]).map((a: Alignment) =>
-                    <button className={`button dark ${a == alignment ? '' : 'hollow'}`}
+                    <button key={a}
+                            className={`button dark ${a == alignment ? '' : 'hollow'}`}
                             onClick={alignmentClickHandler(a)}
-                            onKeyPress={alignmentClickHandler(a)}>
+                            onKeyUp={alignmentClickHandler(a)}>
                         <span>{a}</span>
                     </button>
                 )}
@@ -103,7 +105,7 @@ function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army:
                 {byAlignment(alignment)}
                 <button className="button primary"
                         onClick={alignmentClickHandler(null)}
-                        onKeyPress={alignmentClickHandler(null)}>
+                        onKeyUp={alignmentClickHandler(null)}>
                     <FiChevronLeft/> Back
                 </button>
             </>
@@ -197,7 +199,7 @@ function TerritoryForm({territory, picked, units, artefacts, onChange}: Territor
     return <fieldset className="fieldset">
         <legend>
             {territory.type ?? 'Unclaimed'}{' '}
-            {territory.type && territory.type !== 'Base Camp' ? <a href="#" onClick={onClear} onKeyPress={onClear}>Change</a> : null}
+            {territory.type && territory.type !== 'Base Camp' ? <a href="#" onClick={onClear} onKeyUp={onClear}>Change</a> : null}
         </legend>
         {options}
     </fieldset>;
@@ -268,7 +270,7 @@ function TerritoryChooser({territories, units, artefacts, onChange}: TerritoryCh
 
     return <>
         <p>
-            After surviving the dangers of your journey you finally reach on Hell's Claw. Those who came by sea have to
+            After surviving the dangers of your journey you finally reach on Hell&apos;s Claw. Those who came by sea have to
             pick their way through the icebergs and rocks that loom in the mists that surround the whole island.
             It is a cold and inhospitable place. Rocky ridges extend from the mist shrouded mountains in the centre,
             forming deep valleys and fjords.
@@ -372,7 +374,7 @@ function ModelBuilder({label, value, units, onChange, onSubmit}: ModelBuilderPro
                     ? <div className="input-group-button">
                         <button className={`button ${value ? '' : 'disabled'}`}
                                 onClick={handleAdd}
-                                onKeyPress={handleAdd}
+                                onKeyUp={handleAdd}
                         >
                             <FiPlus/>
                         </button>
@@ -572,7 +574,7 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
     return <>
         <p>
             Having secured your landing site, you start to plan your next moves. If your campaign is going to succeed
-            you need more information. Hell's Claw is keeping its secrets shrouded in thick mists, and you suspect your
+            you need more information. Hell&apos;s Claw is keeping its secrets shrouded in thick mists, and you suspect your
             force is not the only one to take interest in the power here. You assemble your elite scouts...
         </p>
         <h2>Vanguard Roster</h2>
@@ -581,14 +583,14 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
                 <button className="close-button" aria-label="Close skip vanguard information box"
                         type="button"
                         onClick={() => setSkipBoxClosed(true)}
-                        onKeyPress={() => setSkipBoxClosed(true)}
+                        onKeyUp={() => setSkipBoxClosed(true)}
                 >
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <p>
                     <FiInfo/>{' '}
                     <small>
-                        The Vanguard campaign is optional. If you'd rather just play Kings of War you can skip
+                        The Vanguard campaign is optional. If you&apos;d rather just play Kings of War you can skip
                         this section. <br/>
                         <em>Note</em>: This will mean you can roll at most three dice on the territory table per game.
                         You will lose out on the bonus die for winning the Vanguard game.
@@ -604,7 +606,7 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
                     </label>
                     <button className={`button info ${skipBoxChecked ? '' : 'disabled'} margin-bottom-0 small`}
                             onClick={handleSkip}
-                            onKeyPress={handleSkip}
+                            onKeyUp={handleSkip}
                     >
                         Skip
                     </button>
@@ -618,7 +620,7 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
                     <button className="close-button" aria-label="Close different warband notice"
                             type="button"
                             onClick={() => setNoticeClosed(true)}
-                            onKeyPress={() => setNoticeClosed(true)}
+                            onKeyUp={() => setNoticeClosed(true)}
                     >
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -658,13 +660,13 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
                         <div className={styles.modelActions}>
                             <button className="button alert hollow"
                                     onClick={handleRemoveModel(i)}
-                                    onKeyPress={handleRemoveModel(i)}
+                                    onKeyUp={handleRemoveModel(i)}
                             >
                                 <FiTrash/>
                             </button>
                         </div>
                         {model.options.map(option =>
-                            <div className={styles.modelOptions}>{option}</div>
+                            <div key={option} className={styles.modelOptions}>{option}</div>
                         )}
                     </div>;
                 }
@@ -703,7 +705,7 @@ function VanguardRosterBuilder({list, notice, warband, equipment, requirements, 
                             <div className={styles.equipmentActions}>
                                 <button className="button alert hollow"
                                         onClick={handleRemoveEquipment(i)}
-                                        onKeyPress={handleRemoveEquipment(i)}
+                                        onKeyUp={handleRemoveEquipment(i)}
                                 >
                                     <FiTrash/>
                                 </button>
@@ -806,12 +808,12 @@ export function WarhostForm({user}: ForceFormProps) {
             <div key="submit-territories" className="left-right-row">
                 <button className="button primary"
                         onClick={handleBack}
-                        onKeyPress={handleBack}>
+                        onKeyUp={handleBack}>
                     <FiChevronLeft/> Back
                 </button>
                 <button className={`button ${canProgress ? 'primary' : 'secondary disabled'}`}
                         onClick={handleNext}
-                        onKeyPress={handleNext}>
+                        onKeyUp={handleNext}>
                     <FiCheck/> Next
                 </button>
             </div>
@@ -877,12 +879,12 @@ export function WarhostForm({user}: ForceFormProps) {
             <div key="submit-vanguard" className="left-right-row">
                 <button className="button primary"
                         onClick={handleBack}
-                        onKeyPress={handleBack}>
+                        onKeyUp={handleBack}>
                     <FiChevronLeft/> Back
                 </button>
                 <button className={`button ${canProgress ? 'primary' : 'secondary disabled'}`}
                         onClick={handleNext}
-                        onKeyPress={handleNext}>
+                        onKeyUp={handleNext}>
                     <FiCheck/> Next
                 </button>
             </div>
@@ -913,7 +915,7 @@ export function WarhostForm({user}: ForceFormProps) {
             <div key="submit-vanguard" className="left-right-row">
                 <button className="button primary"
                         onClick={handleBack}
-                        onKeyPress={handleBack}>
+                        onKeyUp={handleBack}>
                     <FiChevronLeft/> Back
                 </button>
             </div>
