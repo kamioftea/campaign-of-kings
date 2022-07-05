@@ -12,7 +12,7 @@ export const ImageUpload = ({imageUrl, onDrop}: ImageUploadProps) => {
     const {getRootProps, getInputProps, isDragActive, isDragReject} = useDropzone({
         onDrop: upload,
         multiple: false,
-        accept: 'image/*'
+        accept: {'image/*': []}
     })
 
 

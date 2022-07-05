@@ -11,7 +11,7 @@ const Error404: NextPage = () => {
             <h1><small>404</small> Not Found</h1>
             <p>Sorry this page does not exist</p>
             <Link href={"/"}>
-                <a>Return to Conquest of Hell's Claw Home</a>
+                <a>Return to Conquest of Hell&apos;s Claw Home</a>
             </Link>
         </div>
     </>

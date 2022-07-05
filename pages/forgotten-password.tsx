@@ -11,7 +11,7 @@ const ForgottenPassword: NextPage = () => {
         <div className={styles.content}>
             <ForgottenPasswordForm/>
             <p><Link href="/sign-in"><a>Back to sign in.</a></Link></p>
-            <p><Link href="/sign-up"><a>I don't have an account.</a></Link></p>
+            <p><Link href="/sign-up"><a>I don&apos;t have an account.</a></Link></p>
         </div>
     </>
 }

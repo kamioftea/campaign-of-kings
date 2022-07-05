@@ -1,5 +1,5 @@
 import {NextApiRequest, NextApiResponse} from "next";
-import {userResponse} from "../../model/User";
+import {UserResponse, userResponse} from "../../model/User";
 import {mongooseConnect} from "../../lib/mongoose-connect";
 import {parseResetKey, UserError} from "../../lib/auth";
 import bcrypt from "bcryptjs";
@@ -7,11 +7,7 @@ import {promisify} from "util";
 
 const bcryptHash = promisify(bcrypt.hash);
 
-interface Data {
-    email?:string
-}
-
-export default async function handle(req: NextApiRequest, res: NextApiResponse<Data | string>) {
+export default async function handle(req: NextApiRequest, res: NextApiResponse<UserResponse | string>) {
     switch (req.method) {
         case 'GET':
             return await getUserFromKey(req, res);
@@ -22,7 +18,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse<D
     }
 }
 
-async function getUserFromKey(req: NextApiRequest, res: NextApiResponse<Data | string>) {
+async function getUserFromKey(req: NextApiRequest, res: NextApiResponse<UserResponse | string>) {
     let {key} = req.query;
 
     if(!key || typeof key !== 'string') {
@@ -40,7 +36,7 @@ async function getUserFromKey(req: NextApiRequest, res: NextApiResponse<Data | s
     }
 }
 
-async function setPassword(req: NextApiRequest, res: NextApiResponse<Data | string>) {
+async function setPassword(req: NextApiRequest, res: NextApiResponse<UserResponse | string>) {
     let {key, password: rawPassword} = req.body;
 
     if(!key || typeof key !== 'string') {

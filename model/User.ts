@@ -1,6 +1,6 @@
 import mongoose, {Schema} from "mongoose";
 import {UserDocument} from "./UserDocument";
-import {warhostSchema, WarhostSummary} from "./Warhost";
+import {Warhost, warhostSchema, WarhostSummary} from "./Warhost";
 import {mongooseConnect} from "../lib/mongoose-connect";
 
 const userSchema = new Schema<UserDocument>({
@@ -13,8 +13,16 @@ const userSchema = new Schema<UserDocument>({
 
 export const User = mongoose.model<UserDocument>("User", userSchema);
 
-export function userResponse(user: UserDocument) {
-    return {...user.toJSON(), password: ''}
+export interface UserResponse {
+    name: string
+    email: string
+    roles: string[]
+    warhost?: Warhost
+}
+
+export function userResponse(user: UserDocument): UserResponse {
+    const {name, email, roles, warhost} = user.toJSON()
+    return {name, email, roles, warhost};
 }
 
 export function toWarhostSummary(user: UserDocument) {

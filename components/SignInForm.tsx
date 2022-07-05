@@ -22,7 +22,7 @@ export const SignInForm = () => {
             // noinspection JSIgnoredPromiseFromCall
             router.push("/");
         }
-    }, [user])
+    }, [user, router])
 
     if (loadingState !== UserLoadingState.LOADED) {
         return <p>Loading...</p>

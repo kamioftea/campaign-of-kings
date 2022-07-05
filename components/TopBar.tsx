@@ -1,3 +1,5 @@
+// noinspection HtmlUnknownTarget
+
 import styles from "../styles/TopBar.module.scss"
 import Link from "next/link"
 import {useUser} from "../hooks/use-user";
@@ -10,7 +12,7 @@ export function TopBar() {
     return <div className={styles.topBar}>
         <div className={styles.topBarLeft}>
             <Link href="/">
-                <a className="h2">The Conquest of Hell's Claw</a>
+                <a className="h2">The Conquest of Hell&apos;s Claw</a>
             </Link>
             <Link href="/about">
                 <a>About</a>
