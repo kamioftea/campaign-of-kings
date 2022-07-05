@@ -15,7 +15,7 @@ const Error403: NextPage = () => {
                 wait up to a day for this to be done.
             </p>
             <p>
-                If it has been longer that a day, please email
+                If it has been longer that a day, please email{' '}
                 <a href="mailto:jeff@goblinoid.co.uk">jeff@goblinoid.co.uk</a> for assistance.
             </p>
             <Link href={"/"}>

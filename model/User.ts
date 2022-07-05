@@ -14,6 +14,7 @@ const userSchema = new Schema<UserDocument>({
 export const User = mongoose.model<UserDocument>("User", userSchema);
 
 export interface UserResponse {
+    _id: string
     name: string
     email: string
     roles: string[]
@@ -21,8 +22,8 @@ export interface UserResponse {
 }
 
 export function userResponse(user: UserDocument): UserResponse {
-    const {name, email, roles, warhost} = user.toJSON()
-    return {name, email, roles, warhost};
+    const {_id, name, email, roles, warhost} = user.toJSON()
+    return {_id, name, email, roles, warhost};
 }
 
 export function toWarhostSummary(user: UserDocument) {
