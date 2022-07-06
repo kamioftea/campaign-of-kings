@@ -7,10 +7,10 @@ interface DefaultHeadProps {
 
 export function DefaultHead({title, description}: DefaultHeadProps) {
     const title_parts = title ? [title] : [];
-    title_parts.push("The Conquest of Hell&apos;s Claw");
+    title_parts.push("The Conquest of Hell's Claw");
     title_parts.push("A Kings of War Campaign");
 
-    description = description ?? "The Conquest of Hell&apos;s Claw is a Kings of War and Vanguard Escalation Campaign" +
+    description = description ?? "The Conquest of Hell's Claw is a Kings of War and Vanguard Escalation Campaign" +
         " running at Chesterfield Open Gaming Society";
 
     return <Head>
