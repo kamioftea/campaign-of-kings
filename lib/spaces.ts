@@ -22,4 +22,3 @@ export async function saveFile(contents: PutObjectCommandInput["Body"], extensio
     await s3Client.send(new PutObjectCommand(bucketParams));
     return `${process.env.SPACES_ROOT}/${bucketParams.Key}`;
 }
-

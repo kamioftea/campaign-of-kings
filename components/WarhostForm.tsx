@@ -27,18 +27,17 @@ import {label} from "aws-sdk/clients/sns";
 import {RichTextbox} from "./RichTextbox";
 import {SaveableInput} from "./SaveableInput";
 import {ImageUpload} from "./Dropzone";
-import Image from "next/image";
 
 type ForceFormProps = { user: UserDocument };
 
 const alignmentCopy: { [a in Alignment]: string } = {
-    "Good": "With its isolation, Hell&apos;s Claw has always been a retreat for the most powerful evils in the world. A" +
+    "Good": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world. A" +
         " crusade to purge this place has been a long time coming. Maybe you also have more personal reasons, a" +
         " quest for a stolen relic of the Shining Ones, or to serve justice on a fiend that has fled here.",
-    "Neutral": "With so much interest in Hell&apos;s Claw, there is a lot of money to be made as a sell-sword here. For" +
+    "Neutral": "With so much interest in Hell's Claw, there is a lot of money to be made as a sell-sword here. For" +
         " the more adventurous, if the rumours are true, there will be plenty of opportunities to loot long lost" +
         " hordes. ",
-    "Evil": "With its isolation, Hell&apos;s Claw has always been a retreat for the most powerful evils in the world." +
+    "Evil": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world." +
         " If the rumours are true, the power that is awakening here could be a boon to your nefarious plans. Perhaps" +
         " you seek something more specific, a necromantic tome long lost, or vengeance against an old rival?"
 }
@@ -62,7 +61,7 @@ function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army:
                 onClick={factionClickHandler(summary.army_list)}
                 onKeyUp={factionClickHandler(summary.army_list)}
         >
-            <Image className={styles.armyIcon}
+            <img className={styles.armyIcon}
                  src={`/images/icons/${summary.army_list}.png`}
                  alt={`${summary.army_label} Icon`}/>
             <span>{summary.army_label}</span>
@@ -457,24 +456,30 @@ export function checkRequirements(warband: Warband, list: WarbandData): Requirem
         },
         () => {
             let allowedCommandLargeUsed = false;
-            const largeCount = units.filter(ts => {
-                if (ts?.types.includes('Large')) {
-                    if (warband.list === 'ogre' && ts.races.includes('Ogre')) {
-                        return false
+            const {count, ignored} = units.reduce(
+                ({count, ignored, allowedCommandLargeUsed}, unit) => {
+                    if(!unit?.types.includes('Large')) {
+                        return {count, ignored, allowedCommandLargeUsed}
                     }
-                    if (ts.types.includes('Command') && allowedCommandLargeUsed) {
-                        allowedCommandLargeUsed = true;
-                        return false;
+                    if (warband.list === 'ogre' && unit?.races.includes('Ogre')) {
+                        return {count, ignored: ignored + 1, allowedCommandLargeUsed}
                     }
-                    return true;
+                    if (unit?.types.includes('Command') && !allowedCommandLargeUsed) {
+                        return {count, ignored: ignored + 1, allowedCommandLargeUsed: true}
+                    }
+                    return {count: count + 1, ignored, allowedCommandLargeUsed}
+                },
+                {
+                    count: 0,
+                    ignored: 0,
+                    allowedCommandLargeUsed,
                 }
-                return false;
-            }).length;
+            )
             const supported = Math.floor(warband.totalPoints / 150) + (warband.list === 'northern-alliance' ? 1 : 0);
 
             return {
-                message: `You have ${largeCount} / ${supported} Large units`,
-                passed: largeCount <= supported
+                message: `You have ${count} / ${supported} Large units${ignored ? ` (${ignored} Large units ignored)` : ''}`,
+                passed: count <= supported
             };
         },
         () => ({
