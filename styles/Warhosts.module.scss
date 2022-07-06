@@ -3,7 +3,7 @@
 .summaryContainer {
   display: grid;
 
-  grid-template-columns: max-content auto;
+  grid-template-columns: Min(20rem, 50%) auto;
   grid-template-rows: 10rem max-content;
 
   background-size: cover;

@@ -15,7 +15,7 @@
     border-bottom: thick $secondary-color solid;
     text-align: center;
     padding: $global-padding;
-    margin: $global-margin;
+    margin: 0 $global-margin;
     transition: background-color 0.2s ease-in-out;
 
     &:hover, &:focus-within {

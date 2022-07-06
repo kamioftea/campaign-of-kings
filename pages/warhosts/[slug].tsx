@@ -7,6 +7,45 @@ import {FiAlertTriangle} from "react-icons/fi";
 import {WarhostBanner} from "../../components/WarhostBanner";
 import ReactMarkdown from "react-markdown";
 import {Tab, Tabs} from "../../components/Tabs";
+import {Army, TerritoryType} from '../../model/Warhost'
+import styles from '../../styles/Warhosts.module.scss'
+import {
+    GiAncientRuins,
+    GiForest,
+    GiGoblinCamp,
+    GiHillFort,
+    GiHutsVillage,
+    GiMountainCave,
+    GiMountains
+} from "react-icons/all";
+import {cloneElement, ReactElement} from "react";
+
+interface KingsOfWarProps {
+    army: Army
+}
+
+const territoryIcons: { [T in TerritoryType]: ReactElement } = {
+    'Base Camp': <GiHillFort/>,
+    'Cave': <GiMountainCave/>,
+    'Mountain': <GiMountains/>,
+    'Forest': <GiForest/>,
+    'Village': <GiHutsVillage/>,
+    'Training Camp': <GiGoblinCamp/>,
+    'Ancient Ruins': <GiAncientRuins/>
+}
+
+const KingsOfWar = ({army}: KingsOfWarProps) => {
+
+    return <>
+        <h2>Territories</h2>
+        {army.territories.map((territory, index) =>
+            <div key={territory.name ?? index} className={styles.territory}>
+                {territory.type ? cloneElement(territoryIcons[territory.type], {size: '3em'}) : null}
+                {territory.name || territory.type}
+            </div>
+        )}
+    </>
+}
 
 const Warhost: NextPage = () => {
     const router = useRouter();
@@ -30,7 +69,7 @@ const Warhost: NextPage = () => {
                         <WarhostBanner warhost={summary}/>
                         <Tabs>
                             {warhost.description
-                                ? <Tab id='background' label='Background'>
+                                ? <Tab id="background" label="Background">
                                     {warhost.description
                                         ? <ReactMarkdown>{warhost.description}</ReactMarkdown>
                                         : null
@@ -38,9 +77,12 @@ const Warhost: NextPage = () => {
                                 </Tab>
                                 : null
                             }
-                            <Tab id='kings-of-war' label="Kings Of War">
-                                <h2>Kings of War</h2>
-                            </Tab>
+                            {warhost.army
+                                ? <Tab id="kings-of-war" label="Kings Of War">
+                                    <KingsOfWar army={warhost.army}/>
+                                </Tab>
+                                : null
+                            }
                             {warhost.skipVanguard
                                 ? null
                                 : <Tab id={'vanguard'} label={'Vanguard'}>

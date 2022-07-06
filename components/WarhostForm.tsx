@@ -457,24 +457,30 @@ export function checkRequirements(warband: Warband, list: WarbandData): Requirem
         },
         () => {
             let allowedCommandLargeUsed = false;
-            const largeCount = units.filter(ts => {
-                if (ts?.types.includes('Large')) {
-                    if (warband.list === 'ogre' && ts.races.includes('Ogre')) {
-                        return false
+            const {count, ignored} = units.reduce(
+                ({count, ignored, allowedCommandLargeUsed}, unit) => {
+                    if(!unit?.types.includes('Large')) {
+                        return {count, ignored, allowedCommandLargeUsed}
                     }
-                    if (ts.types.includes('Command') && allowedCommandLargeUsed) {
-                        allowedCommandLargeUsed = true;
-                        return false;
+                    if (warband.list === 'ogre' && unit?.races.includes('Ogre')) {
+                        return {count, ignored: ignored + 1, allowedCommandLargeUsed}
                     }
-                    return true;
+                    if (unit?.types.includes('Command') && !allowedCommandLargeUsed) {
+                        return {count, ignored: ignored + 1, allowedCommandLargeUsed: true}
+                    }
+                    return {count: count + 1, ignored, allowedCommandLargeUsed}
+                },
+                {
+                    count: 0,
+                    ignored: 0,
+                    allowedCommandLargeUsed,
                 }
-                return false;
-            }).length;
+            )
             const supported = Math.floor(warband.totalPoints / 150) + (warband.list === 'northern-alliance' ? 1 : 0);
 
             return {
-                message: `You have ${largeCount} / ${supported} Large units`,
-                passed: largeCount <= supported
+                message: `You have ${count} / ${supported} Large units${ignored ? ` (${ignored} Large units ignored)` : ''}`,
+                passed: count <= supported
             };
         },
         () => ({
