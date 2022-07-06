@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/Warhosts.module.scss";
 import {titleSlug} from "../lib/text";
 import {WarhostSummary} from "../model/Warhost";
@@ -14,7 +13,7 @@ export function WarhostBanner({slug, warhost}: WarhostBannerProps) {
         <div className={styles.summaryContainer}
              style={{backgroundImage: `url(${warhost.coverImageUrl})`}}
         >
-            <Image className={styles.icon}
+            <img className={styles.icon}
                  src={`/images/icons/${warhost.army}.png`}
                  alt={warhost.army}
             />

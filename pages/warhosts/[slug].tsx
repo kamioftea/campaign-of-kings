@@ -17,7 +17,7 @@ import {
     GiHutsVillage,
     GiMountainCave,
     GiMountains
-} from "react-icons/all";
+} from "react-icons/gi";
 import {cloneElement, ReactElement} from "react";
 
 interface KingsOfWarProps {
