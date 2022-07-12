@@ -8,8 +8,6 @@ const options: ConnectOptions = {
     family: 4,
 };
 
-console.log(process.env.MONGO_URI, options)
-
 export const mongooseConnect = mongoose.connect(
     process.env.MONGO_URI || 'mongodb://localhost:27017',
     options
