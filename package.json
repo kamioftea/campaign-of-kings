@@ -16,7 +16,7 @@
     "cookie": "^0.5.0",
     "formidable": "^2.0.1",
     "formik": "^2.2.9",
-    "foundation-sites": "^6.7.4",
+    "foundation-sites": "^6.7.5",
     "glob": "^8.0.3",
     "mongoose": "^6.4.4",
     "multiparty": "^4.2.3",
