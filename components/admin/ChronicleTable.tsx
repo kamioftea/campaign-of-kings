@@ -1,55 +1,39 @@
-import {useAdminUsers} from "../../hooks/use-admin-users";
-import {Role, roles, UserDocument} from "../../model/UserDocument";
-import {KeyboardEvent, MouseEvent} from "react";
+import {useAdminChronicles} from "../../hooks/use-admin-chronicles";
 
 
 export function ChronicleTable() {
-    const {user, isLoading, error, users, updateRole} = useAdminUsers();
-    const handleToggleRole = (user: UserDocument, role: Role) => (e: MouseEvent | KeyboardEvent) => {
-        e.preventDefault();
-        updateRole(user, role, !user.roles.includes(role))
-    }
+    const {user, isLoading, error, chronicles} = useAdminChronicles();
 
     if (!user || isLoading) {
-        return <div className="callout secondary">
-            Loading ...
-        </div>
+        return <div className="callout secondary">Loading ...</div>
     }
 
     if (error) {
         return <div className="callout alert">
-            There was an error loading the users: {error}
+            There was an error loading the chronicles: {error}
         </div>
     }
 
     return <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Roles</th>
-                <th/>
+                <th>Title</th>
+                <th>Published</th>
+                <th>Snippet</th>
+                <th />
             </tr>
         </thead>
         <tbody>
-            {users.sort((a, b) => a.name.localeCompare(b.name))
-                .map(u =>
-                    <tr key={u._id}>
-                        <td>{u.name}</td>
-                        <td>{u.email}</td>
+            {chronicles
+                .sort((a, b) => b.published.getTime() - a.published.getTime())
+                .map(c =>
+                    <tr key={c._id}>
+                        <td>{c.title}</td>
                         <td>
-                            <div className="button-group small">
-                                {roles().map(r => {
-                                    const className =
-                                        `button ${u.roles.includes(r) ? 'primary' : 'secondary hollow'}`;
-                                    return <button key={r}
-                                                   onClick={handleToggleRole(u, r)}
-                                                   onKeyPress={handleToggleRole(u, r)}
-                                                   className={className}>{r}</button
-                                    >
-                                })}
-                            </div>
+                            {c.published.toLocaleDateString()}
+                            {c.draft && <span className="label secondary">Draft</span> }
                         </td>
+                        <td>{c.slug}</td>
                         <td/>
                     </tr>
                 )
