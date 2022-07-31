@@ -3,8 +3,18 @@ import {UserContext, UserLoadingState} from "../components/UserContext";
 import {Role} from "../model/UserDocument";
 import {useRouter} from "next/router";
 
+const authUrls = [
+    '/sign-in',
+    '/sign-up',
+    '/sign-out',
+    '/unauthorised',
+    '/forgotten-password',
+    '/reset-password',
+];
+
 export const useUser = () => {
-    const {user, setUser, loadingState, setLoadingState} = useContext(UserContext);
+    const {user, setUser, loadingState, setLoadingState, previousRoute, setPreviousRoute} = useContext(UserContext);
+    const router = useRouter();
 
     useEffect(
         () => {
@@ -19,6 +29,12 @@ export const useUser = () => {
         },
         [user, loadingState]
     )
+
+    useEffect(() => {
+        if(!authUrls.includes(router.route)) {
+            setPreviousRoute(router.route)
+        }
+    }, [router.route])
 
     const handleSignOut = useCallback(() => {
         setLoadingState(UserLoadingState.LOADING)
@@ -36,6 +52,8 @@ export const useUser = () => {
         loadingState,
         setLoadingState,
         handleSignOut,
+        previousRoute,
+        setPreviousRoute
     }
 }
 
