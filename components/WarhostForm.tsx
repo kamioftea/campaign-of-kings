@@ -1,5 +1,5 @@
 import {UserDocument} from "../model/UserDocument";
-import {useWarhostData} from "../hooks/useWarhostData";
+import {useWarhostData} from "../hooks/use-warhost-data";
 import {
     Alignment,
     Artefact,

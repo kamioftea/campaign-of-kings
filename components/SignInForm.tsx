@@ -14,13 +14,13 @@ const schema = yup.object().shape({
 })
 
 export const SignInForm = () => {
-    const {user, setUser, loadingState} = useUser();
+    const {user, setUser, loadingState, previousRoute} = useUser();
     const router = useRouter();
 
     useEffect(() => {
         if (user) {
             // noinspection JSIgnoredPromiseFromCall
-            router.push("/");
+            router.push(previousRoute ?? "/");
         }
     }, [user, router])
 
