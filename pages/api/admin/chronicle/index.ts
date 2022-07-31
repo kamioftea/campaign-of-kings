@@ -1,24 +1,27 @@
 import {NextApiRequest, NextApiResponse} from "next";
 import {getLoginSession, UserError} from "../../../../lib/auth";
-import {User, userResponse} from "../../../../model/User";
-import {Role, UserDocument} from "../../../../model/UserDocument";
+import {Role} from "../../../../model/UserDocument";
+import {ChronicleDocument} from "../../../../model/ChronicleDocument";
+import {Chronicle} from "../../../../model/Chronicle";
 
-export default async function handle(req: NextApiRequest, res: NextApiResponse<UserDocument[] | string>) {
+export default async function handle(req: NextApiRequest, res: NextApiResponse<ChronicleDocument[] | string>) {
     switch (req.method) {
         case 'GET':
-            return await getUsers(req, res);
+            return await getChronicles(req, res);
+        case 'POST':
+            return
         default:
             return res.status(405).send("Request method not supported");
     }
 }
 
-async function getUsers(req: NextApiRequest, res: NextApiResponse) {
+async function getChronicles(req: NextApiRequest, res: NextApiResponse) {
     try {
         await getLoginSession(req, Role.ADMIN)
 
-        let users = [...await User.find({})].map(u => userResponse(u));
+        let chronicles = [...await Chronicle.find({})];
 
-        res.status(200).json(users)
+        res.status(200).json(chronicles)
     } catch (error) {
         res.status((error as UserError).status_code ?? 500).end((error as UserError).user_message ?? "Unexpected error")
     }

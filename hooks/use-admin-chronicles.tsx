@@ -3,7 +3,7 @@ import {Role} from "../model/UserDocument";
 import {useEffect, useState} from "react";
 import {ChronicleDocument} from "../model/ChronicleDocument";
 
-export function useAdminUsers() {
+export function useAdminChronicles() {
     const user = useAuthorised(Role.ADMIN);
     const [isLoading, setIsLoading] = useState<boolean>(user == null);
     const [chronicles, setChronicles] = useState<ChronicleDocument[]>([]);
