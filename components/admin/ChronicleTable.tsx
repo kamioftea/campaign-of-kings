@@ -1,5 +1,8 @@
 import {useAdminChronicles} from "../../hooks/use-admin-chronicles";
 import {ReviewStatus} from "../../model/ChronicleDocument";
+import {ReactNode} from "react";
+import {FiPause} from "react-icons/all";
+import {FiCheck, FiX} from "react-icons/fi";
 
 
 export function ChronicleTable() {
@@ -23,6 +26,14 @@ export function ChronicleTable() {
         }
     }
 
+    function getStatusIcon(status: ReviewStatus): ReactNode {
+        switch (status) {
+            case ReviewStatus.PENDING: return <FiPause />;
+            case ReviewStatus.ACCEPTED: return <FiCheck />;
+            case ReviewStatus.REJECTED: return <FiX />;
+        }
+    }
+
     return <table>
         <thead>
             <tr>
@@ -43,11 +54,13 @@ export function ChronicleTable() {
                             {c.publishedDate?.toLocaleDateString() ?? '-'}
                             {c.reviewStatus &&
                                 <span className={['label', getStatusLabelClass(c.reviewStatus)].join(' ')}>
-                                    {c.reviewStatus}
+                                    {c.reviewStatus}{' '}
+                                    {getStatusIcon(c.reviewStatus)}
                                 </span>
                             }
                         </td>
                         <td>{c.slug ?? '-'}</td>
+                        <td>{c.author.name}</td>
                         <td/>
                     </tr>
                 )

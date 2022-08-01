@@ -31,3 +31,10 @@ export type ChronicleDocument = Document & {
     reviewStatus?: ReviewStatus,
     reviewNotes?: string,
 };
+
+export type ChronicleResponse = ChronicleDocument & {
+    author: {
+        name: string,
+        iconUrl: string,
+    }
+}
