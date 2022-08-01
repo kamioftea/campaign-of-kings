@@ -4,7 +4,6 @@ import {ObjectID} from "bson";
 
 const chronicleContentSchema = new Schema<ChronicleContent>({
     title: String,
-    slug: String,
     snippet: String,
     body: String,
     allowHtml: Boolean,
@@ -12,8 +11,9 @@ const chronicleContentSchema = new Schema<ChronicleContent>({
 
 const chronicleSchema = new Schema<ChronicleDocument>({
     chronicleType: String,
-    coverImageUrl: String,
     authorId: ObjectID,
+    slug: String,
+    coverImageUrl: String,
     publishedDate: Date,
     updatedDate: Date,
     draftContent: chronicleContentSchema,

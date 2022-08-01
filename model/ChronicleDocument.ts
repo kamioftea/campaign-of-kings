@@ -14,7 +14,6 @@ export enum ChronicleType {
 
 export type ChronicleContent = {
     title: string;
-    slug: string;
     snippet: string;
     body: string;
     allowHtml: boolean;
@@ -22,9 +21,10 @@ export type ChronicleContent = {
 
 export type ChronicleDocument = Document & {
     chronicleType: ChronicleType,
+    authorId: string;
+    slug?: string,
     coverImageUrl?: string,
-    authorId?: string;
-    publishedDate?: Date;
+    publishedDate: Date;
     updatedDate?: Date;
     draftContent?: ChronicleContent;
     approvedContent?: ChronicleContent;

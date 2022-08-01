@@ -1,4 +1,5 @@
 import {useAdminChronicles} from "../../hooks/use-admin-chronicles";
+import {ReviewStatus} from "../../model/ChronicleDocument";
 
 
 export function ChronicleTable() {
@@ -14,26 +15,39 @@ export function ChronicleTable() {
         </div>
     }
 
+    function getStatusLabelClass(status: ReviewStatus): string {
+        switch (status) {
+            case ReviewStatus.PENDING: return 'secondary';
+            case ReviewStatus.ACCEPTED: return 'success';
+            case ReviewStatus.REJECTED: return 'alert';
+        }
+    }
+
     return <table>
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Published</th>
-                <th>Snippet</th>
-                <th />
+                <th>Slug</th>
+                <th>Author</th>
+                <th/>
             </tr>
         </thead>
         <tbody>
             {chronicles
-                .sort((a, b) => b.published.getTime() - a.published.getTime())
+                .sort((a, b) => b.publishedDate.getTime() - a.publishedDate.getTime())
                 .map(c =>
                     <tr key={c._id}>
-                        <td>{c.title}</td>
+                        <td>{c.approvedContent?.title ?? c.draftContent?.title ?? '-'}</td>
                         <td>
-                            {c.published.toLocaleDateString()}
-                            {c.draft && <span className="label secondary">Draft</span> }
+                            {c.publishedDate?.toLocaleDateString() ?? '-'}
+                            {c.reviewStatus &&
+                                <span className={['label', getStatusLabelClass(c.reviewStatus)].join(' ')}>
+                                    {c.reviewStatus}
+                                </span>
+                            }
                         </td>
-                        <td>{c.slug}</td>
+                        <td>{c.slug ?? '-'}</td>
                         <td/>
                     </tr>
                 )
