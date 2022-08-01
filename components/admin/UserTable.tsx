@@ -28,7 +28,6 @@ export function UserTable() {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Roles</th>
-                <th/>
             </tr>
         </thead>
         <tbody>
@@ -50,7 +49,6 @@ export function UserTable() {
                                 })}
                             </div>
                         </td>
-                        <td/>
                     </tr>
                 )
             }
