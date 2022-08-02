@@ -1,5 +1,5 @@
 import type {NextPage} from 'next'
-import styles from '../../styles/Admin.module.scss'
+import styles from '../../../styles/Admin.module.scss'
 import {DefaultHead} from "../../../components/DefaultHead";
 import {ChronicleTable} from "../../../components/admin/ChronicleTable";
 

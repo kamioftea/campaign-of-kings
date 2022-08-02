@@ -1,4 +1,4 @@
-import {Document} from "mongoose";
+import {Document, Types} from "mongoose";
 
 export enum ReviewStatus {
     PENDING = "Pending",
@@ -21,7 +21,7 @@ export type ChronicleContent = {
 
 export type ChronicleDocument = Document & {
     chronicleType: ChronicleType,
-    authorId: string;
+    author: Types.ObjectId;
     slug?: string,
     coverImageUrl?: string,
     publishedDate: Date;
@@ -32,9 +32,16 @@ export type ChronicleDocument = Document & {
     reviewNotes?: string,
 };
 
-export type ChronicleResponse = ChronicleDocument & {
-    author: {
-        name: string,
-        iconUrl: string,
-    }
+export type ChronicleResponse = {
+    _id?: string,
+    chronicleType: ChronicleType,
+    authorName?: string,
+    slug?: string,
+    coverImageUrl?: string,
+    publishedDate: Date;
+    updatedDate?: Date;
+    draftContent?: ChronicleContent;
+    approvedContent?: ChronicleContent;
+    reviewStatus?: ReviewStatus,
+    reviewNotes?: string,
 }

@@ -1,6 +1,5 @@
 import mongoose, {Schema} from "mongoose";
 import {ChronicleContent, ChronicleDocument} from "./ChronicleDocument";
-import {ObjectID} from "bson";
 
 const chronicleContentSchema = new Schema<ChronicleContent>({
     title: String,
@@ -11,7 +10,10 @@ const chronicleContentSchema = new Schema<ChronicleContent>({
 
 const chronicleSchema = new Schema<ChronicleDocument>({
     chronicleType: String,
-    authorId: ObjectID,
+    author: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    },
     slug: String,
     coverImageUrl: String,
     publishedDate: Date,

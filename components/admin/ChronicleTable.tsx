@@ -1,8 +1,7 @@
 import {useAdminChronicles} from "../../hooks/use-admin-chronicles";
 import {ReviewStatus} from "../../model/ChronicleDocument";
 import {ReactNode} from "react";
-import {FiPause} from "react-icons/all";
-import {FiCheck, FiX} from "react-icons/fi";
+import {FiCheck, FiX, FiPause} from "react-icons/fi";
 
 
 export function ChronicleTable() {
@@ -60,7 +59,7 @@ export function ChronicleTable() {
                             }
                         </td>
                         <td>{c.slug ?? '-'}</td>
-                        <td>{c.author.name}</td>
+                        <td>{c.authorName ?? '-'}</td>
                         <td/>
                     </tr>
                 )
