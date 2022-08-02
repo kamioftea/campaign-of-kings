@@ -11,3 +11,8 @@
         grid-area: header-end / left-start / footer-start / right-end;
     }
 }
+
+.split {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}

@@ -12,7 +12,7 @@ export function TopBar() {
     return <div className={styles.topBar}>
         <div className={styles.topBarLeft}>
             <Link href="/">
-                <a className="h2">The Conquest of Hell&apos;s Claw</a>
+                <a className="h2">Twilight Mists</a>
             </Link>
             <Link href="/about">
                 <a>About</a>

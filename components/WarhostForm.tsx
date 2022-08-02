@@ -3,18 +3,15 @@ import {useWarhostData} from "../hooks/use-warhost-data";
 import {
     Alignment,
     Artefact,
-    Equipment,
     ListSummary,
-    ModelType,
     UnitBreakdown,
     UnitCategory,
     WarbandData
 } from "../model/WarhostData";
 import styles from '../styles/WarhostForm.module.scss';
-import {FiAlertTriangle, FiCheck, FiChevronLeft, FiInfo, FiPlus, FiTrash, FiX} from "react-icons/fi";
+import {FiAlertTriangle, FiCheck, FiChevronLeft} from "react-icons/fi";
 import {ChangeEvent, Fragment, KeyboardEvent, MouseEvent, useState} from "react";
 import {
-    Model,
     SlotType,
     Territory,
     TerritorySlot,
@@ -31,15 +28,15 @@ import {ImageUpload} from "./Dropzone";
 type ForceFormProps = { user: UserDocument };
 
 const alignmentCopy: { [a in Alignment]: string } = {
-    "Good": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world. A" +
-        " crusade to purge this place has been a long time coming. Maybe you also have more personal reasons, a" +
-        " quest for a stolen relic of the Shining Ones, or to serve justice on a fiend that has fled here.",
-    "Neutral": "With so much interest in Hell's Claw, there is a lot of money to be made as a sell-sword here. For" +
-        " the more adventurous, if the rumours are true, there will be plenty of opportunities to loot long lost" +
-        " hordes. ",
-    "Evil": "With its isolation, Hell's Claw has always been a retreat for the most powerful evils in the world." +
-        " If the rumours are true, the power that is awakening here could be a boon to your nefarious plans. Perhaps" +
-        " you seek something more specific, a necromantic tome long lost, or vengeance against an old rival?"
+    "Good": "Whatever is causing Mists to flow from the Twilight Glades it is powerful and dangerous. Are you here to " +
+        "defend Pannithor from this threat? Is this more personal? Are you on a crusade against the Twilight Kin or" +
+        " the Nightstalkers?",
+    "Neutral": "With so much interest in the Mists and the Twilight Glades, there is a lot of money to be made as a" +
+        " sell-sword here. Or maybe you're here for personal gain? Do the mists hide treasure? Powerful artefacts?" +
+        " Arcane secrets? ",
+    "Evil": "Whatever is causing Mists to flow from the Twilight Glades it is powerful and dangerous. Will this power" +
+        " be a boon to your nefarious plans? Perhaps you seek something more specific, a necromantic tome long lost," +
+        " or vengeance against an old rival?"
 }
 
 function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army: string) => void }) {
@@ -80,10 +77,8 @@ function ArmyChooser({lists, onSelect}: { lists: ListSummary[], onSelect: (army:
         {!alignment
             ?<>
                 <p>
-                    The journey to Hell&apos;s Claw will be long and treacherous. Most will brave the storms and monsters
-                    of the open ocean, but there are other ways. Maybe you have an experimental airship, or can open a
-                    portal and quest through the horrors of the Ethereal Plane. One thing however is certain, there is
-                    something there you think is worth the cost.
+                    For better or for worse you have come to lead a warhost into the swirling mists roiling out of the
+                    Twilight Glades.
                 </p>
                 <h2>Where does your allegiance lie?</h2>
             <div className={styles.alignmentContainer}>
@@ -269,15 +264,15 @@ function TerritoryChooser({territories, units, artefacts, onChange}: TerritoryCh
 
     return <>
         <p>
-            After surviving the dangers of your journey you finally reach on Hell&apos;s Claw. Those who came by sea have to
-            pick their way through the icebergs and rocks that loom in the mists that surround the whole island.
-            It is a cold and inhospitable place. Rocky ridges extend from the mist shrouded mountains in the centre,
-            forming deep valleys and fjords.
+            Your troops and resources gathered you pack up your baggage train one last time and set forth into the
+            Mists. The Mist swirls and twists around you. Are there things out there or is it just tricks of the
+            Shadows? Occasionally clearings open for a fleeting moment before you are swallowed once more.
         </p>
         <h2>Stake Your Claim</h2>
         <p>
-            The bulk of your expeditionary force upload supplies and sets up a makeshift base camp. Your vanguard
-            set out to explore the local area and secure useful resources.
+            After many hours, as despair grips your host you suddenly break free. Cresting a hill you see the mists fall
+            away below you, an endless white sea. You order your followers to make camp. The next day you send out
+            scouting parties, and start to find what order you can in this chaotic place.
         </p>
         {territories.map((t, i) =>
             <TerritoryForm
@@ -290,131 +285,6 @@ function TerritoryChooser({territories, units, artefacts, onChange}: TerritoryCh
             />
         )}
     </>
-}
-
-interface ModelBuilderProps {
-    label: string
-    units: ModelType[],
-    value: Model | null
-    onChange: (model: Model | null) => void
-    onSubmit?: () => void
-}
-
-function ModelBuilder({label, value, units, onChange, onSubmit}: ModelBuilderProps) {
-    const handleAdd = (e: MouseEvent | KeyboardEvent) => {
-        e.preventDefault();
-        onSubmit?.();
-    }
-    const selectedModel = units.find(u => u.name === value?.type);
-
-    const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-        e.preventDefault();
-        const name = e.currentTarget.value;
-        const unit = units.find(u => u.name === name);
-
-        onChange(unit
-            ? {
-                cost: unit.points,
-                options: [],
-                type: name,
-                upgrades: [],
-                xp: 0
-            }
-            : null,
-        );
-    }
-
-    const handleChecked = (option: string, cost: number) => (e: ChangeEvent<HTMLInputElement>) => {
-        if (value === null) {
-            return;
-        }
-
-        const updated = {...value}
-
-        if (option.startsWith('Gift of Korgaan:')) {
-            const existing = value.options.find(o => o.startsWith('Gift of Korgaan:'));
-            const existingCost = existing ? selectedModel?.options[existing] : undefined
-
-            if (existing && existingCost != undefined) {
-                updated.cost -= existingCost;
-                updated.options = value.options.filter(o => o !== existing)
-            }
-        }
-
-        onChange({
-            ...updated,
-            options: e.currentTarget.checked
-                ? [...updated.options, option]
-                : updated.options.filter(o => o !== option),
-            cost: e.currentTarget.checked
-                ? updated.cost + cost
-                : updated.cost - cost
-        })
-    }
-
-    return <>
-        <label className="inline">
-            {label}
-            <div className="input-group">
-                <select value={value?.type ?? ''} onChange={handleChange}>
-                    <option>-- Pick a Model --</option>
-                    {units
-                        .sort((a, b) => a.name.localeCompare(b.name))
-                        .map(
-                            model =>
-                                <option key={model.name} value={model.name}>
-                                    {model.name}{' '}
-                                    [{(model.types as string[]).concat(model.races ?? []).join(', ')}] {model.points}pts
-                                </option>
-                        )
-                    }
-                </select>
-                {typeof onSubmit === 'function'
-                    ? <div className="input-group-button">
-                        <button className={`button ${value ? '' : 'disabled'}`}
-                                onClick={handleAdd}
-                                onKeyUp={handleAdd}
-                        >
-                            <FiPlus/>
-                        </button>
-                    </div>
-                    : null
-                }
-            </div>
-        </label>
-        {Object.entries(selectedModel?.options ?? {}).map(([option, cost]) =>
-            <div className="inline" key={option}>
-                <div/>
-                <label className={styles.optionContainer}>
-                    <input type="checkbox"
-                           checked={value?.options.includes(option)}
-                           onChange={handleChecked(option, cost)}
-                    />
-                    {option} ({cost}pts)
-                </label>
-            </div>
-        )}
-    </>
-}
-
-interface AddModelProps {
-    units: ModelType[]
-    onSubmit: (model: Model) => void
-}
-
-function AddModel({units, onSubmit}: AddModelProps) {
-    const [model, setModel] = useState<Model | null>(null);
-
-    return <ModelBuilder label={'Add Model'}
-                         units={units}
-                         value={model}
-                         onChange={setModel}
-                         onSubmit={() => model !== null ? onSubmit(model) : null}
-    />
-}
-
-interface WarbandRequirementsProps {
-    requirements: RequirementResult[]
 }
 
 interface RequirementResult {
@@ -489,241 +359,6 @@ export function checkRequirements(warband: Warband, list: WarbandData): Requirem
     ]
 
     return requirements.map(f => f());
-}
-
-function WarbandRequirements({requirements}: WarbandRequirementsProps) {
-    return <>
-        {requirements.map((r, i) =>
-            <div className={styles.requirementRow} key={i}>
-                {r.passed ? <FiCheck className="text-success"/> : <FiX className="text-alert"/>}{' '}
-                {r.message}
-            </div>
-        )}
-    </>
-}
-
-interface VanguardRosterBuilderProps {
-    list: WarbandData | undefined
-    notice?: string
-    warband: Warband
-    equipment: { [keys: string]: Equipment }
-    requirements: RequirementResult[]
-    onUpdate: (warband: Warband | undefined, skip?: boolean) => void
-}
-
-function VanguardRosterBuilder({list, notice, warband, equipment, requirements, onUpdate}: VanguardRosterBuilderProps) {
-    const [skipBoxChecked, toggleSkipBox] = useState<boolean>(false);
-    const [skipBoxClosed, setSkipBoxClosed] = useState<boolean>(false);
-    const [noticeClosed, setNoticeClosed] = useState<boolean>(false);
-
-    if (!list) {
-        return <p>Loading...</p>
-    }
-
-    const handleRetinueChange = (key: keyof typeof warband.retinue) => (model: Model | null) => {
-        warband.unspent = warband.unspent + (warband.retinue[key]?.cost ?? 0) - (model?.cost ?? 0)
-        if (model) {
-            model.upgrades = ['Leader Bonus: +1 Red Power Die'];
-        }
-
-        warband.retinue[key] = model ?? undefined;
-        onUpdate(warband);
-    }
-
-    const handleAddModel = (model: Model) => {
-        warband.unspent = warband.unspent - model.cost;
-        warband.roster.push(model);
-
-        onUpdate(warband);
-    }
-
-    const handleRemoveModel = (index: number) => (e: MouseEvent | KeyboardEvent) => {
-        e.preventDefault()
-        const [model] = warband.roster.splice(index, 1)
-        warband.unspent = warband.unspent + model.cost;
-
-        onUpdate(warband);
-    }
-
-    const handleAddEquipment = (e: ChangeEvent<HTMLSelectElement>) => {
-        e.preventDefault();
-        const selectedEquipment = equipment[e.currentTarget.value];
-        if (!selectedEquipment) {
-            return;
-        }
-        warband.unspent = warband.unspent - selectedEquipment.cost;
-        warband.supplyCaravan.push(selectedEquipment);
-
-        onUpdate(warband);
-    }
-
-    const handleRemoveEquipment = (index: number) => (e: MouseEvent | KeyboardEvent) => {
-        e.preventDefault()
-        const [equipment] = warband.supplyCaravan.splice(index, 1)
-        warband.unspent = warband.unspent + equipment.cost;
-
-        onUpdate(warband);
-    }
-
-    const handleSkip = (e: MouseEvent | KeyboardEvent) => {
-        e.preventDefault()
-        onUpdate(undefined, true)
-    }
-
-    const commonEquipmentCount = warband.supplyCaravan.filter(i => i.rarity === 'Common').length;
-
-    const takenUnique = [...(warband.retinue.leader ? [warband.retinue.leader] : []), ...warband.roster]
-        .map(m => m.type)
-        .filter(t => t.includes('*'));
-
-    return <>
-        <p>
-            Having secured your landing site, you start to plan your next moves. If your campaign is going to succeed
-            you need more information. Hell&apos;s Claw is keeping its secrets shrouded in thick mists, and you suspect your
-            force is not the only one to take interest in the power here. You assemble your elite scouts...
-        </p>
-        <h2>Vanguard Roster</h2>
-        {!skipBoxClosed
-            ? <div className="callout info">
-                <button className="close-button" aria-label="Close skip vanguard information box"
-                        type="button"
-                        onClick={() => setSkipBoxClosed(true)}
-                        onKeyUp={() => setSkipBoxClosed(true)}
-                >
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <p>
-                    <FiInfo/>{' '}
-                    <small>
-                        The Vanguard campaign is optional. If you&apos;d rather just play Kings of War you can skip
-                        this section. <br/>
-                        <em>Note</em>: This will mean you can roll at most three dice on the territory table per game.
-                        You will lose out on the bonus die for winning the Vanguard game.
-                    </small>
-                </p>
-                <div className="left-right-row">
-                    <label>
-                        <input type="checkbox"
-                               checked={skipBoxChecked}
-                               onChange={() => { toggleSkipBox(!skipBoxChecked)}}
-                        />
-                        I do not want to play in the Vanguard Campaign
-                    </label>
-                    <button className={`button info ${skipBoxChecked ? '' : 'disabled'} margin-bottom-0 small`}
-                            onClick={handleSkip}
-                            onKeyUp={handleSkip}
-                    >
-                        Skip
-                    </button>
-                </div>
-            </div>
-            : null
-        }
-        {
-            notice && !noticeClosed
-                ? <div className="callout warning">
-                    <button className="close-button" aria-label="Close different warband notice"
-                            type="button"
-                            onClick={() => setNoticeClosed(true)}
-                            onKeyUp={() => setNoticeClosed(true)}
-                    >
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p>{notice}</p>
-                </div>
-                : null
-        }
-        <div className={styles.warbandHeader}>
-            <fieldset className="fieldset">
-                <legend>Retinue</legend>
-                <ModelBuilder
-                    units={list.units.filter(u =>
-                        u.types.includes("Command")
-                        && ((!takenUnique.includes(u.name)) || u.name === warband.retinue.leader?.type))}
-                    label={'Leader'}
-                    onChange={handleRetinueChange('leader')}
-                    value={warband.retinue.leader ?? null}
-                />
-            </fieldset>
-            <fieldset className="fieldset">
-                <legend>Unspent</legend>
-                <div className="stat">{warband.unspent}</div>
-            </fieldset>
-        </div>
-        <fieldset className="fieldset">
-            <legend>Roster</legend>
-            <AddModel units={list.units.filter(u => !takenUnique.includes(u.name))}
-                      onSubmit={handleAddModel}/>
-
-            {warband.roster.map((model, i) => {
-                    const stats = list?.units.find(m => m.name === model.type)
-                    return <div className={styles.modelContainer} key={i}>
-                        <div className={styles.modelLabel}>{model.type}</div>
-                        <div
-                            className={styles.modelTypes}>{(stats?.types as string[]).concat(stats?.races ?? []).join(', ')}</div>
-                        <div className={styles.modelCost}>{model.cost}pts</div>
-                        <div className={styles.modelActions}>
-                            <button className="button alert hollow"
-                                    onClick={handleRemoveModel(i)}
-                                    onKeyUp={handleRemoveModel(i)}
-                            >
-                                <FiTrash/>
-                            </button>
-                        </div>
-                        {model.options.map(option =>
-                            <div key={option} className={styles.modelOptions}>{option}</div>
-                        )}
-                    </div>;
-                }
-            )}
-
-        </fieldset>
-        <div className="split-row">
-            <fieldset className="fieldset">
-                <legend>Supply Caravan</legend>
-                <label className="inline">
-                    Add Item
-                    <select value="" onChange={handleAddEquipment}>
-                        <option>-- Pick Equipment --</option>
-                        {Object.values(equipment)
-                            .filter(i => i.rarity === "Common" ? commonEquipmentCount < 6 : warband.supplyCaravan.find(sc => sc.name === i.name) == undefined)
-                            .sort((a, b) => a.name.localeCompare(b.name))
-                            .map(
-                                (item) =>
-                                    <option key={item.name} value={item.name}>
-                                        {item.name}{' '}
-                                        [{item.type}, {item.rarity}]{' '}
-                                        {item.cost} pts
-                                    </option>
-                            )
-                        }
-                    </select>
-                </label>
-                {warband.supplyCaravan
-                    .sort((a, b) => a.name.localeCompare(b.name))
-                    .map((item, i) =>
-                        <div className={styles.equipmentRow} key={i}>
-                            <div className={styles.equipmentLabel}>
-                                {item.name}{' '}
-                                <small>{item.type}, {item.rarity}</small>
-                            </div>
-                            <div className={styles.equipmentActions}>
-                                <button className="button alert hollow"
-                                        onClick={handleRemoveEquipment(i)}
-                                        onKeyUp={handleRemoveEquipment(i)}
-                                >
-                                    <FiTrash/>
-                                </button>
-                            </div>
-                        </div>
-                    )}
-            </fieldset>
-            <fieldset className="fieldset">
-                <legend>Requirements</legend>
-                <WarbandRequirements requirements={requirements}/>
-            </fieldset>
-        </div>
-    </>
 }
 
 interface PersonaliseWarhostProps {
@@ -823,77 +458,6 @@ export function WarhostForm({user}: ForceFormProps) {
                 </button>
             </div>
         )
-    } else if (user.warhost.warband?.warbandComplete !== true && !user.warhost.skipVanguard) {
-        if (user.warhost.warband?.list !== warhostData.army?.vanguardList) {
-            user.warhost.warband = undefined
-        }
-
-        const warband = user.warhost.warband ?? {
-            list: warhostData.army?.vanguardList ?? '',
-            totalPoints: 200,
-            unspent: 200,
-            retinue: {
-                leader: undefined
-            },
-            roster: [],
-            supplyCaravan: [],
-            warbandComplete: false,
-        };
-
-        warband.totalPoints = warband.totalPoints ?? 200
-
-        const requirements: RequirementResult[] = warhostData.warband
-            ? checkRequirements(warband, warhostData.warband)
-            : [{message: 'No warband assigned', passed: false}];
-
-        elements.push(
-            <VanguardRosterBuilder key="vanguard-roster-builder"
-                                   list={warhostData.warband}
-                                   notice={warhostData.army?.vanguardNotice}
-                                   warband={warband}
-                                   equipment={warhostData.equipment}
-                                   requirements={requirements}
-                                   onUpdate={(warband, skip = false) => updateWarhost({
-                                       "warband": warband,
-                                       "skipVanguard": skip
-                                   })}
-
-            />
-        )
-
-        const handleBack = (e: MouseEvent | KeyboardEvent) => {
-            e.preventDefault();
-            updateWarhost({
-                "army.complete": false,
-            });
-        }
-
-        const canProgress = requirements.every(r => r.passed);
-
-        const handleNext = (e: MouseEvent | KeyboardEvent) => {
-            e.preventDefault();
-            if (canProgress) {
-                warband.warbandComplete = true
-                updateWarhost({
-                    "warband": warband,
-                });
-            }
-        }
-
-        elements.push(
-            <div key="submit-vanguard" className="left-right-row">
-                <button className="button primary"
-                        onClick={handleBack}
-                        onKeyUp={handleBack}>
-                    <FiChevronLeft/> Back
-                </button>
-                <button className={`button ${canProgress ? 'primary' : 'secondary disabled'}`}
-                        onClick={handleNext}
-                        onKeyUp={handleNext}>
-                    <FiCheck/> Next
-                </button>
-            </div>
-        )
     } else {
         elements.push(<PersonaliseWarhost key="personalise-warhost" warhost={user.warhost} onUpdate={updateWarhost}/>)
 
@@ -911,13 +475,12 @@ export function WarhostForm({user}: ForceFormProps) {
             }
 
             updateWarhost({
-                "skipVanguard": false,
-                "warband": user.warhost?.warband
+                "army.complete": false,
             });
         }
 
         elements.push(
-            <div key="submit-vanguard" className="left-right-row">
+            <div key="back-to-warhost" className="left-right-row">
                 <button className="button primary"
                         onClick={handleBack}
                         onKeyUp={handleBack}>
