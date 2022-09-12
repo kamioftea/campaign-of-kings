@@ -40,7 +40,7 @@
     "@types/glob": "^8.0.0",
     "@types/multiparty": "^0.0.33",
     "@types/node": "18.7.16",
-    "@types/react": "18.0.18",
+    "@types/react": "18.0.19",
     "@types/react-dropzone": "^5.1.0",
     "@types/sharp": "^0.30.5",
     "@types/uuid": "^8.3.4",
