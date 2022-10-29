@@ -24,7 +24,7 @@ const Home: NextPage = () => {
                       <p>
                           September 2022 until February 2023, one game per month.
                       </p>
-                      </div>
+                  </div>
                   <div>
                       <Link href={"/about"}>
                           <a className="button primary">Read the rules pack</a>
