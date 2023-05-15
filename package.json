@@ -17,7 +17,7 @@
     "formidable": "^2.1.1",
     "formik": "^2.2.9",
     "foundation-sites": "^6.7.5",
-    "glob": "^10.2.3",
+    "glob": "^10.2.4",
     "mongoose": "^7.1.1",
     "multiparty": "^4.2.3",
     "next": "13.4.2",
