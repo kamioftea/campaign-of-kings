@@ -38,7 +38,7 @@
     "@types/bcryptjs": "^2.4.6",
     "@types/cookie": "^0.6.0",
     "@types/glob": "^8.1.0",
-    "@types/multiparty": "^0.0.36",
+    "@types/multiparty": "^4.2.1",
     "@types/node": "22.6.1",
     "@types/react": "18.3.9",
     "@types/react-dropzone": "^5.1.0",
