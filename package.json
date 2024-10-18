@@ -18,7 +18,7 @@
     "formik": "^2.4.6",
     "foundation-sites": "^6.9.0",
     "glob": "^11.0.0",
-    "mongoose": "^8.7.1",
+    "mongoose": "^8.7.2",
     "multiparty": "^4.2.3",
     "next": "14.2.15",
     "next-connect": "^1.0.0",
