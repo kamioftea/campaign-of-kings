@@ -13,7 +13,7 @@
     "@aws-sdk/client-ses": "^3.699.0",
     "@hapi/iron": "^7.0.1",
     "bcryptjs": "^2.4.3",
-    "cookie": "^1.0.1",
+    "cookie": "^1.0.2",
     "formidable": "^3.5.2",
     "formik": "^2.4.6",
     "foundation-sites": "^6.9.0",
