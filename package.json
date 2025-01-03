@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.717.0",
-    "@aws-sdk/client-ses": "^3.716.0",
+    "@aws-sdk/client-ses": "^3.721.0",
     "@hapi/iron": "^7.0.1",
     "bcryptjs": "^2.4.3",
     "cookie": "^1.0.2",
