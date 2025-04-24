@@ -14,7 +14,7 @@
     "@hapi/iron": "^7.0.1",
     "bcryptjs": "^3.0.2",
     "cookie": "^1.0.2",
-    "formidable": "^3.5.3",
+    "formidable": "^3.5.4",
     "formik": "^2.4.6",
     "foundation-sites": "^6.9.0",
     "glob": "^11.0.2",
