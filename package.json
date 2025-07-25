@@ -37,7 +37,7 @@
     "@types/aws-sdk": "^2.7.4",
     "@types/bcryptjs": "^3.0.0",
     "@types/cookie": "^1.0.0",
-    "@types/glob": "^8.1.0",
+    "@types/glob": "^9.0.0",
     "@types/multiparty": "^4.2.1",
     "@types/node": "24.0.14",
     "@types/react": "19.1.8",
