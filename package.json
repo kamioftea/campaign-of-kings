@@ -31,7 +31,7 @@
     "sass": "^1.90.0",
     "sharp": "^0.34.3",
     "uuid": "^11.1.0",
-    "yup": "^1.6.1"
+    "yup": "^1.7.0"
   },
   "devDependencies": {
     "@types/aws-sdk": "^2.7.4",
