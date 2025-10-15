@@ -9,7 +9,7 @@
     "build-icons": "node scripts/icon.mjs"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.908.0",
+    "@aws-sdk/client-s3": "^3.910.0",
     "@aws-sdk/client-ses": "^3.908.0",
     "@hapi/iron": "^7.0.1",
     "bcryptjs": "^3.0.2",
