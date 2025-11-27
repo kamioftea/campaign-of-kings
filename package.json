@@ -20,7 +20,7 @@
     "glob": "^13.0.0",
     "mongoose": "^9.0.0",
     "multiparty": "^4.2.3",
-    "next": "16.0.4",
+    "next": "16.0.5",
     "next-connect": "^1.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
