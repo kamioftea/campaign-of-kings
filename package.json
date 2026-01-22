@@ -39,7 +39,7 @@
     "@types/cookie": "^1.0.0",
     "@types/glob": "^9.0.0",
     "@types/multiparty": "^4.2.1",
-    "@types/node": "25.0.9",
+    "@types/node": "25.0.10",
     "@types/react": "19.2.8",
     "@types/react-dropzone": "^5.1.0",
     "@types/sharp": "^0.32.0",
