@@ -19,7 +19,7 @@
     "foundation-sites": "^6.9.0",
     "glob": "^13.0.6",
     "mongoose": "^9.6.2",
-    "multiparty": "^4.2.3",
+    "multiparty": "^4.3.0",
     "next": "16.2.6",
     "next-connect": "^1.0.0",
     "react": "19.2.6",
